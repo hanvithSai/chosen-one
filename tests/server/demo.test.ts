@@ -1,16 +1,16 @@
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { eq } from "drizzle-orm";
-import { openDatabase, type DbHandle } from "../../server/db/client.js";
+import type { DbHandle } from "../../server/db/client.js";
 import { intents, products, sourceNotes } from "../../server/db/schema.js";
 import { loadDemoData } from "../../server/demo/data.js";
 import { assignModelSlot, seedDemo } from "../../server/demo/seed.js";
+import { createTestDatabase } from "../helpers/db.js";
 
 const data = loadDemoData();
 let database: DbHandle;
 
 beforeAll(async () => {
-  database = await openDatabase();
-  await database.migrate();
+  database = await createTestDatabase();
 });
 
 afterAll(async () => {
