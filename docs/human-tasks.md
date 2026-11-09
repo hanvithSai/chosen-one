@@ -20,7 +20,7 @@ These need a person: account sign-ups, CAPTCHAs and 2FA, accepting terms, judgem
 - [x] Made the stack decisions:
   - LLMs: Gemini and Groq free tiers
   - hosting: Render free with Neon free Postgres
-  - planning docs: public here, with strategy kept in a private repo
+  - planning docs: engineering docs public here; strategy and raw research kept only on the team's machine (not on GitHub)
 
 ---
 
@@ -37,9 +37,8 @@ These need a person: account sign-ups, CAPTCHAs and 2FA, accepting terms, judgem
 - [ ] Teammates are invited from the Devpost project's team section **and have accepted**.
 - [ ] Choose the Representative and agree how any prize is split.
 
-### H3. Private research repo (2 min)
-- [ ] At https://github.com/new, create a **Private** repo named `chosen-one-research` with no README, license or .gitignore. Private repos are free.
-- [ ] Say "H3 done". The AI pushes the strategy document and raw research there.
+### H3. Research storage (decided)
+- [x] Decided that strategy and raw research stay **local only**, in a separate folder on the team's machine. It has its own git history but is never pushed. Nothing to do.
 
 ### H4. PayPal Developer sandbox (20 min)
 1. Log in at **developer.paypal.com**.

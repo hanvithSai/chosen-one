@@ -39,7 +39,7 @@
   - Commit messages are 6–8 words in the past tense.
   - Commits are authored only as `hanvithSai <hanvithsai.a@gmail.com>`.
   - No AI-tool attribution in commits or files.
-  - GitHub is the single source of truth. Everything is pushed except `.env` and `node_modules`.
+  - GitHub is the single source of truth. Everything is pushed except `.env`, `node_modules`, and the team's private research, which is kept locally by decision.
 
 ---
 
@@ -378,7 +378,7 @@ chosen-one/
 
 | Milestone | Due | Done when | Owner |
 |---|---|---|---|
-| **M0** | Tue 10 Nov, 10:00 | Keys in `.env`; accounts (PayPal sandbox, Google AI Studio, Groq, Channel3, Neon, Render); private research repo created | Human |
+| **M0** | Tue 10 Nov, 10:00 | Keys in `.env`; accounts (PayPal sandbox, Google AI Studio, Groq, Channel3, Neon, Render) | Human |
 | **M1** | Tue, 14:00 | Spikes pass: PayPal order → approve → capture; Channel3 query; 3-intent smoke panel on each provider; Cart API passes the Zod contract; quotas recorded | AI |
 | **M2** | Tue, 23:00 | Deployed (Render free + Neon). Buyer Agent → `/mcp` → `checkout_cart` → PayPal approval → capture → ledger; a verified webhook received | AI + Human (deploy) |
 | **M3** | Wed 11 Nov, 15:00 | Full 20-intent panel; results grid; run drill-down; loss reasons | AI |
