@@ -17,6 +17,12 @@ const ConfigSchema = z.object({
   PUBLIC_BASE_URL: z.url().default("http://localhost:3000"),
   DEMO_MODE: z.enum(["live", "replay"]).default("live"),
   LOG_LEVEL: z.enum(["fatal", "error", "warn", "info", "debug", "trace", "silent"]).default("info"),
+  /** Neon (or any Postgres) connection string. When unset, an embedded PGlite database is used. */
+  DATABASE_URL: z
+    .string()
+    .regex(/^postgres(ql)?:\/\//, "must be a postgres:// connection string")
+    .optional(),
+  PGLITE_DATA_DIR: z.string().default("./data/runtime/pglite"),
 });
 
 export type AppConfig = z.infer<typeof ConfigSchema>;
