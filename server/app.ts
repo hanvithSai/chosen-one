@@ -2,6 +2,9 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 import express, { type ErrorRequestHandler, type Express } from "express";
 import type { Logger } from "pino";
+import { cartRoutes } from "./agent-api/cartRoutes.js";
+import { paymentRoutes } from "./agent-api/paymentRoutes.js";
+import type { CartService } from "./commerce/cart.js";
 import type { AppConfig } from "./config.js";
 import type { DbHandle } from "./db/client.js";
 
@@ -14,11 +17,13 @@ export interface AppDeps {
   config: AppConfig;
   logger: Logger;
   database?: Pick<DbHandle, "driver" | "ping">;
+  /** Agent commerce surface (Cart API v1 + PayPal return pages). */
+  commerce?: { cartService: CartService };
   /** Directory holding the built web app (dist/web). Served only when it exists. */
   webDistDir?: string;
 }
 
-export function createApp({ config, logger, database, webDistDir }: AppDeps): Express {
+export function createApp({ config, logger, database, commerce, webDistDir }: AppDeps): Express {
   const app = express();
   app.disable("x-powered-by");
   app.set("trust proxy", 1);
@@ -34,6 +39,14 @@ export function createApp({ config, logger, database, webDistDir }: AppDeps): Ex
       db: { driver: database.driver, ok: dbOk },
     });
   });
+
+  if (commerce) {
+    app.use(
+      "/merchant-cart",
+      cartRoutes({ cartService: commerce.cartService, storeApiToken: config.STORE_API_TOKEN }),
+    );
+    app.use("/paypal", paymentRoutes({ cartService: commerce.cartService }));
+  }
 
   if (webDistDir && existsSync(webDistDir)) {
     app.use(express.static(webDistDir, { index: false, maxAge: "1h" }));

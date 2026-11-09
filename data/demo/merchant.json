@@ -3,5 +3,15 @@
   "name": "Mayabazar",
   "tagline": "Handmade clay for everyday magic",
   "location": "Austin, TX",
-  "about": "A fictional two-person clay studio used for the ChosenOne demo. Any resemblance to a real business is coincidental."
+  "about": "A fictional two-person clay studio used for the ChosenOne demo. Any resemblance to a real business is coincidental.",
+  "checkout": {
+    "currency": "USD",
+    "shipToCountries": ["US"],
+    "carrier": "USPS Priority Mail",
+    "handlingBusinessDays": 2,
+    "transitBusinessDays": [2, 3],
+    "flatShippingCents": 800,
+    "freeShippingOverCents": 6000,
+    "giftWrapCents": 500
+  }
 }

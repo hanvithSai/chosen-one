@@ -25,10 +25,12 @@
     "check:secrets": "node scripts/check-secrets.mjs",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx scripts/db-migrate.ts",
-    "db:seed": "tsx scripts/seed-demo.ts"
+    "db:seed": "tsx scripts/seed-demo.ts",
+    "smoke": "node scripts/smoke.mjs"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.16",
+    "@paypal/agentic-commerce-spec": "^1.1.0",
     "drizzle-orm": "^0.45.4",
     "express": "^5.3.0",
     "minisearch": "^7.2.0",

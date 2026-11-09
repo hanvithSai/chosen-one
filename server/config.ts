@@ -11,6 +11,8 @@ export function loadDotEnvFile(file = ".env"): void {
   }
 }
 
+export const DEFAULT_STORE_API_TOKEN = "local-dev-store-token";
+
 const ConfigSchema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
   PORT: z.coerce.number().int().positive().default(3000),
@@ -25,6 +27,10 @@ const ConfigSchema = z.object({
   PGLITE_DATA_DIR: z.string().default("./data/runtime/pglite"),
   /** Seeds the Mayabazar demo merchant at startup (idempotent). */
   SEED_DEMO_ON_START: z.stringbool().default(true),
+  /** Merchant whose store this deployment serves to agents. */
+  MERCHANT_SLUG: z.string().default("mayabazar"),
+  /** Bearer token agents present to the Cart API (stand-in for the PayPal-issued JWT). */
+  STORE_API_TOKEN: z.string().min(8).default(DEFAULT_STORE_API_TOKEN),
 });
 
 export type AppConfig = z.infer<typeof ConfigSchema>;

@@ -4,13 +4,28 @@ import { z } from "zod";
 
 export const DEFAULT_DEMO_DIR = path.resolve(process.cwd(), "data/demo");
 
+/** Rules the checkout must apply. Structured because carts are priced server-side. */
+export const CheckoutPolicySchema = z.object({
+  currency: z.string().length(3),
+  shipToCountries: z.array(z.string().length(2)).min(1),
+  carrier: z.string().min(1),
+  handlingBusinessDays: z.number().int().nonnegative(),
+  transitBusinessDays: z.tuple([z.number().int().positive(), z.number().int().positive()]),
+  flatShippingCents: z.number().int().nonnegative(),
+  freeShippingOverCents: z.number().int().nonnegative(),
+  giftWrapCents: z.number().int().nonnegative(),
+});
+
 const MerchantSchema = z.object({
   slug: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string().min(1),
   tagline: z.string().min(1),
   location: z.string().min(1),
   about: z.string().min(1),
+  checkout: CheckoutPolicySchema,
 });
+
+export type CheckoutPolicy = z.infer<typeof CheckoutPolicySchema>;
 
 const ProductSchema = z.object({
   sku: z.string().regex(/^MB-[A-Z0-9-]+$/),
