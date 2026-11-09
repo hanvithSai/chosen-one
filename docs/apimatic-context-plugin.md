@@ -1,6 +1,6 @@
 # How we used the APIMatic Context Plugin
 
-ChosenOne's PayPal integration was written by Claude Code (Anthropic) with two plugins installed:
+ChosenOne's PayPal integration was written with an AI coding agent that had two plugins installed:
 
 - **APIMatic Context Plugin for the PayPal Server SDK:** `paypal@context-plugins-local` v0.1.0, installed with:
 
@@ -8,7 +8,7 @@ ChosenOne's PayPal integration was written by Claude Code (Anthropic) with two p
   npx context-plugins install https://github.com/paypaldev/server-sdk-context-plugin-preview
   ```
 
-- **PayPal AI-Toolkit:** `paypal@claude-plugins-official` v1.2.0.
+- **PayPal AI-Toolkit:** plugin v1.2.0 (https://github.com/paypal/AI-Toolkit).
 
 The plugin gives the coding agent accurate, versioned knowledge of the APIMatic-generated `@paypal/paypal-server-sdk`. That covers client initialization, OAuth client-credentials, controllers and models, error types, and retry configuration. The agent uses this instead of guessing from training data.
 
