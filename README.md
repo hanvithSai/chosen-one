@@ -1,20 +1,20 @@
-# Shortlist
+# ChosenOne
 
-**Get picked, and paid, by AI shopping agents.**
+**When an AI shops for you, it picks one store. ChosenOne helps small shops be that store.**
 
-AI agents are becoming shoppers. Shortlist shows small PayPal merchants three things:
+AI agents are becoming shoppers, and a small merchant can't see whether those agents recommend them. ChosenOne shows small PayPal merchants three things:
 
-- whether agents pick their store
-- why agents buy elsewhere instead
+- their **PickRate**, which is how often AI shopping agents choose their store
+- why agents choose someone else
 - how much revenue agents bring in
 
-It fixes the gaps with AI and attributes every agent sale through PayPal.
+It then fixes the gaps with AI and attributes every agent sale through PayPal.
 
 > 🚧 **In active development for the [PayPal AI Hackathon](https://paypalaihackathon.devpost.com/) (submissions close 12 Nov 2026).** This README is filled in as features land.
 
 ## How it works
 
-1. **Measure.** A panel of AI "mystery shopper" agents (Claude, using tools) works through realistic shopping requests. They shop the merchant's store alongside competitor products from the Channel3 API. Shortlist records how often agents choose the merchant (the *agent share of shelf*) and the agent's stated reason for every lost sale.
+1. **Measure.** A panel of AI "mystery shopper" agents (Claude, using tools) works through realistic shopping requests. They shop the merchant's store alongside competitor products from the Channel3 API. ChosenOne reports the store's **PickRate** and the agent's stated reason for every lost sale.
 2. **Fix.** Claude drafts structured catalog fixes, such as care instructions, dimensions, delivery windows and returns. Each fix cites the merchant's own notes. The merchant approves every change. Prices and stock are never invented.
 3. **Prove.** The store is published through PayPal's Store Sync **Cart API v1** contract (`@paypal/agentic-commerce-spec`) and an **MCP server**. When a real AI agent buys, checkout runs on **PayPal Orders v2**: the shopper approves on PayPal, and the sale is captured and attributed to the agent. That attribution is confirmed by verified **PayPal webhooks** and reconciled with **Transaction Search**.
 

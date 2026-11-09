@@ -1,6 +1,6 @@
 # How we used the APIMatic Context Plugin
 
-Shortlist's PayPal integration was written by Claude Code (Anthropic) with two plugins installed:
+ChosenOne's PayPal integration was written by Claude Code (Anthropic) with two plugins installed:
 
 - **APIMatic Context Plugin for the PayPal Server SDK:** `paypal@context-plugins-local` v0.1.0, installed with:
 
