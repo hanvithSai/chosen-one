@@ -80,7 +80,7 @@
 ## 4. Scope (MoSCoW)
 
 **Must:**
-1. **Demo merchant** "Fernwood Clay Co." (fictional, Austin TX):
+1. **Demo merchant** "Mayabazar" (fictional clay studio, Austin TX):
    - 24 deliberately thin listings
    - merchant source notes (care card, FAQ, shipping, returns)
    - a frozen set of 20 intents
@@ -116,7 +116,7 @@
 **Should:**
 - Transaction Search reconciliation badge.
 - Merchant copilot (PayPal tools over MCP): agent sales summary, refund, invoice.
-- Public store page `/store/fernwood` with schema.org JSON-LD and a JS SDK v6 button.
+- Public store page `/store/mayabazar` with schema.org JSON-LD and a JS SDK v6 button.
 - CI on GitHub Actions: type-check, tests, secrets scan.
 - Keep-alive ping workflow.
 
@@ -343,16 +343,20 @@ chosen-one/
 | Handle 422 `INSTRUMENT_DECLINED` | capture path |
 | Backoff on 429 | `paypal/errors.ts` |
 | Log `debug_id` | `paypal/errors.ts` → `orders.debug_ids` |
-| JS SDK v6 for buttons | `/store/fernwood` (Should) |
+| JS SDK v6 for buttons | `/store/mayabazar` (Should) |
 | No NVP/SOAP, v1/payments or Hosted Fields | Grep check in CI |
 
 ---
 
 ## 6. Demo data
 
-- **Merchant: Fernwood Clay Co.** A fictional two-person pottery studio in Austin, TX.
-  - Lines: stoneware (dishwasher-safe) and raku (decorative, *not* food-safe).
-  - Price range $18–120.
+- **Merchant: Mayabazar** ("handmade clay for everyday magic"). A fictional two-person clay studio in Austin, TX. The name nods to the 1957 Telugu classic *Mayabazar*, a magic market. US-based, so the sandbox runs in USD.
+  - **Stoneware** (dishwasher- and microwave-safe): mugs, bowls, plates, platters.
+  - **Terracotta** (unglazed, hand-wash only): kulhad chai cups, planters, tea-light holders.
+  - **Raku** (decorative, *not* food-safe): vases.
+  - Price range $14–120.
+  - The mix is deliberate. The facts agents need (care, food safety, size) differ by line, and thin listings leave them out.
+- **Buyer Agent persona:** "Chitti", the in-app AI shopper. "Chitti" is an everyday Tamil/Telugu word for "little one" and a nod to Kollywood's best-known robot. No film imagery is used.
 - **Thin listings:** title, one line of description, price.
 - **Source notes** hold the facts:
   - care
