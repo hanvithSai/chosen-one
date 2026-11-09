@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+coverage/
+.env
+.env.*
+!.env.example
+*.db
+*.db-journal
+*.sqlite
+data/runtime/
+.playwright-mcp/
+.DS_Store
+Thumbs.db
+*.log
