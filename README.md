@@ -26,12 +26,24 @@ It then fixes the gaps with AI and attributes every agent sale through PayPal.
   - Webhooks
   - Transaction Search
   - Agent Toolkit / PayPal MCP server
-- **AI:** an LLM with tool calling and structured outputs. The provider is being finalised; only open-source and free-tier options are used.
+- **AI:**
+  - Google **Gemini** (free tier) and open-source models served by **Groq** (free tier), through the open-source **Vercel AI SDK**.
+  - Uses tool calling, structured outputs and an MCP client.
 - **Sponsor tools:**
   - APIMatic Context Plugin for PayPal
   - Channel3
-  - AG Grid
+  - AG Grid Community
   - Render
+- **Infrastructure (all free tier or open source):**
+  - Node.js / TypeScript, Express, React + Vite
+  - Postgres (Neon free tier; PGlite locally) with Drizzle ORM
+  - Model Context Protocol SDK
+  - GitHub Actions
+
+## Project docs
+
+- [Engineering plan](docs/plan.md): architecture, scope, schedule, testing and risks
+- [Tasks that need a person](docs/human-tasks.md)
 
 ### Built with the APIMatic Context Plugin and the PayPal AI-Toolkit
 
