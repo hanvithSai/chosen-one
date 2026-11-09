@@ -32,6 +32,11 @@ describe("config", () => {
     expect(cfg.DEMO_MODE).toBe("live");
   });
 
+  it("parses boolean flags from strings", () => {
+    expect(loadConfig({}).SEED_DEMO_ON_START).toBe(true);
+    expect(loadConfig({ SEED_DEMO_ON_START: "false" }).SEED_DEMO_ON_START).toBe(false);
+  });
+
   it("treats blank values as unset", () => {
     const cfg = loadConfig({ PUBLIC_BASE_URL: "", DEMO_MODE: "" });
     expect(cfg.PUBLIC_BASE_URL).toBe("http://localhost:3000");

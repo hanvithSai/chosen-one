@@ -23,6 +23,8 @@ const ConfigSchema = z.object({
     .regex(/^postgres(ql)?:\/\//, "must be a postgres:// connection string")
     .optional(),
   PGLITE_DATA_DIR: z.string().default("./data/runtime/pglite"),
+  /** Seeds the Mayabazar demo merchant at startup (idempotent). */
+  SEED_DEMO_ON_START: z.stringbool().default(true),
 });
 
 export type AppConfig = z.infer<typeof ConfigSchema>;
