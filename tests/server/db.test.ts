@@ -3,15 +3,15 @@ import { eq } from "drizzle-orm";
 import request from "supertest";
 import { createApp } from "../../server/app.js";
 import { loadConfig } from "../../server/config.js";
-import { openDatabase, type DbHandle } from "../../server/db/client.js";
+import type { DbHandle } from "../../server/db/client.js";
 import { catalogVersions, merchants, products } from "../../server/db/schema.js";
 import { createLogger } from "../../server/logger.js";
+import { createTestDatabase } from "../helpers/db.js";
 
 let database: DbHandle;
 
 beforeAll(async () => {
-  database = await openDatabase(); // in-memory PGlite
-  await database.migrate();
+  database = await createTestDatabase();
 });
 
 afterAll(async () => {
