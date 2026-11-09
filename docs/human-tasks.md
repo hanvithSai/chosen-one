@@ -27,7 +27,7 @@ These need a person: account sign-ups, CAPTCHAs and 2FA, accepting terms, judgem
 ## P0: by Tue 10 Nov, 10:00 (blocks the build)
 
 ### H1. Remaining decisions (5 min)
-1. **Demo merchant:** **"Fernwood Clay Co.", a fictional pottery studio in Austin, TX**, or another fictional name. Avoid real brands.
+1. [x] **Demo merchant:** decided. **Mayabazar**, a fictional clay studio in Austin, TX (stoneware, terracotta, raku). The in-app buyer agent is called "Chitti".
 2. **Sponsor tools to tick on Devpost:** **APIMatic, Channel3, Render, AG Grid** (we use AG Grid Community for the results grid).
 3. **Team roles:** who records the voiceover, and who is the submitting Representative.
 
@@ -89,7 +89,7 @@ These need a person: account sign-ups, CAPTCHAs and 2FA, accepting terms, judgem
 - [ ] Open the PayPal sandbox link the AI posts, log in as the sandbox buyer, and approve.
 
 ### H13. Product photos (optional, 30 min)
-- [ ] Gather 12–24 photos of mugs, bowls, planters and vases: your own, or from Unsplash or Pexels (free licences, no visible logos).
+- [ ] Gather 12–24 photos of stoneware mugs and bowls, terracotta chai cups (kulhads) and planters, and raku vases: your own, or from Unsplash or Pexels (free licences, no visible logos).
 - [ ] Save them in `data/demo/images/` and list their sources in `data/demo/images/CREDITS.md`.
 
 ### H14. Review demo content (Wed about 12:00, 20 min)
