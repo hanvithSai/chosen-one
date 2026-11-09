@@ -3,6 +3,7 @@ import path from "node:path";
 import express, { type ErrorRequestHandler, type Express } from "express";
 import type { Logger } from "pino";
 import type { AppConfig } from "./config.js";
+import type { DbHandle } from "./db/client.js";
 
 const SERVICE_NAME = "chosen-one";
 
@@ -12,18 +13,26 @@ const API_PREFIXES = ["/api", "/mcp", "/merchant-cart", "/paypal", "/webhooks", 
 export interface AppDeps {
   config: AppConfig;
   logger: Logger;
+  database?: Pick<DbHandle, "driver" | "ping">;
   /** Directory holding the built web app (dist/web). Served only when it exists. */
   webDistDir?: string;
 }
 
-export function createApp({ config, logger, webDistDir }: AppDeps): Express {
+export function createApp({ config, logger, database, webDistDir }: AppDeps): Express {
   const app = express();
   app.disable("x-powered-by");
   app.set("trust proxy", 1);
   app.use(express.json({ limit: "1mb" }));
 
-  app.get("/healthz", (_req, res) => {
-    res.json({ status: "ok", service: SERVICE_NAME, mode: config.DEMO_MODE });
+  app.get("/healthz", async (_req, res) => {
+    const body = { status: "ok", service: SERVICE_NAME, mode: config.DEMO_MODE };
+    if (!database) return res.json(body);
+    const dbOk = await database.ping();
+    res.status(dbOk ? 200 : 503).json({
+      ...body,
+      status: dbOk ? "ok" : "degraded",
+      db: { driver: database.driver, ok: dbOk },
+    });
   });
 
   if (webDistDir && existsSync(webDistDir)) {
