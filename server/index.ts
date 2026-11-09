@@ -3,6 +3,8 @@ import { fileURLToPath } from "node:url";
 import { createApp } from "./app.js";
 import { loadConfig, loadDotEnvFile } from "./config.js";
 import { openDatabase } from "./db/client.js";
+import { loadDemoData } from "./demo/data.js";
+import { seedDemo } from "./demo/seed.js";
 import { createLogger } from "./logger.js";
 
 loadDotEnvFile();
@@ -15,6 +17,11 @@ const database = await openDatabase({
 });
 await database.migrate();
 logger.info({ driver: database.driver }, "Database ready");
+
+if (config.SEED_DEMO_ON_START) {
+  const summary = await seedDemo(database.db, loadDemoData());
+  logger.info({ created: summary.created }, "Demo merchant ready");
+}
 
 // In production the compiled server lives in dist/server and the web build in dist/web.
 const here = path.dirname(fileURLToPath(import.meta.url));

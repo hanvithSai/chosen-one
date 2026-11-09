@@ -1,0 +1,194 @@
+[
+  {
+    "sku": "MB-MUG-MONSOON",
+    "line": "stoneware",
+    "title": "Monsoon Mug",
+    "description": "Hand-thrown mug in our Monsoon blue glaze.",
+    "priceCents": 3400,
+    "stock": 18
+  },
+  {
+    "sku": "MB-MUG-BIGHUG",
+    "line": "stoneware",
+    "title": "Big Hug Mug",
+    "description": "Our biggest mug.",
+    "priceCents": 3800,
+    "stock": 12
+  },
+  {
+    "sku": "MB-MUG-SANDSTONE",
+    "line": "stoneware",
+    "title": "Sandstone Mug",
+    "description": "Speckled cream mug.",
+    "priceCents": 3200,
+    "stock": 20
+  },
+  {
+    "sku": "MB-CUP-ESPRESSO-2",
+    "line": "stoneware",
+    "title": "Espresso Pair",
+    "description": "Two little cups.",
+    "priceCents": 3600,
+    "stock": 9
+  },
+  {
+    "sku": "MB-CUP-SAUCER",
+    "line": "stoneware",
+    "title": "Pastel Cup & Saucer",
+    "description": "Cup and saucer in soft pastels.",
+    "priceCents": 4200,
+    "stock": 7
+  },
+  {
+    "sku": "MB-BOWL-SOUP-2",
+    "line": "stoneware",
+    "title": "Soup Bowls, Set of 2",
+    "description": "Deep bowls for soups and noodles.",
+    "priceCents": 5800,
+    "stock": 10
+  },
+  {
+    "sku": "MB-BOWL-EVERYDAY",
+    "line": "stoneware",
+    "title": "Everyday Bowl",
+    "description": "A bowl for everything.",
+    "priceCents": 2800,
+    "stock": 25
+  },
+  {
+    "sku": "MB-PLATE-DINNER-4",
+    "line": "stoneware",
+    "title": "Dinner Plates, Set of 4",
+    "description": "Rimmed plates in Sandstone.",
+    "priceCents": 11600,
+    "stock": 5
+  },
+  {
+    "sku": "MB-PLATE-SIDE",
+    "line": "stoneware",
+    "title": "Side Plate",
+    "description": "Small plate.",
+    "priceCents": 2200,
+    "stock": 16
+  },
+  {
+    "sku": "MB-PLATTER-OVAL",
+    "line": "stoneware",
+    "title": "Oval Serving Platter",
+    "description": "For feasts.",
+    "priceCents": 8400,
+    "stock": 6
+  },
+  {
+    "sku": "MB-VASE-BUD",
+    "line": "stoneware",
+    "title": "Bud Vase",
+    "description": "A little vase.",
+    "priceCents": 2600,
+    "stock": 14
+  },
+  {
+    "sku": "MB-PITCHER-LASSI",
+    "line": "stoneware",
+    "title": "Lassi Pitcher",
+    "description": "A pouring jug.",
+    "priceCents": 6400,
+    "stock": 6
+  },
+  {
+    "sku": "MB-KULHAD-4",
+    "line": "terracotta",
+    "title": "Kulhad Chai Cups, Set of 4",
+    "description": "Traditional clay chai cups.",
+    "priceCents": 2400,
+    "stock": 30
+  },
+  {
+    "sku": "MB-KULHAD-12",
+    "line": "terracotta",
+    "title": "Kulhad Party Pack (12)",
+    "description": "For chai parties.",
+    "priceCents": 6000,
+    "stock": 10
+  },
+  {
+    "sku": "MB-PLANTER-LARGE",
+    "line": "terracotta",
+    "title": "Large Terracotta Planter",
+    "description": "Big planter.",
+    "priceCents": 7200,
+    "stock": 8
+  },
+  {
+    "sku": "MB-PLANTER-SMALL",
+    "line": "terracotta",
+    "title": "Small Terracotta Planter",
+    "description": "Small planter.",
+    "priceCents": 1800,
+    "stock": 24
+  },
+  {
+    "sku": "MB-TEALIGHT-6",
+    "line": "terracotta",
+    "title": "Tea-Light Holders, Set of 6",
+    "description": "Clay holders for tea lights.",
+    "priceCents": 2100,
+    "stock": 15
+  },
+  {
+    "sku": "MB-CHIME",
+    "line": "terracotta",
+    "title": "Clay Wind Chime",
+    "description": "Tinkly chime.",
+    "priceCents": 3000,
+    "stock": 9
+  },
+  {
+    "sku": "MB-INCENSE",
+    "line": "terracotta",
+    "title": "Incense Holder",
+    "description": "For incense sticks.",
+    "priceCents": 1600,
+    "stock": 22
+  },
+  {
+    "sku": "MB-GIFTSET-CHAI",
+    "line": "terracotta",
+    "title": "Chai Lover Gift Set",
+    "description": "Gift set.",
+    "priceCents": 2900,
+    "stock": 11
+  },
+  {
+    "sku": "MB-RAKU-TALL",
+    "line": "raku",
+    "title": "Tall Raku Vase",
+    "description": "Crackle-glaze vase.",
+    "priceCents": 11000,
+    "stock": 3
+  },
+  {
+    "sku": "MB-RAKU-ORB",
+    "line": "raku",
+    "title": "Raku Orb Vase",
+    "description": "Round crackle vase.",
+    "priceCents": 7800,
+    "stock": 4
+  },
+  {
+    "sku": "MB-RAKU-BOWL",
+    "line": "raku",
+    "title": "Raku Decorative Bowl",
+    "description": "Smoky metallic bowl.",
+    "priceCents": 6400,
+    "stock": 3
+  },
+  {
+    "sku": "MB-RAKU-BOTTLE",
+    "line": "raku",
+    "title": "Raku Bud Bottle",
+    "description": "Slender bottle vase.",
+    "priceCents": 4800,
+    "stock": 5
+  }
+]

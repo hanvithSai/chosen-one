@@ -1,0 +1,115 @@
+[
+  {
+    "text": "Find a dishwasher-safe handmade coffee mug under $40 as a birthday gift for my mom. It has to reach Austin, TX by Friday.",
+    "persona": "Busy adult child buying a gift",
+    "constraints": {
+      "maxPriceCents": 4000,
+      "mustHave": ["dishwasher safe", "handmade"],
+      "deliverToState": "TX",
+      "deliverWithinDays": 4
+    }
+  },
+  {
+    "text": "I need a set of 4 food-safe clay chai cups for a Diwali party next week.",
+    "persona": "Host planning a festival party",
+    "constraints": { "quantity": 4, "mustHave": ["food safe"], "deliverWithinDays": 7 }
+  },
+  {
+    "text": "Looking for a large planter with a drainage hole for my fiddle leaf fig, ideally with a saucer, under $80.",
+    "persona": "Houseplant owner",
+    "constraints": {
+      "maxPriceCents": 8000,
+      "mustHave": ["drainage hole"],
+      "niceToHave": ["saucer included"]
+    }
+  },
+  {
+    "text": "Two handmade soup bowls that are microwave safe, under $60 for the pair.",
+    "persona": "Home cook",
+    "constraints": {
+      "quantity": 2,
+      "maxPriceCents": 6000,
+      "mustHave": ["microwave safe", "handmade"]
+    }
+  },
+  {
+    "text": "A statement vase for dried pampas grass, around 12 inches tall.",
+    "persona": "Interior styling enthusiast",
+    "constraints": { "mustHave": ["about 12 in tall"], "use": "dried flowers" }
+  },
+  {
+    "text": "Gift for a tea lover under $30 that arrives gift-wrapped.",
+    "persona": "Friend buying a last-minute gift",
+    "constraints": { "maxPriceCents": 3000, "mustHave": ["gift wrap available"] }
+  },
+  {
+    "text": "Lead-free ceramic dinner plates, set of 4, sturdy enough for a family with toddlers.",
+    "persona": "Parent of young children",
+    "constraints": { "quantity": 4, "mustHave": ["lead-free", "chip resistant"] }
+  },
+  {
+    "text": "Something handmade for my sister's new apartment, budget $70, and I'd like free shipping.",
+    "persona": "Sibling buying a housewarming gift",
+    "constraints": { "maxPriceCents": 7000, "mustHave": ["handmade", "free shipping"] }
+  },
+  {
+    "text": "Big coffee mug, at least 16 oz, for someone who drinks a lot of coffee.",
+    "persona": "Coffee lover",
+    "constraints": { "mustHave": ["capacity 16 oz or more"] }
+  },
+  {
+    "text": "Order 30 handmade mugs as gifts for our team, and send our company an invoice.",
+    "persona": "Office manager",
+    "constraints": { "quantity": 30, "mustHave": ["bulk order", "invoice"] }
+  },
+  {
+    "text": "Minimalist white espresso cups, a set of 2.",
+    "persona": "Espresso drinker",
+    "constraints": { "quantity": 2, "mustHave": ["white", "espresso size"] }
+  },
+  {
+    "text": "A small vase for fresh flowers on my desk. It must hold water.",
+    "persona": "Office worker",
+    "constraints": { "mustHave": ["watertight"], "use": "fresh flowers" }
+  },
+  {
+    "text": "Tea-light holders for a wedding: 60 pieces, under $3.50 each.",
+    "persona": "Wedding planner",
+    "constraints": { "quantity": 60, "maxUnitPriceCents": 350 }
+  },
+  {
+    "text": "Housewarming gift: an oven-safe serving platter, handmade, under $90.",
+    "persona": "Guest at a housewarming party",
+    "constraints": { "maxPriceCents": 9000, "mustHave": ["oven safe", "handmade"] }
+  },
+  {
+    "text": "A mug with a wide handle that's easy to hold for my dad, who has arthritis.",
+    "persona": "Caregiver",
+    "constraints": { "mustHave": ["wide handle", "easy grip"] }
+  },
+  {
+    "text": "The cheapest handmade mug you can find, delivered to New York.",
+    "persona": "Price-sensitive shopper",
+    "constraints": { "optimize": "lowest price", "mustHave": ["handmade"], "deliverToState": "NY" }
+  },
+  {
+    "text": "A gift I can return within 30 days if they don't like it, under $50.",
+    "persona": "Cautious gift buyer",
+    "constraints": { "maxPriceCents": 5000, "mustHave": ["30-day returns"] }
+  },
+  {
+    "text": "A heavy ceramic water bowl for my large dog so he can't tip it over.",
+    "persona": "Dog owner",
+    "constraints": { "mustHave": ["pet bowl", "heavy"] }
+  },
+  {
+    "text": "Pastel cup and saucer set for my grandma's 80th birthday.",
+    "persona": "Grandchild buying a gift",
+    "constraints": { "mustHave": ["pastel colour", "cup and saucer"] }
+  },
+  {
+    "text": "A handmade ceramic mug shipped to Toronto, Canada.",
+    "persona": "Canadian shopper",
+    "constraints": { "mustHave": ["handmade"], "deliverToCountry": "CA" }
+  }
+]
