@@ -24,7 +24,8 @@
     "test:watch": "vitest",
     "check:secrets": "node scripts/check-secrets.mjs",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "tsx scripts/db-migrate.ts"
+    "db:migrate": "tsx scripts/db-migrate.ts",
+    "db:seed": "tsx scripts/seed-demo.ts"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.16",
