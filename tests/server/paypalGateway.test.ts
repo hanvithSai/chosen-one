@@ -141,16 +141,14 @@ describe("PayPalGateway.createOrder", () => {
   });
 
   it("does not retry client errors and surfaces the debug id", async () => {
-    const createOrder = vi
-      .fn()
-      .mockRejectedValue(
-        apiError(422, {
-          name: "UNPROCESSABLE_ENTITY",
-          message: "bad",
-          debug_id: "dbg9",
-          details: [{ issue: "ITEM_TOTAL_MISMATCH" }],
-        }),
-      );
+    const createOrder = vi.fn().mockRejectedValue(
+      apiError(422, {
+        name: "UNPROCESSABLE_ENTITY",
+        message: "bad",
+        debug_id: "dbg9",
+        details: [{ issue: "ITEM_TOTAL_MISMATCH" }],
+      }),
+    );
     const gateway = new PayPalGateway(noSleep, controllerWith({ createOrder }));
     const error = await gateway.createOrder(input).catch((e: unknown) => e);
     expect(createOrder).toHaveBeenCalledTimes(1);
@@ -196,16 +194,14 @@ describe("PayPalGateway.captureOrder", () => {
   });
 
   it("reports a declined instrument instead of throwing", async () => {
-    const captureOrder = vi
-      .fn()
-      .mockRejectedValue(
-        apiError(422, {
-          name: "UNPROCESSABLE_ENTITY",
-          message: "declined",
-          debug_id: "dbgD",
-          details: [{ issue: "INSTRUMENT_DECLINED" }],
-        }),
-      );
+    const captureOrder = vi.fn().mockRejectedValue(
+      apiError(422, {
+        name: "UNPROCESSABLE_ENTITY",
+        message: "declined",
+        debug_id: "dbgD",
+        details: [{ issue: "INSTRUMENT_DECLINED" }],
+      }),
+    );
     const gateway = new PayPalGateway(noSleep, controllerWith({ captureOrder }));
     expect(await gateway.captureOrder("ORDER1", "capture-ORDER1")).toEqual({
       orderId: "ORDER1",
@@ -215,15 +211,13 @@ describe("PayPalGateway.captureOrder", () => {
   });
 
   it("treats an already-captured order as settled by fetching it", async () => {
-    const captureOrder = vi
-      .fn()
-      .mockRejectedValue(
-        apiError(422, {
-          name: "UNPROCESSABLE_ENTITY",
-          message: "done",
-          details: [{ issue: "ORDER_ALREADY_CAPTURED" }],
-        }),
-      );
+    const captureOrder = vi.fn().mockRejectedValue(
+      apiError(422, {
+        name: "UNPROCESSABLE_ENTITY",
+        message: "done",
+        details: [{ issue: "ORDER_ALREADY_CAPTURED" }],
+      }),
+    );
     const getOrder = vi.fn().mockResolvedValue({ result: completed });
     const gateway = new PayPalGateway(noSleep, controllerWith({ captureOrder, getOrder }));
     expect(await gateway.captureOrder("ORDER1", "capture-ORDER1")).toMatchObject({

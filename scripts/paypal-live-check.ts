@@ -21,7 +21,13 @@ const created = await gateway.createOrder({
   shippingCents: 800,
   handlingCents: 0,
   totalCents: 4200,
-  shippingAddress: { addressLine1: "500 Congress Ave", adminArea2: "Austin", adminArea1: "TX", postalCode: "78701", countryCode: "US" },
+  shippingAddress: {
+    addressLine1: "500 Congress Ave",
+    adminArea2: "Austin",
+    adminArea1: "TX",
+    postalCode: "78701",
+    countryCode: "US",
+  },
   returnUrl: new URL("/paypal/return", config.PUBLIC_BASE_URL).toString(),
   cancelUrl: new URL("/paypal/cancel", config.PUBLIC_BASE_URL).toString(),
 });
