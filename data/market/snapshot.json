@@ -1,0 +1,929 @@
+{
+  "capturedAt": "2026-11-10T18:41:17.819Z",
+  "source": "Channel3 product search API",
+  "queries": [
+    "handmade stoneware coffee mug",
+    "handmade ceramic tea cup and saucer set",
+    "clay chai cups kulhad set",
+    "large terracotta planter with drainage hole and saucer",
+    "handmade ceramic soup bowls microwave safe",
+    "raku fired ceramic vase",
+    "lead-free ceramic dinner plates set",
+    "ceramic pet water bowl heavy",
+    "handmade ceramic serving platter oven safe",
+    "ceramic tea light holders"
+  ],
+  "products": [
+    {
+      "storeLabel": "Competitor A",
+      "externalId": "v5C4Hdk",
+      "title": "Brisa Handthe maker Stoneware Coffee Mug",
+      "description": "A handthe maker stoneware coffee mug featuring a rustic, textured, off-white finish. Part of a coastal-inspired collection, the design is influenced by the Algarve coast and Ria Formosa, incorporating organic shapes and blended glazes to evoke the landscape of lagoons and sandy beaches.",
+      "priceCents": 17100,
+      "currency": "USD",
+      "attributes": {
+        "category": "Mugs",
+        "materials": ["Stoneware"],
+        "features": [
+          "Handthe maker",
+          "Unique finish",
+          "Metal marking resistant",
+          "Stain resistant",
+          "Organic shape"
+        ],
+        "pattern": ["Organic"]
+      }
+    },
+    {
+      "storeLabel": "Competitor A",
+      "externalId": "xs3G5Fd",
+      "title": "Tea Cup and Saucer, Set of 6",
+      "description": "This set of 6 tea cups and saucers from the maker's Pearl Collection is crafted in Portugal from fine stoneware with a glossy white glaze. Each piece features a rim decorated with pearls and a hand-brushed finish, giving it a unique artisanal touch. The collection combines timeless elegance with versatility, making it perfect for both special occasions and everyday use. The cups and saucers are stackable, stain-resistant, and chip-resistant, with a classic design and round shapes for sturdiness and elegance. They are suitable for oven, microwave, dishwasher, and the makerzer use and are highly resistant to thermal shock.",
+      "priceCents": 24900,
+      "currency": "USD",
+      "attributes": {
+        "category": "Coffee & Tea Cups",
+        "materials": ["fine stoneware"],
+        "features": [
+          "Set of 6 tea cups and saucer",
+          "Fine stoneware",
+          "Glossy white glaze that provides a sophisticated finish",
+          "Stackable, stain resistant and chip resistant",
+          "Classic design and round shapes, offering sturdiness and elegance",
+          "Easily pairs with other collections, such as Rosa and Friso",
+          "Due to the handcrafted nature of this item, slight variations in appearance are expected",
+          "Suitable for oven, microwave, dishwasher and the makerzer",
+          "Fine stoneware pieces are highly resistant to thermal shock, withstanding variations between -20ºC and 250ºC (0ºF to 500ºF)",
+          "Maximum recommended thermal variation is 180ºC (350ºF)",
+          "Avoid placing hot items directly from the oven onto cold surfaces",
+          "Do not use over direct flame"
+        ],
+        "drinkware-material": ["Ceramic"],
+        "pattern": ["Solid"],
+        "cleaning-instructions": ["Dishwasher safe"]
+      }
+    },
+    {
+      "storeLabel": "Competitor A",
+      "externalId": "JrPJ3ih",
+      "title": "Tea Cup and Saucer",
+      "description": "This set of four Eivissa Tea Cups and Saucers by the maker is handcrafted from fine stoneware in Portugal. Featuring an organic design and a sand beige reactive glaze, each piece is unique with 'perfectly imperfect' patterns. These durable pieces are resistant to thermal and mechanical shocks and are safe for use in the oven, microwave, dishwasher, and the makerzer.",
+      "priceCents": 16900,
+      "currency": "USD",
+      "attributes": {
+        "category": "Coffee & Tea Cups",
+        "materials": ["stoneware"],
+        "features": [
+          "Set of 4 cups and saucers",
+          "Handcrafted in Portugal",
+          "Oven, microwave, dishwasher, and the makerzer safe",
+          "Reactive glaze for unique patterns",
+          "FDA food safe (lead and cadmium the maker)",
+          "High-temperature single firing systemresistant to thermal and mechanical shocks"
+        ],
+        "pattern": ["Organic"],
+        "drinkware-material": ["Ceramic"],
+        "cleaning-instructions": ["Dishwasher safe"]
+      }
+    },
+    {
+      "storeLabel": "Competitor B",
+      "externalId": "JLuKcS7",
+      "title": "Handcrafted Soup Bowls",
+      "description": "These handcrafted 20-ounce soup bowls are the maker from lead-the maker and cadmium-the maker natural clay, designed for versatility in the kitchen. They are oven and microwave safe, capable of withstanding temperatures up to 482°F, making them ideal for browning cheese under a broiler or reheating meals. Each bowl features an ergonomic, flared handle for a secure grip and a satin neutral glaze that masks scratches. The rustic design includes subtle spiral ridges and an exposed clay foot, ensuring each piece is unique. This set is dishwasher friendly and comes packaged in a kraft box, making it a suitable gift for weddings or housewarmings.",
+      "priceCents": 19759,
+      "currency": "USD",
+      "attributes": {
+        "category": "Bowls",
+        "materials": ["clay", "ceramic"],
+        "features": [
+          "20 oz capacity",
+          "Oven safe up to 482°F",
+          "Microwave and dishwasher safe",
+          "Ergonomic flared handle",
+          "Lead-the maker and cadmium-the maker natural clay",
+          "Hand-thrown unique design"
+        ],
+        "pattern": ["Texture"],
+        "finish": ["Satin"],
+        "cleaning-instructions": ["Dishwasher safe"],
+        "dinnerware-features": [
+          "Dishwasher safe",
+          "Lead-free",
+          "Microwave safe",
+          "Oven safe",
+          "Stackable"
+        ],
+        "bowl-type": ["Soup bowl"],
+        "shape": ["Round"],
+        "tableware-material": ["Ceramic"]
+      }
+    },
+    {
+      "storeLabel": "Competitor B",
+      "externalId": "SzHxCf2",
+      "title": "Bohemian Ceramic Soup Bowls",
+      "description": "A set of four Bohemian-style ceramic soup bowls with a 23 oz capacity. Features include a two-hole side handle for secure grip, vibrant interior Bohemian pattern, and a durable high-fire ceramic that is microwave, dishwasher, the makerzer, and oven safe up to 450 °F. Bowls are stackable and designed for versatile use from oven to table, suitable for soups, stews, and side dishes. Gift-ready packaging.",
+      "priceCents": 22609,
+      "currency": "USD",
+      "attributes": {
+        "category": "Bowls",
+        "materials": ["Ceramic"],
+        "features": [
+          "Two-Hole Handle Design",
+          "23 oz capacity",
+          "Oven to table",
+          "Microwave and dishwasher safe",
+          "Vibrant Bohemian interior pattern",
+          "Stackable"
+        ],
+        "pattern": ["Swirl", "Floral"],
+        "tableware-material": ["Ceramic"],
+        "finish": ["Gloss"],
+        "cleaning-instructions": ["Dishwasher safe"],
+        "dinnerware-features": [
+          "Chip-resistant",
+          "Dishwasher safe",
+          "Freezer safe",
+          "Microwave safe",
+          "Oven safe",
+          "Stackable",
+          "Stain-resistant"
+        ],
+        "bowl-type": ["Soup bowl"],
+        "shape": ["Round"]
+      }
+    },
+    {
+      "storeLabel": "Competitor B",
+      "externalId": "V1ljdY9",
+      "title": "Ceramic Soup Bowls With Handles",
+      "description": "Tikooere 22-oz ceramic soup bowls with side handles that are stackable and oven-safe. Suitable for soups, stews, pasta, and more. Microwave, dishwasher, and oven safe up to 500 °F. Matte glaze with ivory/black the maker-inspired design. Includes two side handles for a secure grip. Stackable for space-saving storage. Ideal as daily ware or a gift for holidays.",
+      "priceCents": 21184,
+      "currency": "USD",
+      "attributes": {
+        "category": "Bowls",
+        "materials": ["Stoneware"],
+        "features": [
+          "22 oz deep bowl serves soups, stews, pasta, desserts",
+          "Twin handles give safe bathe makerd oven-to-table grip",
+          "Stackable, 500°F ceramic, microwave & dishwasher safe",
+          "Stoneware",
+          "Wipe Clean",
+          "Imported"
+        ],
+        "dinnerware-features": [
+          "Dishwasher safe",
+          "Microwave safe",
+          "Oven safe",
+          "Freezer safe",
+          "Stackable"
+        ],
+        "cleaning-instructions": ["Dishwasher safe"],
+        "pattern": ["Solid", "Texture"],
+        "tableware-material": ["Stoneware"],
+        "bowl-type": ["Soup bowl", "Dessert bowl", "Rice bowl", "Cereal bowl", "Porridge bowl"],
+        "shape": ["Round"],
+        "finish": ["Matte"]
+      }
+    },
+    {
+      "storeLabel": "Competitor B",
+      "externalId": "Fk2Cwmc",
+      "title": "10.25 Inch Ceramic Dinner Plates Set Of 6",
+      "description": "This 6-piece dinner plate set features a modern and practical design, suitable for both formal and casual dining. Each 10.25-inch plate is crafted from high-fired stoneware with a scratch-resistant, reactive glazed surface in a neutral brown tone, ensuring each piece has a unique, one-of-a-kind look. The plates are designed with subtly raised edges to prevent food spills and are both microwave and dishwasher safe for convenient use and cleanup.",
+      "priceCents": 8997,
+      "currency": "USD",
+      "attributes": {
+        "category": "Plates",
+        "materials": ["stoneware", "ceramic"],
+        "features": [
+          "Serves 6 people",
+          "Crafted from high-fired stoneware",
+          "Scratch-resistant, reactive glazed surface",
+          "Microwave and dishwasher safe",
+          "Subtly raised edges to prevent spills"
+        ],
+        "cleaning-instructions": ["Dishwasher safe"],
+        "finish": ["Gloss"],
+        "plate-style": ["Dinner plate"],
+        "pattern": ["Solid"],
+        "shape": ["Round"],
+        "tableware-material": ["Stoneware"]
+      }
+    },
+    {
+      "storeLabel": "Competitor B",
+      "externalId": "Yro8Lyx",
+      "title": "Ceramic Pet Bowl",
+      "description": "This durable ceramic pet bowl features a classic white-speckled finish and a playful 'Woof' graphic on the exterior. Designed for daily feeding, its weighted construction ensures stability to prevent spills during mealtimes. With a 3-cup (24 oz) capacity, it is well-suited for puppies and small-to-medium dogs for both food and water.",
+      "priceCents": 4990,
+      "currency": "USD",
+      "attributes": {
+        "category": "Bowls",
+        "materials": ["ceramic"],
+        "features": [
+          "Heavy-duty ceramic stays put, no flip or slide",
+          "3-cup/24 oz capacity serves small-medium dogs one full meal",
+          "Hand-wash to protect the speckled 'Woof' design",
+          "Durable construction suitable for food or water"
+        ],
+        "material": ["Ceramic"],
+        "pattern": ["Text"],
+        "animal-type": ["Dogs"]
+      }
+    },
+    {
+      "storeLabel": "Competitor C",
+      "externalId": "d9YkwN2",
+      "title": "Handthe maker Yixing Tea Cups With Lids in Box",
+      "description": "A set of two vintage 1990s handthe maker Yixing tea cups, complete with lids, presented in their orithe makerl red and gold satin-lined presentation box. These cups orithe makerte from the Diaoyutai State Guesthouse, signifying their diplomatic significance, and come from the estate of a Chinese Diplomat. The cups are crafted from traditional purple-clay, known for its excellent air permeability which enhances the tea's flavor, giving it a mellow taste. The set appears unused. Dimensions are provided for both the larger and smaller cup, both with and without their respective lids. This is a unique piece of Chinese traditional handicraft and diplomatic memorabilia.",
+      "priceCents": 9800,
+      "currency": "USD",
+      "attributes": {
+        "category": "Coffee & Tea Cups",
+        "materials": ["Clay"],
+        "features": [
+          "Handthe maker Yixing tea cups",
+          "Includes lids and presentation box",
+          "From Diaoyutai State Guesthouse estate",
+          "the maker of purple-clay",
+          "Mint Condition, No Imperfections"
+        ],
+        "insulation-type": ["Non-insulated"],
+        "lid-type": ["Snap-on"],
+        "pattern": ["Solid"],
+        "drinkware-shape": ["Round"],
+        "drinkware-insulation": ["Non-insulated"],
+        "drinkware-material": ["Ceramic"],
+        "cleaning-instructions": ["Hand wash only"],
+        "handle-type": ["No handle"]
+      }
+    },
+    {
+      "storeLabel": "Competitor C",
+      "externalId": "tT5diGd",
+      "title": "Pottery Cups - Set of 5",
+      "description": "A set of five artisan-crafted vintage pottery cups featuring a striking two-toned earth glaze combination of creamy white and tan/brown. Each cup is adorned with a minimalist, dark brown leaf design, suggesting a Japanese or Mid-Century Modern aesthetic. These versatile pieces are perfectly sized for serving tea, sake, or small condiments.",
+      "priceCents": 4200,
+      "currency": "USD",
+      "attributes": {
+        "category": "Coffee & Tea Cups",
+        "materials": ["Pottery"],
+        "features": [
+          "Set of 5",
+          "Two-toned earth glazes",
+          "Leaf design",
+          "Can be used as tea/sake cups or condiment bowls",
+          "Vintage, antique or pre-owned"
+        ],
+        "pattern": ["Leaves"],
+        "handle-type": ["No handle"]
+      }
+    },
+    {
+      "storeLabel": "Competitor C",
+      "externalId": "EhxacXK",
+      "title": "the maker Fired Ceramic Vase",
+      "description": "A unique, vintage postmodernist ceramic vase featuring a distinctive the maker firing process. The vase showcases an external wrapping clay detail and a richly textured, almost crackled finish, suggestive of bronze tones. Its sculptural, asymmetrical form leans toward abstract design, making it a captivating accent piece for any collection.",
+      "priceCents": 35000,
+      "currency": "USD",
+      "attributes": {
+        "category": "Vases",
+        "materials": ["Ceramic"],
+        "features": [
+          "the maker fired ceramic",
+          "External wrapping clay detail",
+          "Textured finish",
+          "Postmodernist style"
+        ],
+        "pattern": ["Texture"],
+        "decoration-material": ["Ceramic"],
+        "material": ["Ceramic"],
+        "item-style": ["Abstract", "Retro/Vintage"]
+      }
+    },
+    {
+      "storeLabel": "Competitor C",
+      "externalId": "UPoL3jP",
+      "title": "Signed Ron Pratt Artist Handcrafted Blue Black Crackled the maker Art Pottery Vase",
+      "description": "This is a unique, handcrafted the maker art pottery vase created by artist Ron Pratt in the late 20th century. It features a striking turquoise and black crackled glaze finish, characteristic of the maker firing techniques. The vase has a slightly tapered body with horizontal ribbed detailing near the neck and base, and it is signed by the artist.",
+      "priceCents": 7500,
+      "currency": "USD",
+      "attributes": {
+        "category": "Vases",
+        "materials": ["Pottery", "Ceramic"],
+        "features": [
+          "Handcrafted by artist Ron Pratt",
+          "the maker pottery technique",
+          "Blue and black crackled glaze",
+          "Signed by the artist",
+          "Ribbed detailing"
+        ],
+        "decoration-material": ["Ceramic"],
+        "pattern": ["Texture"]
+      }
+    },
+    {
+      "storeLabel": "Competitor D",
+      "externalId": "C2FgdZx",
+      "title": "Terracotta Pot with Saucer 10 Inch Large Ceramic Clay Planter",
+      "description": "A 10-inch large terracotta pot and matching saucer set crafted from high-quality ceramic clay fired at high temperatures for durability and crack resistance. The breathable material and integrated drainage hole promote healthy root growth and prevent waterlogging, making it ideal for succulents, herbs, cacti, and other plants that prefer well-aerated soil. Its classic terra cotta color and minimalist design make it suitable for indoor and outdoor use in homes, offices, patios, or gardens.",
+      "priceCents": 10165,
+      "currency": "USD",
+      "attributes": {
+        "category": "Pots",
+        "materials": ["Ceramic Clay"],
+        "features": [
+          "Highly drained and breathable ceramic clay construction",
+          "Fired at high temperatures for durability and crack resistance",
+          "Includes drainage hole and matching saucer for efficient water management",
+          "Spacious 10-inch design suitable for a wide range of plants",
+          "Classic terra cotta color with a minimalist design"
+        ]
+      }
+    },
+    {
+      "storeLabel": "Competitor D",
+      "externalId": "ENOxIQ2",
+      "title": "Ceramic Planter with Drainage Hole Saucer",
+      "description": "Elevate your indoor gardening with this 10-inch ceramic planter pot. Designed with a modern cylindrical silhouette and finished in classic white, it is ideal for living rooms, bedrooms, or offices. This premium ceramic earthenware pot accommodates up to 2.6 gallons (10 quarts) of potting soil, making it suitable for medium to large house plants like fiddle leaf figs and snake plants. It features an integrated drainage hole, a mesh drainage net, and a matching ceramic saucer to ensure proper water management and protect surfaces from moisture. A protective scratch pad is also included to prevent marks on delicate tabletops.",
+      "priceCents": 14498,
+      "currency": "USD",
+      "attributes": {
+        "category": "Planters",
+        "materials": ["ceramic earthenware"],
+        "features": [
+          "Modern cylindrical design in crisp white finish",
+          "10 inches in diameter and 10.2 inches in height",
+          "Accommodates up to 2.6 gallons or 10 quarts of potting soil",
+          "Integrated drainage hole with mesh drainage net",
+          "Matching ceramic saucer included",
+          "Protective scratch pad included for surface protection",
+          "Integrated drainage system prevents waterlogging and root damage",
+          "Ceramic construction ensures durability"
+        ],
+        "lumber-wood-type": ["Wood"],
+        "material": ["Ceramic"],
+        "pattern": ["Solid"],
+        "suitable-space": ["Indoors"],
+        "plant-support-material": ["Wood", "Ceramic"],
+        "shape": ["Round", "Cylindrical"],
+        "mounting-type": ["Tabletop"]
+      }
+    },
+    {
+      "storeLabel": "Competitor D",
+      "externalId": "2bZ6RPH",
+      "title": "the maker 12 Inch Ceramic Planter with Drainage Hole and Saucer",
+      "description": "Enhance your indoor spaces with this 12 inch ceramic planter pot, featuring a sleek cylindrical round design in a classic black finish that suits contemporary, modern, and minimalist decor. Measuring 11.8 inches in both diameter and height, it provides generous room for larger houseplants, small trees, or creative arrangements. Crafted from high-quality ceramic earthenware, this durable planter is built to resist cracks and chips. It includes a built-in drainage hole, a mesh drainage net, a protective scratch pad, and a matching ceramic saucer tray to protect surfaces from water runoff.",
+      "priceCents": 19832,
+      "currency": "USD",
+      "attributes": {
+        "category": "Planters",
+        "materials": ["Ceramic earthenware"],
+        "features": [
+          "Includes matching ceramic saucer tray",
+          "Built-in drainage hole",
+          "Includes mesh drainage net and protective scratch pad",
+          "Resists cracking and chipping",
+          "12-inch round ceramic planter with a straight cylinder shape and modern black finish",
+          "Designed for indoor use with larger houseplants, herbs, or decorative greenery",
+          "Large planting capacity for substantial root growth"
+        ],
+        "suitable-space": ["Indoors"],
+        "pattern": ["Solid"],
+        "mounting-type": ["Free-standing", "Tabletop"],
+        "material": ["Ceramic"],
+        "shape": ["Cylindrical", "Round"],
+        "plant-support-material": ["Ceramic"]
+      }
+    },
+    {
+      "storeLabel": "Competitor D",
+      "externalId": "LOaEjST",
+      "title": "the maker Ceramic Planter with Drainage Hole and Saucer",
+      "description": "This modern 10-inch ceramic planter features a velvety matte black glaze and a refined smooth finish, designed to serve as a sophisticated centerpiece for any indoor living space. Expertly crafted from premium natural ceramic and fired at high temperatures, it is built for durability and resists fading, warping, and cracking. The planter is equipped with a built-in drainage hole, a mesh pad, and a matching saucer to prevent water overflow and protect surfaces, further enhanced by a silicone base pad. With a 10-inch widest body and an 8-inch opening, it is ideal for medium to large houseplants such as Snake Plants, Fiddle Leaf Figs, and Monstera.",
+      "priceCents": 11498,
+      "currency": "USD",
+      "attributes": {
+        "category": "Planters",
+        "materials": ["Ceramic"],
+        "features": [
+          "Velvety matte glaze and smooth finish",
+          "Built-in drainage hole with mesh pad and attached saucer",
+          "Silicone base pad for floor protection",
+          "Fired at high temperatures for strength and resistance to fading, warping, and cracking",
+          "Suitable for medium to large plants (e.g., Snake Plants, Monstera, ZZ Plants)"
+        ],
+        "mounting-type": ["Tabletop"],
+        "plant-support-material": ["Ceramic"],
+        "suitable-space": ["Indoors"],
+        "material": ["Ceramic"],
+        "shape": ["Round"],
+        "pattern": ["Solid"]
+      }
+    },
+    {
+      "storeLabel": "Competitor E",
+      "externalId": "54mxOuZ",
+      "title": "Payne Handthe maker Stoneware Coffee Mug",
+      "description": "A modern take on the stemless wineglass, this handthe maker stoneware coffee mug features a rounded bottom for an easy grip. Designed for versatility, it is suitable for wines, cold refreshments, and warm beverages, making it a year-round staple.",
+      "priceCents": 2200,
+      "currency": "USD",
+      "attributes": {
+        "category": "Mugs",
+        "materials": ["stoneware"],
+        "features": [
+          "Modern stemless wineglass design",
+          "Handthe maker stoneware",
+          "Versatile use for hot and cold beverages",
+          "Rounded bottom for easy grip"
+        ],
+        "handle-type": ["No handle"],
+        "pattern": ["Solid"]
+      }
+    },
+    {
+      "storeLabel": "Competitor E",
+      "externalId": "CIulMM6",
+      "title": "Borgen Handthe maker Stoneware Coffee Mug",
+      "description": "The Borgen Handthe maker Stoneware Coffee Mug is a versatile, handleless vessel designed for a wide range of beverages, from warm coffee to cold refreshments and wine. It features a smooth, rounded bottom for a comfortable grip and an artisanal stoneware construction, offering a modern yet humble aesthetic suitable for any occasion.",
+      "priceCents": 5500,
+      "currency": "USD",
+      "attributes": {
+        "category": "Mugs",
+        "materials": ["stoneware"],
+        "features": [
+          "Handleless design",
+          "Rounded bottom for easy grip",
+          "Versatile use for hot and cold beverages",
+          "Handthe maker stoneware construction"
+        ],
+        "pattern": ["Solid"],
+        "drinkware-shape": ["Round"],
+        "handle-type": ["No handle"]
+      }
+    },
+    {
+      "storeLabel": "Competitor E",
+      "externalId": "8U7OMbF",
+      "title": "Allmodern Borgen Regular Goblet Coffee Mug",
+      "description": "A handthe maker stoneware coffee mug featuring a muted blue-gray glaze, blending a minimalist aesthetic with artisanal variations from the kiln-firing process. Designed as a versatile vessel, it serves as both a handleless mug and a stemless wine glass.",
+      "priceCents": 4700,
+      "currency": "USD",
+      "attributes": {
+        "category": "Mugs",
+        "materials": ["stoneware"],
+        "features": [
+          "Handthe maker",
+          "Rounded bottom for easy grip",
+          "Multi-purpose (wines, cold refreshments, warm beverages)",
+          "Handleless mug and stemless wine glass hybrid design",
+          "Unique glaze variations from kiln-firing",
+          "Clean minimalist lines"
+        ],
+        "drinkware-material": ["Ceramic"],
+        "pattern": ["Solid"],
+        "drinkware-shape": ["Round"],
+        "handle-type": ["No handle"]
+      }
+    },
+    {
+      "storeLabel": "Competitor F",
+      "externalId": "f53CTtl",
+      "title": "Ceramic Tea Cup with Saucer",
+      "description": "Experience the beauty of Japanese tea culture with this exquisitely handcrafted ceramic tea cup and saucer set. The Ippuku-wan design promotes a mindful 'moment of tea,' perfect for enjoying green teas like sencha or matcha. Featuring a delicate pink speckled glaze and a unique, organically shaped saucer, this set blends traditional artistry with modern elegance. While capable of handling dishwashers and microwaves, hand washing is recommended to preserve its artisan quality.",
+      "priceCents": 6400,
+      "currency": "USD",
+      "attributes": {
+        "category": "Tea Sets",
+        "materials": ["ceramic"],
+        "features": [
+          "Handcrafted ceramic construction",
+          "Japanese Ippuku-wan design concept",
+          "Includes two cups and two saucers",
+          "Saucer shape is inspired by natural forms",
+          "Microwave and dishwasher safe (hand wash recommended)",
+          "Versatile for various tea types (Sencha, Matcha, etc.)"
+        ],
+        "style": ["Modern"],
+        "coffee-tea-set-pieces-included": ["Cups", "Saucers", "Teapot"],
+        "drinkware-material": ["Ceramic"],
+        "cleaning-instructions": ["Dishwasher safe", "Hand wash only"],
+        "tableware-material": ["Ceramic"]
+      }
+    },
+    {
+      "storeLabel": "Competitor F",
+      "externalId": "bOtyEav",
+      "title": "Blue Ceramic Tea Cup with Saucer",
+      "description": "Indulge in the artistry of traditional Japanese craftsmanship with this stunning cup and saucer set. Each piece is a testament to the rich heritage of Minoyaki pottery, renowned for its beauty and quality. Created by skilled artisans in Japan, this ceramic set features a unique design characterized by vibrant colors, intricate patterns, and a distinctive crackled glass-like glaze that adds depth and character. Perfect for tea, coffee, or other hot beverages, it brings sophistication to your daily ritual.",
+      "priceCents": 8800,
+      "currency": "USD",
+      "attributes": {
+        "category": "Coffee & Tea Cups",
+        "materials": ["Ceramic"],
+        "features": [
+          "Traditional Japanese Minoyaki pottery craftsmanship",
+          "Features a vibrant blue and earth-toned design",
+          "Distinctive crackled glass-like glaze finish",
+          "Cup capacity: approximately 5 ounces (150 ml)",
+          "Cup dimensions: 3.15 inches diameter x 2.76 inches height",
+          "Handthe maker by skilled artisans in Japan",
+          "Available in single, pair, or set of four configurations",
+          "Includes matching saucer",
+          "Suitable for tea, coffee, or other hot beverages"
+        ],
+        "drinkware-insulation": ["Non-insulated"],
+        "pattern": ["Abstract"],
+        "drinkware-material": ["Ceramic"],
+        "insulation-type": ["Non-insulated"],
+        "handle-type": ["Short"],
+        "drinkware-shape": ["Round"]
+      }
+    },
+    {
+      "storeLabel": "Competitor G",
+      "externalId": "OaWFywE",
+      "title": "Soup Bowl",
+      "description": "A roomy, handcrafted ceramic soup bowl designed in collaboration with Christina Kim and Alice Waters of Chez Panisse. It features a laid-back Californian twist on classic French dinnerware, finished in a matte, cool-hued Slate glaze that serves as a versatile foundation for contemporary tables.",
+      "priceCents": 6800,
+      "currency": "USD",
+      "attributes": {
+        "category": "Bowls",
+        "materials": ["Ceramic"],
+        "features": [
+          "Handcrafted ceramic tableware",
+          "Designed in collaboration with Christina Kim and Alice basadas Waters of Chez Panisse",
+          "Matte finish glaze",
+          "Microwave and dishwasher safe"
+        ],
+        "cleaning-instructions": ["Dishwasher safe"],
+        "tableware-material": ["Ceramic"],
+        "bowl-type": ["Soup bowl"],
+        "finish": ["Matte"],
+        "shape": ["Round"],
+        "dinnerware-features": ["Dishwasher safe", "Microwave safe"],
+        "pattern": ["Solid"]
+      }
+    },
+    {
+      "storeLabel": "Competitor G",
+      "externalId": "hiRf7Ar",
+      "title": "Candleholder",
+      "description": "A simple and stackable ceramic candleholder designed to support tapered candles, tea lights, and votives or pillar candles up to 2\". This specific piece features a deep, saturated matte Cranberry glaze and is part of the limited edition the maker + Herman Miller Collection.",
+      "priceCents": 3300,
+      "currency": "USD",
+      "attributes": {
+        "category": "Candle Holders",
+        "materials": ["Ceramic"],
+        "features": [
+          "Simple and stackable",
+          "Supports tapered candles, tea lights, and votives or pillar candles up to 2\"",
+          "Handcrafted in Sausalito, CA",
+          "Dishwasher safe"
+        ],
+        "finish": ["Matte"],
+        "suitable-space": ["Indoors"],
+        "material": ["Ceramic"],
+        "shape": ["Cylindrical"],
+        "pattern": ["Solid"]
+      }
+    },
+    {
+      "storeLabel": "Competitor G",
+      "externalId": "oAitZOp",
+      "title": "Candleholder And Riser Set",
+      "description": "This handcrafted ceramic Candleholder and Riser Set in Fennel features a cool, understated matte glaze with a subtle blue-green hue. The candleholder is versatile, supporting tapered candles, tea lights, and votives or pillars with a diameter up to 2\". The accompanying Riser is designed for convenient storage of extra tea lights.",
+      "priceCents": 10000,
+      "currency": "USD",
+      "attributes": {
+        "category": "Candle Holders",
+        "materials": ["Ceramic"],
+        "features": [
+          "Supports tapered candles, tea lights, and votives or pillars up to 2\" diameter",
+          "Includes a matching Riser for tea light storage",
+          "Handcrafted ceramic with a matte glaze",
+          "Dishwasher safe"
+        ],
+        "shape": ["Cylindrical"],
+        "material": ["Ceramic"],
+        "finish": ["Matte"],
+        "pattern": ["Solid"],
+        "suitable-space": ["Indoors"]
+      }
+    },
+    {
+      "storeLabel": "Competitor H",
+      "externalId": "2ByrSXE",
+      "title": "the maker 16 Piece Stoneware Dinnerware Set, Service For 4",
+      "description": "The the maker 16-piece stoneware dinnerware set is a service for four, featuring a delicate sesame dot design combined with a smooth color glaze for understated soft aesthetics. Crafted from premium, heavy-duty stoneware using traditional high-temperature firing, the set is designed for durability and a practical dining experience. The set includes four 10.5\" dinner plates, four 8\" salad plates, four 7\" dining bowls, and four 12 oz. mugs. It is oven, dishwasher, and microwave safe, and is BPA-the maker.",
+      "priceCents": 6972,
+      "currency": "USD",
+      "attributes": {
+        "category": "Dinnerware Sets",
+        "materials": ["Stoneware", "Ceramic"],
+        "features": [
+          "Oven Safe",
+          "Dishwasher Safe",
+          "Microwave Safe",
+          "BPA the maker",
+          "Chip Resistant",
+          "Scratch Resistant",
+          "Lead the maker"
+        ],
+        "cleaning-instructions": ["Dishwasher safe"],
+        "tableware-material": ["Stoneware"],
+        "shape": ["Round"],
+        "pattern": ["Dots"],
+        "dinnerware-pieces-included": ["Bowls", "Dinner plates", "Mugs", "Salad plate"],
+        "finish": ["Gloss"],
+        "heating-instructions": ["Microwave", "Oven"]
+      }
+    },
+    {
+      "storeLabel": "Competitor H",
+      "externalId": "UFtgp9G",
+      "title": "the maker 12 Piece Stoneware Dinnerware Set, Service For 4",
+      "description": "The the maker 12-Piece Stoneware Dinnerware Set is an elegant service for four, featuring a sophisticated blend of blue and white patterns. This ceramic set includes 4 dinner plates (10.25\"), 4 salad plates (8.25\"), and 4 cereal bowls (23oz), each adorned with unique floral and geometric designs. Crafted from high-quality, lead-the maker and cadmium-the maker ceramic, the set is designed for daily durability and versatility, being oven, microwave, and dishwasher safe.",
+      "priceCents": 4749,
+      "currency": "USD",
+      "attributes": {
+        "category": "Dinnerware Sets",
+        "materials": ["ceramic", "stoneware"],
+        "features": [
+          "Service for 4",
+          "Oven safe",
+          "Dishwasher safe",
+          "Microwave safe",
+          "BPA the maker",
+          "Lead and cadmium the maker",
+          "Chip and scratch resistant"
+        ],
+        "cleaning-instructions": ["Dishwasher safe"],
+        "shape": ["Round"],
+        "dinnerware-pieces-included": ["Bowls", "Dinner plates", "Salad plate"],
+        "pattern": ["Floral", "Geometric"],
+        "tableware-material": ["Stoneware"],
+        "finish": ["Gloss"],
+        "heating-instructions": ["Microwave", "Oven"]
+      }
+    },
+    {
+      "storeLabel": "Competitor H",
+      "externalId": "TqQH8Bg",
+      "title": "Vega 18 Piece Stoneware Dinnerware Set, Service For 6",
+      "description": "The the maker Vega 18-Piece Stoneware Dinnerware Set is a durable and elegant collection designed for a service of six. Crafted from premium ceramic stoneware, each piece features a unique double-sided kiln glaze that creates a rich, vibrant blue-green color and a distinctive glossy texture. This practical set is oven, microwave, and dishwasher safe, and is lead, cadmium, and BPA-the maker. The set includes six 10.25-inch dinner plates, six 8.25-inch salad plates, and six 24oz cereal bowls.",
+      "priceCents": 9702,
+      "currency": "USD",
+      "attributes": {
+        "category": "Dinnerware Sets",
+        "materials": ["Ceramic", "Stoneware"],
+        "features": [
+          "Service for 6",
+          "Oven Safe",
+          "Dishwasher Safe",
+          "Microwave Safe",
+          "BPA the maker",
+          "Lead and cadmium the maker",
+          "Chip Resistant",
+          "Scratch Resistant",
+          "Double-sided kiln glaze technique"
+        ],
+        "finish": ["Gloss"],
+        "dinnerware-pieces-included": ["Bowls", "Dinner plates", "Salad plate"],
+        "tableware-material": ["Stoneware"],
+        "pattern": ["Texture"],
+        "shape": ["Round"],
+        "heating-instructions": ["Microwave", "Oven"],
+        "cleaning-instructions": ["Dishwasher safe"]
+      }
+    },
+    {
+      "storeLabel": "Competitor I",
+      "externalId": "QGnRw9n",
+      "title": "Ceramic Handled Serving Platter",
+      "description": "Elevate your hosting with this elegant Ceramic Medium Handled Serving Platter. Handthe maker Italy from high-fired earthenware, this versatile piece features a thick white glaze finish and functional handles for easy transport and serving. Its timeless design blends European elegance with utilitarian function, making it a perfect addition to any party or a thoughtful gift for a host.",
+      "priceCents": 4800,
+      "currency": "USD",
+      "attributes": {
+        "category": "Serving Platters",
+        "materials": ["Ceramic", "Earthenware"],
+        "features": [
+          "Handthe maker Italy",
+          "High-fired earthenware with a thick white glaze finish",
+          "Elegant and functional handles",
+          "Dishwasher safe",
+          "Dimensions: 11\"W x 18\"L"
+        ],
+        "pattern": ["Solid"],
+        "shape": ["Rectangular"],
+        "tableware-material": ["Ceramic"],
+        "cleaning-instructions": ["Dishwasher safe"]
+      }
+    },
+    {
+      "storeLabel": "Competitor I",
+      "externalId": "5CxIxDr",
+      "title": "Lagos Ceramic Serving Platter",
+      "description": "The Lagos Small Ceramic Serving Platter is a timeless, oval-shaped piece handthe maker Portugal. Featuring a classic white glaze and a slightly raised edge, this versatile platter combines casual elegance with impeccable craftsmanship. Its generous size makes it ideal for serving salads and pastas, displaying fresh fruit, or presenting as a sophisticated gift.",
+      "priceCents": 5440,
+      "currency": "USD",
+      "attributes": {
+        "category": "Serving Platters",
+        "materials": ["Ceramic"],
+        "features": [
+          "Handthe maker Portugal",
+          "Signature white glaze",
+          "Slightly raised edge",
+          "Microwave safe",
+          "Dishwasher safe"
+        ],
+        "pattern": ["Solid"],
+        "cleaning-instructions": ["Dishwasher safe"],
+        "shape": ["Oval"],
+        "tableware-material": ["Ceramic"]
+      }
+    },
+    {
+      "storeLabel": "Competitor I",
+      "externalId": "nOKLFJr",
+      "title": "Round Ceramic Serving Platter",
+      "description": "This modern, round serving platter is a versatile and chic addition to any table. Handthe maker Italy from high-fired ceramic and finished in a signature creamy white glaze, it features a sleek, low-profile, and smooth edgeless surface. Its generous 14.5-inch diameter makes it ideal for presenting cheese, charcuterie, sushi, or cakes, and it can even be used as a kitchen organizer for oils and spices.",
+      "priceCents": 7800,
+      "currency": "USD",
+      "attributes": {
+        "category": "Serving Platters",
+        "materials": ["Ceramic"],
+        "features": [
+          "Handthe maker Italy",
+          "High fired ceramic",
+          "Dishwasher safe",
+          "Smooth edgeless surface and low profile",
+          "14.5\" diameter"
+        ],
+        "cleaning-instructions": ["Dishwasher safe"],
+        "shape": ["Round"],
+        "tableware-material": ["Ceramic"],
+        "pattern": ["Solid"]
+      }
+    },
+    {
+      "storeLabel": "Competitor J",
+      "externalId": "6CDmWhb",
+      "title": "Set of 4 Pink/White Ceramic Bow 'Love' Tea Light Holders",
+      "description": "A charming set of four ceramic tea light holders featuring pink‑and‑white ombre finishes and delicate bows. Each holder has a perforated base allowing light to peek through, creating a soft, romantic glow. Ideal for adding a cozy touch to any room.",
+      "priceCents": 2500,
+      "currency": "USD",
+      "attributes": {
+        "category": "Candle Holders",
+        "materials": ["ceramic"],
+        "features": [
+          "ceramic construction",
+          "pink and white ombre finish",
+          "bowl‑shaped bow detail",
+          "perforated lower section for light"
+        ],
+        "candle-type": ["Tea light"],
+        "pattern": ["Solid", "Hearts", "Dots"],
+        "shape": ["Cylindrical"],
+        "material": ["Ceramic"],
+        "theme": ["Romantic"],
+        "decoration-material": ["Ceramic"],
+        "suitable-space": ["Indoors"]
+      }
+    },
+    {
+      "storeLabel": "Competitor J",
+      "externalId": "KrZwBsG",
+      "title": "Clam Ceramic Candle Holder",
+      "description": "Enhance your home decor with this elegant ceramic candle holder, designed to resemble a natural clam shell. The exterior features a textured, speckled glaze in earthy tones of beige and tan, with subtle hints of olive green. A smooth, contrasting cream-colored cup at the center is perfect for holding a tea light or votive candle. This piece brings a touch of coastal sophistication to any space, whether displayed on a mantel, table, or shelf.",
+      "priceCents": 3200,
+      "currency": "USD",
+      "attributes": {
+        "category": "Candle Holders",
+        "materials": ["Ceramic"],
+        "features": [
+          "Designed to resemble a natural clam shell",
+          "Textured, speckled glaze",
+          "Smooth, contrasting cream-colored cup",
+          "Holds a tea light or votive candle"
+        ],
+        "pattern": ["Scale", "Texture"],
+        "material": ["Ceramic"]
+      }
+    },
+    {
+      "storeLabel": "Competitor J",
+      "externalId": "vhNTQdM",
+      "title": "Set of 3 Pleat Tea Light Candle Holders",
+      "description": "A set of three stoneware tea light candle holders with a pleated design, perfect for adding a touch of elegance to your home decor. These holders come in three different sizes and are part of a larger pleated range. Candles are not included.",
+      "priceCents": 3000,
+      "currency": "USD",
+      "attributes": {
+        "category": "Candle Holders",
+        "materials": ["Stoneware"],
+        "features": [
+          "Set of 3 candle holders",
+          "Stoneware material",
+          "Pleated design",
+          "Three different sizes"
+        ],
+        "candle-type": ["Tea light"],
+        "finish": ["Eggshell"],
+        "pattern": ["Texture"],
+        "suitable-space": ["Indoors"],
+        "material": ["Ceramic"]
+      }
+    },
+    {
+      "storeLabel": "Competitor K",
+      "externalId": "rJu5MzN",
+      "title": "Ceramic Coffee Mugs",
+      "description": "These generously sized stoneware coffee mugs are designed for your morning ritual, perfect for lattes or tea. Each mug is hand-finished by artisans in Portugal using locally sourced and recycled clay in a zero-waste facility, ensuring every piece is organically shaped and one of a kind. They feature a wide handle and a rounded body for a comfortable grip.",
+      "priceCents": 9100,
+      "currency": "USD",
+      "attributes": {
+        "category": "Mugs",
+        "materials": ["Stoneware", "Portuguese clay", "Lead-safe glaze"],
+        "features": [
+          "Hand-finished by artisans in Portugal",
+          "Dishwasher, microwave, and oven safe up to 450ºF",
+          "Sustainably crafted at a zero-waste facility",
+          "Organically shaped and one of a kind",
+          "Set of 4 mugs"
+        ],
+        "cleaning-instructions": ["Dishwasher safe"],
+        "drinkware-material": ["Ceramic"],
+        "drinkware-shape": ["Round"],
+        "microwave-compatibility": ["Microwave safe"],
+        "pattern": ["Solid"]
+      }
+    },
+    {
+      "storeLabel": "Competitor K",
+      "externalId": "spV4cEW",
+      "title": "Oval Serving Platter",
+      "description": "the maker’s oval serving platter is a sophisticated piece of dinnerware crafted from local Portuguese clay. Featuring an organic, hand-finished shape, this long and lean platter is designed for elegant food presentation or can serve as a decorative tray for a coffee table or credenza. It is dishwasher, microwave, and oven safe up to 450ºF.",
+      "priceCents": 7900,
+      "currency": "USD",
+      "attributes": {
+        "category": "Serving Platters",
+        "materials": ["Stoneware", "Local Portuguese clay", "Lead-safe glaze"],
+        "features": [
+          "Organically shaped and one of a kind",
+          "Hand-finished by artisans in Portugal",
+          "Dishwasher, microwave, and oven safe up to 450ºF",
+          "the maker at a zero-waste facility"
+        ]
+      }
+    },
+    {
+      "storeLabel": "Competitor L",
+      "externalId": "ATfGuuG",
+      "title": "Moroccan Terracotta Cups",
+      "description": "Handcrafted Moroccan-inspired terracotta cups, glazed in cream or rust, designed for hot or cold beverages. Each cup is hand-dipped and locally sourced clay, offering natural insulation with a smooth, durable finish. Includes a set of four cups with warm earthy tones suitable for tea, coffee, wine, or mint tea. Hand-wash recommended due to terracotta’s porous nature; variations may occur due to artisan handcrafting.",
+      "priceCents": 5000,
+      "currency": "USD",
+      "attributes": {
+        "category": "Coffee & Tea Cups",
+        "materials": ["Clay", "Glaze"],
+        "features": [
+          "Handcrafted with Moroccan tradition",
+          "Tripled-glazed terracotta with cream or rust glaze",
+          "Naturally insulating for hot or cold beverages",
+          "Dim (2.5\" height x 2.6\" diameter) with handthe maker variations",
+          "Dish care: hand-wash recommended due to porous material",
+          "Set of 4 cups with artisanal finish"
+        ],
+        "cleaning-instructions": ["Hand wash only"],
+        "handle-type": ["No handle"],
+        "insulation-type": ["Insulated"],
+        "pattern": ["Solid"],
+        "drinkware-shape": ["Round"]
+      }
+    },
+    {
+      "storeLabel": "Competitor L",
+      "externalId": "aFggWJW",
+      "title": "Terracotta Cups - Set of 4",
+      "description": "A set of four handcrafted terracotta cups featuring a striking two-tone design. Each cylindrical cup is finished with a cream-colored glaze on the upper portion, leaving the natural burnt orange terracotta exposed at the base. Orithe makerting from Morocco, these versatile vessels are suitable for hot or cold beverages such as coffee, wine, or mint tea.",
+      "priceCents": 5000,
+      "currency": "USD",
+      "attributes": {
+        "category": "Coffee & Tea Cups",
+        "materials": ["Ceramic", "Glaze"],
+        "features": [
+          "Set includes 4 cups",
+          "Handcrafted by artisans in Morocco",
+          "Ideal for both hot and cold beverages",
+          "Capacity: 4.5 fl oz"
+        ],
+        "cleaning-instructions": ["Hand wash only"],
+        "drinkware-material": ["Ceramic"],
+        "handle-type": ["No handle"]
+      }
+    }
+  ]
+}
