@@ -5,6 +5,7 @@ import { CartService } from "./commerce/cart.js";
 import { DEFAULT_STORE_API_TOKEN, loadConfig, loadDotEnvFile } from "./config.js";
 import { openDatabase } from "./db/client.js";
 import { loadDemoData } from "./demo/data.js";
+import { seedRecordings } from "./demo/recordings.js";
 import { seedDemo } from "./demo/seed.js";
 import { createLlm } from "./ai/providers.js";
 import { createLogger } from "./logger.js";
@@ -34,6 +35,8 @@ if (config.SEED_DEMO_ON_START) {
   logger.info({ created: summary.created }, "Demo merchant ready");
   const market = await seedMarket(database.db, config.MERCHANT_SLUG);
   if (market) logger.info(market, "Competitor market snapshot ready");
+  const recordings = await seedRecordings(database.db, config.MERCHANT_SLUG);
+  logger.info(recordings, "Demo recordings ready");
 }
 
 const gateway = createGateway(config, demo.merchant.name, logger);
