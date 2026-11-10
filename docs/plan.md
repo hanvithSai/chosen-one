@@ -1,11 +1,28 @@
 # ChosenOne: Engineering Plan
 
-*Version 2, Tue 10 Nov 2026. Free-tier stack.*
+*Version 3, Tue 10 Nov 2026 (IST). Free-tier stack. Solo project.*
 
 **Deadline:** Thu 12 Nov 2026, 12:00 PST, which is **Fri 13 Nov, 01:30 IST**. After that, nothing changes until the winners are announced (around 21 Dec).
-**Companion:** [human-tasks.md](human-tasks.md), the tasks that need a person.
+**Companion:** [human-tasks.md](human-tasks.md), the tasks that need the developer.
 
 > **One line:** When an AI shops for you, it picks one store. ChosenOne shows a small PayPal merchant how often AI shopping agents pick their store (their **PickRate**) and why they lose. It fixes the gaps with AI, then proves the result with real, agent-attributed PayPal checkouts.
+
+---
+
+## Progress (Tue 10 Nov)
+
+| Done and merged into `main` (CI green) | Next |
+|---|---|
+| Project scaffold, CI with secrets scan and a production smoke test | MCP server for outside agents |
+| Postgres schema (Neon in production, PGlite locally and in tests); Neon project created and migrated | Verified PayPal webhooks and the agent revenue ledger |
+| Mayabazar demo store: 24 thin listings, 8 merchant notes, 20 shopper intents | Gemini and Groq providers with a quota guard |
+| Deterministic product search shared by all stores | Channel3 competitor market snapshot |
+| Store Sync Cart API v1, validated against PayPal's own schemas; server-side pricing | Shopper-agent panel, diagnosis and cited fixes |
+| Real PayPal Orders checkout on the Server SDK, with retries, idempotency and error handling; a sandbox payment approved and captured | Web UI, Buyer Agent page, Render deploy |
+
+Findings that shaped the build:
+- The Server SDK retries nothing by default and never retries POST, so the gateway retries rate limits and server errors itself, reusing one `PayPal-Request-Id`.
+- PayPal's Cart API spec package cannot be loaded by plain Node at runtime, so all imports go through one adapter (`server/commerce/cartSpec.ts`), a lint rule blocks the bad import, and CI boots the production build.
 
 ---
 
@@ -33,13 +50,14 @@
 
 - **Open-source and free-tier only.** Sponsor-provided tools (APIMatic Context Plugin, Channel3 credits) are allowed. Nothing paid.
 - **Everything runs in PayPal's sandbox.** No real money and no real customer data.
-- **Builders:** an AI coding agent writes the code, tests, docs and copy. People handle accounts, keys, decisions, recording and submitting ([human-tasks.md](human-tasks.md)).
+- **Solo project:** one developer, based in India and working in IST. An AI coding agent writes the code, tests, docs and copy. The developer handles accounts, keys, decisions, recording and submitting ([human-tasks.md](human-tasks.md)).
+- **US sandbox accounts:** the demo shop is a US merchant charging USD, so the PayPal sandbox merchant and buyer are US accounts. India-based sandbox accounts block PayPal-to-PayPal payments inside India and can leave USD payments pending.
 - **Engineering process:**
   - Feature branches merged into `main` with `--no-ff`, pushed to GitHub, and deleted after merging.
   - Commit messages are 6–8 words in the past tense.
   - Commits are authored only as `hanvithSai <hanvithsai.a@gmail.com>`.
   - No AI-tool attribution in commits or files.
-  - GitHub is the single source of truth. Everything is pushed except `.env`, `node_modules`, and the team's private research, which is kept locally by decision.
+  - GitHub is the single source of truth. Everything is pushed except `.env`, `node_modules`, and the developer's private research, which is kept locally by decision.
 
 ---
 
@@ -157,7 +175,7 @@
 | Search | MiniSearch 7.2 (BM25-style, deterministic) | MIT |
 | Validation | Zod 4 | MIT |
 | PayPal | `@paypal/paypal-server-sdk` 2.5 (Orders); REST for webhook verification and Transaction Search; `@paypal/agentic-commerce-spec` 1.1 (Cart API types and Zod); PayPal MCP server for copilot tools | Apache-2.0 |
-| Market data | Channel3 REST API (sponsor credits) | — |
+| Market data | Channel3 REST API (`POST /v1/search`; free monthly credits) | — |
 | Hosting | Render free web service (Blueprint) | Free tier |
 | CI | GitHub Actions (free for public repos) | — |
 
@@ -382,37 +400,38 @@ chosen-one/
 
 | Milestone | Due | Done when | Owner |
 |---|---|---|---|
-| **M0** | Tue 10 Nov, 10:00 | Keys in `.env`; accounts (PayPal sandbox, Google AI Studio, Groq, Channel3, Neon, Render) | Human |
+| **M0** | Tue 10 Nov, 10:00 | Keys in `.env`; accounts (PayPal sandbox, Google AI Studio, Groq, Channel3, Neon, Render). **Done except the Render account** | Developer |
 | **M1** | Tue, 14:00 | Spikes pass: PayPal order → approve → capture; Channel3 query; 3-intent smoke panel on each provider; Cart API passes the Zod contract; quotas recorded | AI |
-| **M2** | Tue, 23:00 | Deployed (Render free + Neon). Buyer Agent → `/mcp` → `checkout_cart` → PayPal approval → capture → ledger; a verified webhook received | AI + Human (deploy) |
+| **M2** | Tue, 23:00 | Deployed (Render free + Neon). Buyer Agent → `/mcp` → `checkout_cart` → PayPal approval → capture → ledger; a verified webhook received | AI + Developer (deploy) |
 | **M3** | Wed 11 Nov, 15:00 | Full 20-intent panel; results grid; run drill-down; loss reasons | AI |
 | **M4** | Wed, 22:00 | Fix loop end to end, with before/after compare. **Must scope frozen.** | AI |
-| **M5** | Thu 12 Nov, 11:00 | Shoulds done or cut; README complete; tests green; final recorded panels; judge path checked in a fresh browser | AI + Human review |
-| **M6** | Thu, 18:00 | Video public on YouTube | Human |
-| **M7** | Thu, 22:00 | Devpost submitted | Human (AI drafts the copy) |
+| **M5** | Thu 12 Nov, 11:00 | Shoulds done or cut; README complete; tests green; final recorded panels; judge path checked in a fresh browser | AI + Developer review |
+| **M6** | Thu, 18:00 | Video public on YouTube | Developer |
+| **M7** | Thu, 22:00 | Devpost submitted | Developer (AI drafts the copy) |
 | **Freeze** | Fri 13 Nov, 01:30 | No changes to the repo, video or Devpost until 21 Dec | Everyone |
 
 **Feature branches, in order:** each is merged into `main` before the next one starts, which avoids conflicts.
 
-| Branch | Contents |
-|---|---|
-| `chore/project-scaffold` | TS config, lint and format, scripts, CI |
-| `feature/database-schema` | Drizzle schema, migrations, Neon/PGlite client |
-| `feature/demo-store-data` | Catalog, notes, intents, images, seed |
-| `feature/catalog-search` | MiniSearch index, catalog versions |
-| `feature/cart-api` | Cart API v1 routes, Zod contract tests |
-| `feature/mcp-server` | MCP tools, tool-call log |
-| `feature/paypal-orders` | Server SDK, checkout/return/capture, errors |
-| `feature/paypal-webhooks` | Verification, ledger, registration script |
-| `feature/llm-providers` | AI SDK providers, quota guard, mock models |
-| `feature/channel3-market` | Competitor snapshot |
-| `feature/shopper-panel` | Agent loop, panel runner, metrics, recorded runs |
-| `feature/diagnosis-enrichment` | Taxonomy, cited proposals, approve/publish |
-| `feature/web-ui` | Dashboard, panel, fixes, compare, revenue, Buyer Agent |
-| `feature/buyer-agent` | AI SDK MCP client chat |
-| `chore/render-deploy` | `render.yaml`, keep-alive workflow |
-| Should branches | `feature/transaction-search`, `feature/merchant-copilot`, `feature/store-page` |
-| `docs/readme-submission` | README, screenshots, Devpost copy |
+| Branch | Contents | Status |
+|---|---|---|
+| `chore/project-scaffold` | TS config, lint and format, scripts, CI | Merged |
+| `feature/database-schema` | Drizzle schema, migrations, Neon/PGlite client | Merged |
+| `feature/demo-store-data` | Catalog, notes, intents, seed | Merged |
+| `feature/catalog-search` | MiniSearch index, catalog versions | Merged |
+| `feature/cart-api` | Cart API v1 routes, Zod contract tests, offline payment gateway | Merged |
+| `feature/paypal-orders` | Server SDK gateway, checkout/capture, errors, retries | Merged |
+| `chore/neon-database-setup` | Neon project, config, dev dependencies | Merged |
+| `feature/mcp-server` | MCP tools, tool-call log | Next |
+| `feature/paypal-webhooks` | Verification, ledger, registration script | Planned |
+| `feature/llm-providers` | AI SDK providers, quota guard, mock models | Planned |
+| `feature/channel3-market` | Competitor snapshot | Planned |
+| `feature/shopper-panel` | Agent loop, panel runner, metrics, recorded runs | Planned |
+| `feature/diagnosis-enrichment` | Taxonomy, cited proposals, approve/publish | Planned |
+| `feature/web-ui` | Dashboard, panel, fixes, compare, revenue, Buyer Agent | Planned |
+| `feature/buyer-agent` | AI SDK MCP client chat | Planned |
+| `chore/render-deploy` | `render.yaml`, keep-alive workflow | Planned |
+| Should branches | `feature/transaction-search`, `feature/merchant-copilot`, `feature/store-page` | Planned |
+| `docs/readme-submission` | README, screenshots, Devpost copy | Planned |
 
 ---
 
@@ -441,7 +460,7 @@ chosen-one/
   - Free instances sleep after 15 minutes idle and take about a minute to wake.
   - Mitigation: `.github/workflows/keepalive.yml` pings `/healthz` every 10 minutes. That's within Render's 750 free instance-hours a month.
   - The README warns judges about possible wake-up delay.
-- **Neon free Postgres:** a pooled connection string goes in `DATABASE_URL`. Migrations run on deploy. Nothing is stored on Render's ephemeral disk.
+- **Neon free Postgres** (project `chosen-one`, AWS US East, N. Virginia): the pooled connection string goes in `DATABASE_URL`. Migrations run on deploy. Nothing is stored on Render's ephemeral disk.
 - **Environment variables** (secrets are set in the Render dashboard):
   - `PAYPAL_CLIENT_ID`, `PAYPAL_CLIENT_SECRET`, `PAYPAL_ENV=sandbox`, `PAYPAL_WEBHOOK_ID`, `PAYPAL_MERCHANT_ID`
   - `GOOGLE_GENERATIVE_AI_API_KEY`, `GROQ_API_KEY`, and the model and quota variables
@@ -456,7 +475,7 @@ chosen-one/
 
 ---
 
-## 10. Submission deliverables (AI drafts, people publish)
+## 10. Submission deliverables (AI drafts, the developer publishes)
 
 - **README:**
   - pitch and GIF
@@ -492,9 +511,9 @@ chosen-one/
 | Resource | Free allowance (provider pages; varies) | Our use |
 |---|---|---|
 | Gemini API (AI Studio free tier) | Per-model RPM, TPM and RPD; Flash-Lite allows the most requests per day | About half of each panel, plus diagnosis, enrichment and Buyer Agent. Dev testing uses mock models |
-| Groq free tier | Per-model RPM, TPM and tokens per day (TPD), e.g. about 200k TPD on large open models | The other half of each panel |
+| Groq free tier | Measured 10 Nov: about 1,000 requests a day and 8,000 tokens a minute on `openai/gpt-oss-120b` (same on `gpt-oss-20b`) | A smaller share of each panel, spaced to stay under the per-minute cap |
 | A 20-intent panel | About 20 × 10–15k tokens ≈ 200–300k tokens, about 160 requests | About 2–4 full panels a day across both providers |
-| Channel3 | 20,000 credits (sponsor promo) | Under 100 searches |
+| Channel3 | 1,000 free credits a month (the hackathon promo code was not needed) | Under 100 searches |
 | Neon free | 0.5 GB storage; compute auto-suspends | Tiny |
 | Render free | 750 instance-hours a month | One service, kept warm |
 | GitHub Actions | Free for public repos | CI and keep-alive |
