@@ -39,6 +39,8 @@ const ConfigSchema = z.object({
   /** LLM providers (free tiers) used through the Vercel AI SDK. A missing key disables that slot. */
   GOOGLE_GENERATIVE_AI_API_KEY: z.string().min(10).optional(),
   GROQ_API_KEY: z.string().min(10).optional(),
+  /** Channel3 product search (free credits), used only to refresh the committed market snapshot. */
+  CHANNEL3_API_KEY: z.string().min(10).optional(),
   GEMINI_MAIN_MODEL: z.string().default("gemini-3.5-flash"),
   GEMINI_PANEL_MODEL: z.string().default("gemini-flash-lite-latest"),
   GROQ_PANEL_MODEL: z.string().default("openai/gpt-oss-120b"),
