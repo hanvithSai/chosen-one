@@ -1,0 +1,4874 @@
+{
+  "recordedAt": "2026-11-10T19:08:17.906Z",
+  "note": "Real runs of AI shopper agents (Gemini and Groq free tiers) against the demo store and an anonymised competitor snapshot.",
+  "proposals": [
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-BOWL-EVERYDAY",
+      "field": "size",
+      "value": "5.5 in across, 16 oz",
+      "quote": "Everyday Bowl: 5.5 in across, 16 oz.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-BOWL-SOUP-2",
+      "field": "size",
+      "value": "6.5 in across, 24 oz each",
+      "quote": "Soup Bowls: 6.5 in across, 24 oz each.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CHIME",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-CHIME",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CHIME",
+      "field": "dishwasher safe",
+      "value": "not dishwasher safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CHIME",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CHIME",
+      "field": "microwave safe",
+      "value": "not microwave safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CHIME",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-CHIME",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CHIME",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CHIME",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CUP-ESPRESSO-2",
+      "field": "size",
+      "value": "two 3 oz cups",
+      "quote": "Espresso Pair: two 3 oz cups in matte white.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-CUP-SAUCER",
+      "field": "size",
+      "value": "8 oz cup",
+      "quote": "Pastel Cup & Saucer: 8 oz cup, comes in blush pink or mint.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "dishwasher safe",
+      "value": "not dishwasher safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "the kulhads are food safe and give chai a light earthy aroma.",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "microwave safe",
+      "value": "not microwave safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-GIFTSET-CHAI",
+      "field": "size",
+      "value": "4 oz each",
+      "quote": "Kulhads: 4 oz each.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-INCENSE",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-INCENSE",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-INCENSE",
+      "field": "dishwasher safe",
+      "value": "not dishwasher safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-INCENSE",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-INCENSE",
+      "field": "microwave safe",
+      "value": "not microwave safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-INCENSE",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-INCENSE",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-INCENSE",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-INCENSE",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "dishwasher safe",
+      "value": "not dishwasher safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "the kulhads are food safe and give chai a light earthy aroma.",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "microwave safe",
+      "value": "not microwave safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-12",
+      "field": "size",
+      "value": "4 oz each",
+      "quote": "Kulhads: 4 oz each.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "dishwasher safe",
+      "value": "not dishwasher safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "the kulhads are food safe and give chai a light earthy aroma.",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "microwave safe",
+      "value": "not microwave safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-KULHAD-4",
+      "field": "size",
+      "value": "4 oz each",
+      "quote": "Kulhads: 4 oz each.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "handle",
+      "value": "extra-wide handle that fits four fingers",
+      "quote": "Big Hug Mug: 16 oz with an extra-wide handle that fits four fingers",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-BIGHUG",
+      "field": "size",
+      "value": "16 oz",
+      "quote": "Big Hug Mug: 16 oz with an extra-wide handle",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-MONSOON",
+      "field": "size",
+      "value": "12 oz, 4 in tall",
+      "quote": "Monsoon Mug: 12 oz, 4 in tall, Monsoon blue.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-MUG-SANDSTONE",
+      "field": "size",
+      "value": "12 oz",
+      "quote": "Sandstone Mug: 12 oz, speckled cream.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PITCHER-LASSI",
+      "field": "capacity",
+      "value": "40 oz",
+      "quote": "Lassi Pitcher: 40 oz.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PITCHER-LASSI",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PITCHER-LASSI",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PITCHER-LASSI",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PITCHER-LASSI",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "dishwasher safe",
+      "value": "not dishwasher safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "drainage hole",
+      "value": "yes",
+      "quote": "with a drainage hole and a matching saucer included.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "microwave safe",
+      "value": "not microwave safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "saucer included",
+      "value": "matching saucer included",
+      "quote": "with a drainage hole and a matching saucer included.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-LARGE",
+      "field": "size",
+      "value": "12 in across, 11 in tall",
+      "quote": "Large Terracotta Planter: 12 in across, 11 in tall",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "dishwasher safe",
+      "value": "not dishwasher safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "drainage hole",
+      "value": "yes",
+      "quote": "drainage hole, no saucer.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "microwave safe",
+      "value": "not microwave safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "saucer included",
+      "value": "no",
+      "quote": "drainage hole, no saucer.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLANTER-SMALL",
+      "field": "size",
+      "value": "5 in across",
+      "quote": "Small Terracotta Planter: 5 in across",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATE-DINNER-4",
+      "field": "size",
+      "value": "10.5 in",
+      "quote": "Dinner Plates: 10.5 in, rimmed.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATE-SIDE",
+      "field": "size",
+      "value": "7.5 in",
+      "quote": "Side Plate: 7.5 in.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "oven safe",
+      "value": "oven safe up to 450°F",
+      "quote": "The Oval Serving Platter is oven safe up to 450°F",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-PLATTER-OVAL",
+      "field": "size",
+      "value": "14 in long",
+      "quote": "Oval Serving Platter: 14 in long.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-BOTTLE",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOTTLE",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOTTLE",
+      "field": "food safe",
+      "value": "not food safe",
+      "quote": "Raku is not food safe and not watertight",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-BOTTLE",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-BOTTLE",
+      "field": "holds water",
+      "value": "not watertight",
+      "quote": "Raku is not food safe and not watertight; use dried flowers or a glass liner for fresh stems.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-BOTTLE",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOTTLE",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOTTLE",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOTTLE",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOTTLE",
+      "field": "size",
+      "value": "9 in tall",
+      "quote": "Raku Bud Bottle: 9 in tall.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-BOWL",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOWL",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOWL",
+      "field": "food safe",
+      "value": "not food safe",
+      "quote": "Raku is not food safe and not watertight",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-BOWL",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-BOWL",
+      "field": "holds water",
+      "value": "not watertight",
+      "quote": "Raku is not food safe and not watertight; use dried flowers or a glass liner for fresh stems.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-BOWL",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOWL",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOWL",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-BOWL",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-ORB",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-RAKU-ORB",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-ORB",
+      "field": "food safe",
+      "value": "not food safe",
+      "quote": "Raku is not food safe and not watertight",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-ORB",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-ORB",
+      "field": "holds water",
+      "value": "not watertight",
+      "quote": "Raku is not food safe and not watertight; use dried flowers or a glass liner for fresh stems.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-ORB",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-RAKU-ORB",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-ORB",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-ORB",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-ORB",
+      "field": "size",
+      "value": "7 in tall",
+      "quote": "Raku Orb Vase: 7 in tall.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-TALL",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-RAKU-TALL",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-TALL",
+      "field": "food safe",
+      "value": "not food safe",
+      "quote": "Raku is not food safe and not watertight",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-TALL",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-TALL",
+      "field": "holds water",
+      "value": "not watertight",
+      "quote": "Raku is not food safe and not watertight; use dried flowers or a glass liner for fresh stems.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-RAKU-TALL",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-RAKU-TALL",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-TALL",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-TALL",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-RAKU-TALL",
+      "field": "size",
+      "value": "13 in tall",
+      "quote": "Tall Raku Vase: 13 in tall.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-TEALIGHT-6",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-TEALIGHT-6",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-TEALIGHT-6",
+      "field": "dishwasher safe",
+      "value": "not dishwasher safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-TEALIGHT-6",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-TEALIGHT-6",
+      "field": "microwave safe",
+      "value": "not microwave safe",
+      "quote": "TERRACOTTA (kulhads, planters, tea-light holders, chime, incense holder): hand wash only, not microwave safe, not dishwasher safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-TEALIGHT-6",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-TEALIGHT-6",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-TEALIGHT-6",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-TEALIGHT-6",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-TEALIGHT-6",
+      "field": "size",
+      "value": "3 in across",
+      "quote": "Tea-light holders: 3 in across",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "breakage replacement",
+      "value": "send a photo within 7 days and we will send a free replacement",
+      "quote": "If anything arrives broken, send us a photo within 7 days and we will send a free replacement.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "delivery time",
+      "value": "2 to 3 business days anywhere in the continental US",
+      "quote": "which takes 2 to 3 business days anywhere in the continental US.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "dishwasher safe",
+      "value": "dishwasher safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "food safe",
+      "value": "food safe",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "gift wrap",
+      "value": "available for $5 per order and includes a handwritten note card for free",
+      "quote": "Gift wrap is available for $5 per order and includes a handwritten note card for free.",
+      "noteTitle": "Gifting",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "holds water",
+      "value": "glazed inside so it holds water",
+      "quote": "Bud Vase: 6 in tall, glazed inside so it holds water.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "lead free",
+      "value": "lead-free",
+      "quote": "All glazes on our stoneware are lead-free and food safe",
+      "noteTitle": "Glazes and materials (from our FAQ page)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "microwave safe",
+      "value": "microwave safe",
+      "quote": "STONEWARE (mugs, bowls, plates, platter, bud vase, pitcher): dishwasher safe and microwave safe.",
+      "noteTitle": "Care card (printed, ships in every box)",
+      "reasonCategory": "missing_fact"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "returns",
+      "value": "accepted within 30 days on unused items in their original packaging",
+      "quote": "Returns are accepted within 30 days on unused items in their original packaging; we refund to the original payment method.",
+      "noteTitle": "Returns and breakage",
+      "reasonCategory": "returns_unknown"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "ships from",
+      "value": "Austin, TX",
+      "quote": "Every order ships from our studio in Austin, TX",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "ships to",
+      "value": "within the United States only",
+      "quote": "We currently ship within the United States only.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "ships within",
+      "value": "within 2 business days",
+      "quote": "within 2 business days, double-boxed.",
+      "noteTitle": "Shipping policy",
+      "reasonCategory": "delivery_unknown"
+    },
+    {
+      "sku": "MB-VASE-BUD",
+      "field": "size",
+      "value": "6 in tall",
+      "quote": "Bud Vase: 6 in tall, glazed inside so it holds water.",
+      "noteTitle": "Size guide (studio notebook)",
+      "reasonCategory": "missing_fact"
+    }
+  ],
+  "baseline": {
+    "label": "Baseline",
+    "runs": [
+      {
+        "position": 0,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "None of the listings meet all the user's requirements, specifically regarding the budget under $40, dishwasher-safe instructions, and delivery date by Friday.",
+        "tokens": 2303,
+        "considerations": [
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "rejected",
+            "reason": "Price is 91.00 USD, which exceeds the $40 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "Price is 47.00 USD, exceeding the $40 budget, and dishwasher safety is unstated.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "Price is 55.00 USD, exceeding the $40 budget, and dishwasher safety is not mentioned.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:v5C4Hdk",
+            "verdict": "rejected",
+            "reason": "Price is 171.00 USD, far above the $40 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "Dishwasher-safe status is not stated in the listing.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "Price is 169.00 USD, which is well over the $40 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:2ByrSXE",
+            "verdict": "rejected",
+            "reason": "This is a 16-piece dinnerware set, not a single coffee mug.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:spV4cEW",
+            "verdict": "rejected",
+            "reason": "This is an oval serving platter, not a coffee mug.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "mayabazar",
+            "productRef": "mayabazar:none",
+            "verdict": "not_found",
+            "reason": "None of the store's listings appeared for this request.",
+            "reasonCategory": "not_found"
+          }
+        ]
+      },
+      {
+        "position": 1,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "No listing confirmed that the clay cups are food‑safe, which is required for serving chai; therefore none can be confidently selected.",
+        "tokens": 3343,
+        "considerations": [
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-KULHAD-4",
+            "verdict": "rejected",
+            "reason": "No statement of food safety for the clay cups",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "Material is stoneware, not clay as requested",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor L",
+            "productRef": "competitor-l:ATfGuuG",
+            "verdict": "shortlisted",
+            "reason": "Clay set of 4 but food‑safe certification not provided",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:d9YkwN2",
+            "verdict": "rejected",
+            "reason": "Only a set of 2 cups, not 4",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:spV4cEW",
+            "verdict": "rejected",
+            "reason": "Item is a serving platter, not cups",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:tT5diGd",
+            "verdict": "rejected",
+            "reason": "Set of 5 cups and no food‑safe claim; also not confirmed as clay",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "Item is soup bowls, not cups",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:KrZwBsG",
+            "verdict": "rejected",
+            "reason": "Item is a candle holder, not cups",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-PLANTER-LARGE",
+        "rationale": "Listing 8 is the only large planter priced under $80. The other planters exceed the budget, and the rest of the listings are tea cups or serving platters.",
+        "tokens": 2464,
+        "considerations": [
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "Price is 144.98 USD, which exceeds the budget of $80.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:LOaEjST",
+            "verdict": "rejected",
+            "reason": "Price is 114.98 USD, which exceeds the budget of $80.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:2bZ6RPH",
+            "verdict": "rejected",
+            "reason": "Price is 198.32 USD, which exceeds the budget of $80.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:C2FgdZx",
+            "verdict": "rejected",
+            "reason": "Price is 101.65 USD, which exceeds the budget of $80.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "This is a tea cup and saucer set, not a planter.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:spV4cEW",
+            "verdict": "rejected",
+            "reason": "This is a serving platter, not a plant pot.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:f53CTtl",
+            "verdict": "rejected",
+            "reason": "This is a tea cup set, not a plant planter.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-PLANTER-LARGE",
+            "verdict": "chosen",
+            "reason": "It is a large terracotta planter priced at $72.00, meeting the budget requirement.",
+            "reasonCategory": "price"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "No listing provides two handmade microwave‑safe soup bowls for under $60, so none can be chosen.",
+        "tokens": 3322,
+        "considerations": [
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:V1ljdY9",
+            "verdict": "rejected",
+            "reason": "Price $211.84 far exceeds the $60 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:SzHxCf2",
+            "verdict": "rejected",
+            "reason": "Price $226.09 far exceeds the $60 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "Price $197.59 exceeds the $60 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor G",
+            "productRef": "competitor-g:OaWFywE",
+            "verdict": "rejected",
+            "reason": "Single bowl priced $68.00 exceeds budget and does not provide a pair",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-BOWL-SOUP-2",
+            "verdict": "rejected",
+            "reason": "Listing lacks any statement that the bowls are handmade or microwave safe",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:2ByrSXE",
+            "verdict": "rejected",
+            "reason": "Set includes many pieces, not a pair of soup bowls, and price $69.72 exceeds budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:UFtgp9G",
+            "verdict": "rejected",
+            "reason": "Not a pair of soup bowls and no confirmation of handmade or microwave safety",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:TqQH8Bg",
+            "verdict": "rejected",
+            "reason": "Price $97.02 exceeds budget and the listing is a large dinnerware set, not a pair of soup bowls",
+            "reasonCategory": "price"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "No listing provides the required height of around 12 inches, so none can be confirmed as meeting the request.",
+        "tokens": 2851,
+        "considerations": [
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-TALL",
+            "verdict": "rejected",
+            "reason": "Height not specified, cannot confirm 12-inch requirement.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:bOtyEav",
+            "verdict": "rejected",
+            "reason": "Item is a tea cup set, not a vase.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-VASE-BUD",
+            "verdict": "rejected",
+            "reason": "Described as a \"little vase\" with no height info; unlikely to be a statement piece.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:EhxacXK",
+            "verdict": "shortlisted",
+            "reason": "Described as a unique, abstract vase that could serve as a statement piece, but height is not provided.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-ORB",
+            "verdict": "rejected",
+            "reason": "No dimensions given; cannot verify 12-inch height.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:UPoL3jP",
+            "verdict": "rejected",
+            "reason": "No height information; cannot confirm size requirement.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "Item is a planter, not a vase.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-BOTTLE",
+            "verdict": "rejected",
+            "reason": "Height not stated; cannot verify 12-inch requirement.",
+            "reasonCategory": "missing_fact"
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "No listing confirms gift-wrapping and meets the under‑$30 price while being appropriate for a tea lover, so none can be selected.",
+        "tokens": 3426,
+        "considerations": [
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-GIFTSET-CHAI",
+            "verdict": "rejected",
+            "reason": "Gift wrap not mentioned; cannot confirm it arrives gift‑wrapped.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:6CDmWhb",
+            "verdict": "rejected",
+            "reason": "Product is a set of candle holders, not a tea‑related item.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "Price $249 exceeds the $30 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:f53CTtl",
+            "verdict": "rejected",
+            "reason": "Price $64 exceeds the $30 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "Price $169 exceeds the $30 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:bOtyEav",
+            "verdict": "rejected",
+            "reason": "Price $88 exceeds the $30 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:d9YkwN2",
+            "verdict": "rejected",
+            "reason": "Price $98 exceeds the $30 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:vhNTQdM",
+            "verdict": "rejected",
+            "reason": "Item is a candle holder set and price $30 is not under $30; also not a tea‑related gift.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "None of the listings provide a set of 4 dinner plates specifically confirmed as lead-free and sturdy for families with toddlers. Listing 2 and 4 are sets for 4 with dinner plates, but do not explicitly state lead-free status in the facts. Listing 6 is a set of 4 dinner plates, but lacks all required facts.",
+        "tokens": 2601,
+        "considerations": [
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:Fk2Cwmc",
+            "verdict": "rejected",
+            "reason": "This is a set of 6 plates, not a set of 4.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:UFtgp9G",
+            "verdict": "rejected",
+            "reason": "Contains dinner plates for 4, but lead-free status is not explicitly stated in facts.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:TqQH8Bg",
+            "verdict": "rejected",
+            "reason": "This is a set for 6, not a set of 4.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:2ByrSXE",
+            "verdict": "rejected",
+            "reason": "Contains dinner plates for 4, but lead-free status is unconfirmed in facts.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "These are soup bowls, not dinner plates.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-PLATE-DINNER-4",
+            "verdict": "rejected",
+            "reason": "No facts are stated for this listing.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:SzHxCf2",
+            "verdict": "rejected",
+            "reason": "These are soup bowls, not dinner plates.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:V1ljdY9",
+            "verdict": "rejected",
+            "reason": "These are soup bowls, not dinner plates.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 7,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "No listing confirms free shipping, which is a required condition, so none can be chosen. The closest match is the handcrafted tea set priced at $64, but its shipping cost is unknown.",
+        "tokens": 3867,
+        "considerations": [
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:2bZ6RPH",
+            "verdict": "rejected",
+            "reason": "Price $198.32 exceeds the $70 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "Price $249.00 exceeds the $70 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "Price $144.98 exceeds the $70 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:bOtyEav",
+            "verdict": "rejected",
+            "reason": "Price $88.00 exceeds the $70 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:TqQH8Bg",
+            "verdict": "rejected",
+            "reason": "Price $97.02 exceeds the $70 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:V1ljdY9",
+            "verdict": "rejected",
+            "reason": "Price $211.84 exceeds the $70 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:2ByrSXE",
+            "verdict": "rejected",
+            "reason": "Handmade nature not confirmed",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:f53CTtl",
+            "verdict": "shortlisted",
+            "reason": "Handcrafted and under $70 but free shipping not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "mayabazar",
+            "productRef": "mayabazar:none",
+            "verdict": "not_found",
+            "reason": "None of the store's listings appeared for this request.",
+            "reasonCategory": "not_found"
+          }
+        ]
+      },
+      {
+        "position": 8,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "None of the listings state a capacity of at least 16 oz, which is required for the request. Without that fact we cannot confirm the mug meets the size need.",
+        "tokens": 2308,
+        "considerations": [
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "No capacity information provided; cannot confirm 16 oz size.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "rejected",
+            "reason": "No capacity information provided; cannot confirm 16 oz size.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "No capacity information provided; cannot confirm 16 oz size.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:v5C4Hdk",
+            "verdict": "rejected",
+            "reason": "No capacity information provided; cannot confirm 16 oz size.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "No capacity information provided; cannot confirm 16 oz size.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-SANDSTONE",
+            "verdict": "rejected",
+            "reason": "No capacity information provided; cannot confirm 16 oz size.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-MONSOON",
+            "verdict": "rejected",
+            "reason": "No capacity information provided; cannot confirm 16 oz size.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-BIGHUG",
+            "verdict": "rejected",
+            "reason": "No capacity information provided; cannot confirm 16 oz size.",
+            "reasonCategory": "missing_fact"
+          }
+        ]
+      },
+      {
+        "position": 9,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "bought_competitor",
+        "chosenStore": "Competitor K",
+        "chosenProductRef": "competitor-k:rJu5MzN",
+        "rationale": "Listing 1 provides hand‑finished stoneware mugs sold in sets of four, allowing the required 30 mugs to be sourced, and clearly indicates they are handmade.",
+        "tokens": 3001,
+        "considerations": [
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "chosen",
+            "reason": "Hand‑finished stoneware mugs, sold as a set of 4, enabling bulk purchase for 30 units.",
+            "reasonCategory": "quality_signal"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "shortlisted",
+            "reason": "Hand‑the‑maker stoneware mug but listing does not specify pack size or bulk availability.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:v5C4Hdk",
+            "verdict": "rejected",
+            "reason": "Hand‑the‑maker stoneware mug with no pack size and high price; not ideal for bulk gifting.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "Handleless stoneware mug, no indication of hand‑finished or pack size; less suitable for team gifts.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "Handleless stoneware mug, no pack size and unclear if truly handmade.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:2ByrSXE",
+            "verdict": "rejected",
+            "reason": "Dinnerware set includes mugs but also plates/bowls; not a pure mug order for the request.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-SANDSTONE",
+            "verdict": "rejected",
+            "reason": "No facts provided; unclear if mug is handmade or suitable for bulk order.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-MONSOON",
+            "verdict": "rejected",
+            "reason": "No facts provided; unclear if mug is handmade or suitable for bulk order.",
+            "reasonCategory": "missing_fact"
+          }
+        ]
+      },
+      {
+        "position": 10,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-CUP-ESPRESSO-2",
+        "rationale": "Mayabazar Espresso Pair is the only listing specifically offering a set of two espresso cups.",
+        "tokens": 2426,
+        "considerations": [
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:tT5diGd",
+            "verdict": "rejected",
+            "reason": "This is a set of 5 pottery cups, not a set of 2.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-CUP-ESPRESSO-2",
+            "verdict": "chosen",
+            "reason": "This is an espresso pair matching the requirement for a set of 2 cups.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "This is a set of 6 tea cups and saucers.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:f53CTtl",
+            "verdict": "rejected",
+            "reason": "This is a tea cup set with saucers, not minimalist espresso cups.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor L",
+            "productRef": "competitor-l:ATfGuuG",
+            "verdict": "rejected",
+            "reason": "This is a set of 4 terracotta cups.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:6CDmWhb",
+            "verdict": "rejected",
+            "reason": "These are tea light holders, not cups.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor L",
+            "productRef": "competitor-l:aFggWJW",
+            "verdict": "rejected",
+            "reason": "This is a set of 4 terracotta cups.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:d9YkwN2",
+            "verdict": "rejected",
+            "reason": "These are Yixing tea cups with lids, not minimalist white espresso cups.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 11,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "None of the listings explicitly state that the item can hold water, which is a required feature for a vase of fresh flowers, so no listing meets the request.",
+        "tokens": 3149,
+        "considerations": [
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:LOaEjST",
+            "verdict": "rejected",
+            "reason": "It is a planter, not a vase, and no water‑holding claim for flowers.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "Large planter intended for soil, not a small vase for fresh flowers.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:C2FgdZx",
+            "verdict": "rejected",
+            "reason": "Terracotta pot for plants, not a vase; water‑holding for flowers not indicated.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:6CDmWhb",
+            "verdict": "rejected",
+            "reason": "Candle holder, not a vase; does not hold water for flowers.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:2bZ6RPH",
+            "verdict": "rejected",
+            "reason": "12‑inch planter, too large and not a vase; water‑holding for flowers not stated.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-VASE-BUD",
+            "verdict": "rejected",
+            "reason": "No information confirming it can hold water for fresh flowers.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:EhxacXK",
+            "verdict": "rejected",
+            "reason": "Decorative vase with no mention of water capacity; unclear suitability for fresh flowers.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-ORB",
+            "verdict": "rejected",
+            "reason": "No details about water‑holding ability; suitability for fresh flowers unknown.",
+            "reasonCategory": "missing_fact"
+          }
+        ]
+      },
+      {
+        "position": 12,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "None of the listings offer 60 tea-light holders under $3.50 each as requested.",
+        "tokens": 2272,
+        "considerations": [
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:6CDmWhb",
+            "verdict": "rejected",
+            "reason": "Only 4 pieces for $25.00 ($6.25 each), exceeding the price limit and not providing 60 pieces.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:vhNTQdM",
+            "verdict": "rejected",
+            "reason": "Only 3 pieces for $30.00, well above the budget per piece and quantity needed.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-TEALIGHT-6",
+            "verdict": "rejected",
+            "reason": "Only 6 pieces, quantity is far short of 60.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:KrZwBsG",
+            "verdict": "rejected",
+            "reason": "Single piece for $32.00, exceeding budget and quantity requirements.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "Wrong product type (tea cups and saucers instead of tea-light holders).",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "Wrong product type (tea cups and saucers).",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor G",
+            "productRef": "competitor-g:oAitZOp",
+            "verdict": "rejected",
+            "reason": "Priced at $100.00 for a set, exceeding the $3.50 per piece budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor G",
+            "productRef": "competitor-g:hiRf7Ar",
+            "verdict": "rejected",
+            "reason": "Priced at $33.00 for a single candleholder.",
+            "reasonCategory": "price"
+          }
+        ]
+      },
+      {
+        "position": 13,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "bought_competitor",
+        "chosenStore": "Competitor K",
+        "chosenProductRef": "competitor-k:spV4cEW",
+        "rationale": "Listing 1 meets all the request criteria: handmade, oven‑safe, and priced under $90.",
+        "tokens": 3347,
+        "considerations": [
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:spV4cEW",
+            "verdict": "chosen",
+            "reason": "Meets price, handmade, and oven safe requirement.",
+            "reasonCategory": "quality_signal"
+          },
+          {
+            "store": "Competitor I",
+            "productRef": "competitor-i:nOKLFJr",
+            "verdict": "rejected",
+            "reason": "Oven safe not stated.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor I",
+            "productRef": "competitor-i:5CxIxDr",
+            "verdict": "rejected",
+            "reason": "Oven safe not stated.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor I",
+            "productRef": "competitor-i:QGnRw9n",
+            "verdict": "rejected",
+            "reason": "Oven safe not stated.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-PLATTER-OVAL",
+            "verdict": "rejected",
+            "reason": "Handmade and oven safe not confirmed.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "Product is a bowl, not a serving platter.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:V1ljdY9",
+            "verdict": "rejected",
+            "reason": "Product is a bowl, not a serving platter.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:SzHxCf2",
+            "verdict": "rejected",
+            "reason": "Product is a bowl, not a serving platter.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 14,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_competitor",
+        "chosenStore": "Competitor K",
+        "chosenProductRef": "competitor-k:rJu5MzN",
+        "rationale": "Listing 4 features a wide handle and a comfortable grip specifically suited for someone with arthritis, whereas the other listings are either handleless mugs, candle holders, or soup bowls.",
+        "tokens": 2340,
+        "considerations": [
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "This is a handleless mug, which is not suitable for someone with arthritis needing an easy-to-hold handle.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "This is a handleless mug.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "This is a handleless mug.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "chosen",
+            "reason": "Features a wide handle and a rounded body designed for a comfortable grip, perfect for someone with arthritis.",
+            "reasonCategory": "better_alternative"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:KrZwBsG",
+            "verdict": "rejected",
+            "reason": "This is a candle holder, not a mug.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:SzHxCf2",
+            "verdict": "rejected",
+            "reason": "This is a soup bowl, not a mug.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:vhNTQdM",
+            "verdict": "rejected",
+            "reason": "This is a candle holder, not a mug.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:V1ljdY9",
+            "verdict": "rejected",
+            "reason": "This is a soup bowl, not a mug.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "mayabazar",
+            "productRef": "mayabazar:none",
+            "verdict": "not_found",
+            "reason": "None of the store's listings appeared for this request.",
+            "reasonCategory": "not_found"
+          }
+        ]
+      },
+      {
+        "position": 15,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "No listing confirms delivery to New York, so none can be selected.",
+        "tokens": 2235,
+        "considerations": [
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "Delivery to New York not specified",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-SANDSTONE",
+            "verdict": "rejected",
+            "reason": "Delivery to New York not specified",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-MONSOON",
+            "verdict": "rejected",
+            "reason": "Delivery to New York not specified",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-BIGHUG",
+            "verdict": "rejected",
+            "reason": "Delivery to New York not specified",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:v5C4Hdk",
+            "verdict": "rejected",
+            "reason": "Delivery to New York not specified",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "Delivery to New York not specified",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "Delivery to New York not specified",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "rejected",
+            "reason": "Delivery to New York not specified",
+            "reasonCategory": "missing_fact"
+          }
+        ]
+      },
+      {
+        "position": 16,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "None of the listings state a 30-day return policy, which is a required fact for this cautious gift buyer.",
+        "tokens": 2686,
+        "considerations": [
+          {
+            "store": "mayabazar",
+            "productRef": "mayabazar:none",
+            "verdict": "not_found",
+            "reason": "None of the store's listings appeared for this request.",
+            "reasonCategory": "not_found"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:bOtyEav",
+            "verdict": "rejected",
+            "reason": "Price is over $50 (88.00 USD) and return policy is unstated.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "Price is over $50 (249.00 USD) and return policy is unstated.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "Price is over $50 (197.59 USD) and return policy is unstated.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:f53CTtl",
+            "verdict": "rejected",
+            "reason": "Price is over $50 (64.00 USD) and return policy is unstated.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor G",
+            "productRef": "competitor-g:oAitZOp",
+            "verdict": "rejected",
+            "reason": "Price is over $50 (100.00 USD) and return policy is unstated.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:2bZ6RPH",
+            "verdict": "rejected",
+            "reason": "Price is over $50 (198.32 USD) and return policy is unstated.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:EhxacXK",
+            "verdict": "rejected",
+            "reason": "Price is over $50 (350.00 USD) and return policy is unstated.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:UPoL3jP",
+            "verdict": "rejected",
+            "reason": "Price is over $50 (75.00 USD) and return policy is unstated.",
+            "reasonCategory": "price"
+          }
+        ]
+      },
+      {
+        "position": 17,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "None of the listings provide a heavy ceramic water bowl sized for a large dog; the only pet bowl listed is rated for small‑to‑medium dogs and has a limited 24 oz capacity, while the rest are soup or planter items.",
+        "tokens": 3200,
+        "considerations": [
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:Yro8Lyx",
+            "verdict": "rejected",
+            "reason": "Pet bowl is only 3‑cup (24 oz) and described for small‑to‑medium dogs, not suitable for a large dog.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor G",
+            "productRef": "competitor-g:OaWFywE",
+            "verdict": "rejected",
+            "reason": "Item is a decorative soup bowl, not a pet water bowl.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:V1ljdY9",
+            "verdict": "rejected",
+            "reason": "Soup bowl with handles, not intended for pet use.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:SzHxCf2",
+            "verdict": "rejected",
+            "reason": "Soup bowls, not pet water bowls.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:6CDmWhb",
+            "verdict": "rejected",
+            "reason": "Ceramic tea‑light holders, not a bowl for dogs.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "Handcrafted soup bowls, not pet water bowls.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:C2FgdZx",
+            "verdict": "rejected",
+            "reason": "Terracotta planter pot, not a bowl for dogs.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "Ceramic planter, not a pet bowl.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "mayabazar",
+            "productRef": "mayabazar:none",
+            "verdict": "not_found",
+            "reason": "None of the store's listings appeared for this request.",
+            "reasonCategory": "not_found"
+          }
+        ]
+      },
+      {
+        "position": 18,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-CUP-SAUCER",
+        "rationale": "Listing 1 is the only option explicitly matching the requested pastel cup and saucer set, suitable as a birthday gift for a grandma. Listings 2 through 5 are tea cups in other colors or price points, and Listings 6 through 8 are planters.",
+        "tokens": 2608,
+        "considerations": [
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-CUP-SAUCER",
+            "verdict": "chosen",
+            "reason": "Matches the requested pastel cup and saucer set perfectly.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:bOtyEav",
+            "verdict": "rejected",
+            "reason": "Blue and earth-toned ceramic set, not pastel.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:f53CTtl",
+            "verdict": "shortlisted",
+            "reason": "Features a delicate pink speckled glaze and includes two cups and saucers, but is pricier.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "Sand beige color and expensive set of 4.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "Glossy white glaze and very expensive set of 6.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "This is a plant pot, not a teacup.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:C2FgdZx",
+            "verdict": "rejected",
+            "reason": "This is a terracotta plant pot, not a teacup.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:LOaEjST",
+            "verdict": "rejected",
+            "reason": "This is a ceramic planter, not a teacup.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 19,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "No listing confirms that the handmade ceramic mug can be shipped to Toronto, Canada, which is a required condition.",
+        "tokens": 2304,
+        "considerations": [
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "Shipping to Toronto, Canada not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "rejected",
+            "reason": "Shipping to Toronto, Canada not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-SANDSTONE",
+            "verdict": "rejected",
+            "reason": "Shipping to Toronto, Canada not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-MONSOON",
+            "verdict": "rejected",
+            "reason": "Shipping to Toronto, Canada not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-BIGHUG",
+            "verdict": "rejected",
+            "reason": "Shipping to Toronto, Canada not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:v5C4Hdk",
+            "verdict": "rejected",
+            "reason": "Shipping to Toronto, Canada not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "Shipping to Toronto, Canada not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "Shipping to Toronto, Canada not stated",
+            "reasonCategory": "missing_fact"
+          }
+        ]
+      }
+    ]
+  },
+  "after": {
+    "label": "After fixes",
+    "runs": [
+      {
+        "position": 0,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-MUG-MONSOON",
+        "rationale": "Listing mayabazar:MB-MUG-MONSOON is hand-thrown, dishwasher-safe, costs $34.00 (under $40), ships from Austin, TX with a 2 to 3 business day delivery time, fitting all criteria.",
+        "tokens": 2273,
+        "considerations": [
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "rejected",
+            "reason": "Price is 91.00 USD, which exceeds the $40 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-SANDSTONE",
+            "verdict": "shortlisted",
+            "reason": "Meets all criteria including price ($32) and being dishwasher-safe, but Monsoon Mug is a close second choice.",
+            "reasonCategory": "better_alternative"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-MONSOON",
+            "verdict": "chosen",
+            "reason": "Meets all criteria: hand-thrown, dishwasher-safe, $34.00, and fast local shipping from Austin.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-BIGHUG",
+            "verdict": "shortlisted",
+            "reason": "Meets all criteria, but Monsoon Mug was chosen instead.",
+            "reasonCategory": "better_alternative"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "Price is 47.00 USD, which exceeds the $40 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "Price is 55.00 USD, which exceeds the $40 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:v5C4Hdk",
+            "verdict": "rejected",
+            "reason": "Price is 171.00 USD, which exceeds the $40 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "Dishwasher-safe property is not stated.",
+            "reasonCategory": "missing_fact"
+          }
+        ]
+      },
+      {
+        "position": 1,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-KULHAD-4",
+        "rationale": "Listing 1 provides exactly four clay, food‑safe, lead‑free chai cups with a confirmed 2‑3 business‑day delivery, fitting the Diwali party timeline.",
+        "tokens": 3399,
+        "considerations": [
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-KULHAD-4",
+            "verdict": "chosen",
+            "reason": "Exact 4‑piece clay cup set, food safe, lead‑free, 2‑3 day delivery meets timeline",
+            "reasonCategory": "quality_signal"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-GIFTSET-CHAI",
+            "verdict": "shortlisted",
+            "reason": "Offers 4 food‑safe cups with same delivery, but unclear if set includes only cups",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor L",
+            "productRef": "competitor-l:ATfGuuG",
+            "verdict": "rejected",
+            "reason": "Food safety and lead‑free status not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "Made of stoneware, not clay; price far higher than needed",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:d9YkwN2",
+            "verdict": "rejected",
+            "reason": "Only 2 cups provided, not a set of 4",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:tT5diGd",
+            "verdict": "rejected",
+            "reason": "Set contains 5 cups, not the required 4",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:spV4cEW",
+            "verdict": "rejected",
+            "reason": "Item is a serving platter, not cups",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "Item is a soup bowl, not cups",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-PLANTER-LARGE",
+        "rationale": "This large terracotta planter is 12 inches across, includes a drainage hole and a matching saucer, and costs $72.00, which satisfies all requirements and stays under the $80 budget.",
+        "tokens": 2562,
+        "considerations": [
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "Price is 144.98 USD, exceeding the $80 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:LOaEjST",
+            "verdict": "rejected",
+            "reason": "Price is 114.98 USD, exceeding the $80 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:2bZ6RPH",
+            "verdict": "rejected",
+            "reason": "Price is 198.32 USD, exceeding the $80 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:C2FgdZx",
+            "verdict": "rejected",
+            "reason": "Price is 101.65 USD, exceeding the $80 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-PLANTER-LARGE",
+            "verdict": "chosen",
+            "reason": "Meets all criteria: large size (12 in), has a drainage hole, includes a saucer, and costs $72.00 (under $80).",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-PLANTER-SMALL",
+            "verdict": "rejected",
+            "reason": "Too small (5 in across) for a fiddle leaf fig, and does not include a saucer.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-CUP-SAUCER",
+            "verdict": "rejected",
+            "reason": "This is a cup and saucer set, not a planter.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "This is a tea cup and saucer set, not a planter.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "No listing satisfies all requirements; the only affordable set (listing 5) lacks confirmation that the bowls are handmade.",
+        "tokens": 3332,
+        "considerations": [
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:V1ljdY9",
+            "verdict": "rejected",
+            "reason": "Price $211.84 exceeds $60 limit",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:SzHxCf2",
+            "verdict": "rejected",
+            "reason": "Price $226.09 exceeds $60 limit",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "Price $197.59 exceeds $60 limit",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor G",
+            "productRef": "competitor-g:OaWFywE",
+            "verdict": "rejected",
+            "reason": "Price $68.00 exceeds $60 limit",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-BOWL-SOUP-2",
+            "verdict": "rejected",
+            "reason": "Handmade status not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:2ByrSXE",
+            "verdict": "rejected",
+            "reason": "Price $69.72 exceeds $60 limit and not a pair of soup bowls",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:UFtgp9G",
+            "verdict": "rejected",
+            "reason": "Items are cereal bowls, not soup bowls",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:TqQH8Bg",
+            "verdict": "rejected",
+            "reason": "Price $97.02 exceeds $60 limit",
+            "reasonCategory": "price"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-RAKU-TALL",
+        "rationale": "Listing mayabazar:MB-RAKU-TALL is a statement vase at 13 inches tall, perfectly suited in size and aesthetic for dried pampas grass.",
+        "tokens": 2355,
+        "considerations": [
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-TALL",
+            "verdict": "chosen",
+            "reason": "13 inches tall, makes a great statement vase for dried pampas grass.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-VASE-BUD",
+            "verdict": "rejected",
+            "reason": "Too short at 6 inches tall.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-ORB",
+            "verdict": "rejected",
+            "reason": "Too short at 7 inches tall.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:bOtyEav",
+            "verdict": "rejected",
+            "reason": "This is a tea cup and saucer set, not a vase.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-BOTTLE",
+            "verdict": "shortlisted",
+            "reason": "Nice vase, but at 9 inches tall it is smaller than the requested 12 inches.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:EhxacXK",
+            "verdict": "rejected",
+            "reason": "Height is not stated, and price is very high.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:UPoL3jP",
+            "verdict": "rejected",
+            "reason": "Height of the vase is missing from the facts.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "This is a planter with drainage holes, not a vase.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-GIFTSET-CHAI",
+        "rationale": "Listing 1 meets the tea‑lover theme, is under $30, and explicitly offers gift‑wrap, making it the best fit.",
+        "tokens": 3464,
+        "considerations": [
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-GIFTSET-CHAI",
+            "verdict": "chosen",
+            "reason": "Fits budget, directly tea‑related, and offers gift‑wrap option",
+            "reasonCategory": "quality_signal"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:6CDmWhb",
+            "verdict": "rejected",
+            "reason": "Only candle holders, not tea‑related",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "Price far exceeds $30 limit",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-TEALIGHT-6",
+            "verdict": "rejected",
+            "reason": "Tea‑light holders, not tea‑drinking accessories",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:f53CTtl",
+            "verdict": "rejected",
+            "reason": "Price exceeds $30 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "Price exceeds $30 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:bOtyEav",
+            "verdict": "rejected",
+            "reason": "Price exceeds $30 budget",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:d9YkwN2",
+            "verdict": "rejected",
+            "reason": "Price exceeds $30 budget",
+            "reasonCategory": "price"
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "No listing confirmed lead‑free, a set of four dinner plates, and durability suitable for toddlers; therefore none was selected.",
+        "tokens": 3629,
+        "considerations": [
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:Fk2Cwmc",
+            "verdict": "rejected",
+            "reason": "Set of 6 plates and lead‑free not stated",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-PLATE-DINNER-4",
+            "verdict": "rejected",
+            "reason": "Lead‑free and set of 4 but no durability information to confirm toddler‑proof sturdiness",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:UFtgp9G",
+            "verdict": "rejected",
+            "reason": "Contains lead; not lead‑free",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:TqQH8Bg",
+            "verdict": "rejected",
+            "reason": "Set of 6 and contains lead; not lead‑free",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:2ByrSXE",
+            "verdict": "rejected",
+            "reason": "Contains lead; not lead‑free",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "Soup bowls, not dinner plates",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-PLATE-SIDE",
+            "verdict": "rejected",
+            "reason": "Single side plate, not a set of 4 dinner plates",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:SzHxCf2",
+            "verdict": "rejected",
+            "reason": "Soup bowls, not dinner plates",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 7,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "bought_competitor",
+        "chosenStore": "Competitor F",
+        "chosenProductRef": "competitor-f:f53CTtl",
+        "rationale": "Listing 8 is handcrafted, within the $70 budget, and best fits a handmade housewarming gift despite shipping details not being provided.",
+        "tokens": 3954,
+        "considerations": [
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:2bZ6RPH",
+            "verdict": "rejected",
+            "reason": "Price $198.32 exceeds the $70 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "Price $249.00 exceeds the $70 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "Price $144.98 exceeds the $70 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:bOtyEav",
+            "verdict": "rejected",
+            "reason": "Price $88.00 exceeds the $70 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:V1ljdY9",
+            "verdict": "rejected",
+            "reason": "Price $211.84 exceeds the $70 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:TqQH8Bg",
+            "verdict": "rejected",
+            "reason": "Price $97.02 exceeds the $70 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor H",
+            "productRef": "competitor-h:2ByrSXE",
+            "verdict": "shortlisted",
+            "reason": "Item is within budget but does not explicitly state it is handcrafted and free shipping is not confirmed.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:f53CTtl",
+            "verdict": "chosen",
+            "reason": "Handcrafted tea set within budget; free shipping not mentioned but it best meets the handmade requirement.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "mayabazar",
+            "productRef": "mayabazar:none",
+            "verdict": "not_found",
+            "reason": "None of the store's listings appeared for this request.",
+            "reasonCategory": "not_found"
+          }
+        ]
+      },
+      {
+        "position": 8,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-MUG-BIGHUG",
+        "rationale": "Listing mayabazar:MB-MUG-BIGHUG is the only one explicitly stated to have a 16 oz size, fitting the requirement for a big coffee mug.",
+        "tokens": 2180,
+        "considerations": [
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "Capacity in ounces is not stated.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "rejected",
+            "reason": "Capacity in ounces is not stated.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "Capacity in ounces is not stated.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:v5C4Hdk",
+            "verdict": "rejected",
+            "reason": "Capacity in ounces is not stated.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "Capacity in ounces is not stated.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-SANDSTONE",
+            "verdict": "rejected",
+            "reason": "Size is 12 oz, which is under the 16 oz requirement.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-MONSOON",
+            "verdict": "rejected",
+            "reason": "Size is 12 oz, which is under the 16 oz requirement.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-BIGHUG",
+            "verdict": "chosen",
+            "reason": "Meets the requirement of being 16 oz.",
+            "reasonCategory": "price"
+          }
+        ]
+      },
+      {
+        "position": 9,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-MUG-MONSOON",
+        "rationale": "Listing 3 provides genuine hand‑thrown mugs suitable for gifting the required quantity, though invoice details are not confirmed.",
+        "tokens": 3395,
+        "considerations": [
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "rejected",
+            "reason": "Set of 4 mugs only, no gift‑wrap info, invoice not confirmed",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-SANDSTONE",
+            "verdict": "rejected",
+            "reason": "Handmade status not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-MONSOON",
+            "verdict": "chosen",
+            "reason": "Hand‑thrown handmade mugs, suitable for gifting and ordering 30 units",
+            "reasonCategory": "quality_signal"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-BIGHUG",
+            "verdict": "rejected",
+            "reason": "Handmade status not stated",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "Not explicitly handmade, no gift‑wrap or invoice info",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:v5C4Hdk",
+            "verdict": "rejected",
+            "reason": "Very high price, no gift‑wrap or invoice info",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "Not explicitly handmade, no gift‑wrap or invoice info",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "Not explicitly handmade, no gift‑wrap or invoice info",
+            "reasonCategory": "missing_fact"
+          }
+        ]
+      },
+      {
+        "position": 10,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "None of the listings clearly provide a minimalist white espresso cup set of exactly two; required color and style are not confirmed in any listing.",
+        "tokens": 3213,
+        "considerations": [
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:tT5diGd",
+            "verdict": "rejected",
+            "reason": "Set of 5 with two‑tone earth glaze and leaf design, not a two‑cup minimalist white set.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-CUP-ESPRESSO-2",
+            "verdict": "rejected",
+            "reason": "Color and minimalist style are not stated, so white cannot be confirmed.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "Set of 6 white stoneware cups, not a pair of espresso cups.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:f53CTtl",
+            "verdict": "rejected",
+            "reason": "Pink speckled glaze and includes saucers; not a minimalist white pair.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:6CDmWhb",
+            "verdict": "rejected",
+            "reason": "These are candle holders, not espresso cups.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor L",
+            "productRef": "competitor-l:ATfGuuG",
+            "verdict": "rejected",
+            "reason": "Set of 4 terracotta cups in cream or rust, not a two‑cup white set.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor L",
+            "productRef": "competitor-l:aFggWJW",
+            "verdict": "rejected",
+            "reason": "Set of 4 terracotta cups with two‑tone glaze, not a white pair of two.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor C",
+            "productRef": "competitor-c:d9YkwN2",
+            "verdict": "rejected",
+            "reason": "Purple‑clay vintage tea cups, not white minimalist espresso cups.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 11,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-VASE-BUD",
+        "rationale": "Listing 1 is the only small vase that explicitly holds water, matching the request for a desk‑sized fresh‑flower vase.",
+        "tokens": 3263,
+        "considerations": [
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-VASE-BUD",
+            "verdict": "chosen",
+            "reason": "6‑inch tall, glazed interior holds water, ideal small desk vase",
+            "reasonCategory": "quality_signal"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-ORB",
+            "verdict": "rejected",
+            "reason": "Not watertight; cannot hold water",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-TALL",
+            "verdict": "rejected",
+            "reason": "13‑inch tall and not watertight, too large and cannot hold water",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:LOaEjST",
+            "verdict": "rejected",
+            "reason": "Planter with drainage hole; not a vase and not watertight",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-BOTTLE",
+            "verdict": "rejected",
+            "reason": "Not watertight; cannot hold water",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "Large planter with drainage hole; not suitable as a small vase",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:6CDmWhb",
+            "verdict": "rejected",
+            "reason": "Tea‑light holders; not a vase and cannot hold water",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:2bZ6RPH",
+            "verdict": "rejected",
+            "reason": "Large planter with drainage hole; not a small vase and not watertight",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 12,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "None of the listings provide the requested quantity of 60 pieces or a sufficiently low price per piece to meet the wedding planner's criteria of under $3.50 each.",
+        "tokens": 2467,
+        "considerations": [
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:6CDmWhb",
+            "verdict": "rejected",
+            "reason": "Only a set of 4 for $25.00 ($6.25 each), exceeding the $3.50 budget and not enough quantity.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:vhNTQdM",
+            "verdict": "rejected",
+            "reason": "Only a set of 3 for $30.00 ($10.00 each), exceeding the $3.50 budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-TEALIGHT-6",
+            "verdict": "shortlisted",
+            "reason": "Set of 6 for $21.00 ($3.50 each), which meets the unit price limit, but buying 60 pieces would require 10 sets totaling $210.00 and does not explicitly confirm having 60 pieces available.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:KrZwBsG",
+            "verdict": "rejected",
+            "reason": "Single piece for $32.00, far exceeding the budget of $3.50 per piece.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "This is a tea cup and saucer set, not a tea-light holder.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor G",
+            "productRef": "competitor-g:oAitZOp",
+            "verdict": "rejected",
+            "reason": "Priced at $100.00 for a set, far exceeding the $3.50 per piece budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor G",
+            "productRef": "competitor-g:hiRf7Ar",
+            "verdict": "rejected",
+            "reason": "Priced at $33.00 for a single candleholder, exceeding the budget.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "This is a tea cup and saucer set, not a tea-light holder.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 13,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "bought_competitor",
+        "chosenStore": "Competitor K",
+        "chosenProductRef": "competitor-k:spV4cEW",
+        "rationale": "Listing 1 fulfills all requirements (handmade, oven‑safe, serving platter, under $90), while the other listings either lack confirmed oven safety or handmade status or are the wrong product type.",
+        "tokens": 3141,
+        "considerations": [
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:spV4cEW",
+            "verdict": "chosen",
+            "reason": "Meets all criteria: handmade, oven‑safe, serving platter, price under $90",
+            "reasonCategory": "quality_signal"
+          },
+          {
+            "store": "Competitor I",
+            "productRef": "competitor-i:nOKLFJr",
+            "verdict": "rejected",
+            "reason": "Oven safety not confirmed",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor I",
+            "productRef": "competitor-i:5CxIxDr",
+            "verdict": "rejected",
+            "reason": "Oven safety not confirmed",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-PLATTER-OVAL",
+            "verdict": "rejected",
+            "reason": "Handmade status not confirmed",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor I",
+            "productRef": "competitor-i:QGnRw9n",
+            "verdict": "rejected",
+            "reason": "Oven safety not confirmed",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "Item is a bowl, not a serving platter",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:V1ljdY9",
+            "verdict": "rejected",
+            "reason": "Item is a bowl, not a serving platter",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:SzHxCf2",
+            "verdict": "rejected",
+            "reason": "Item is a bowl, not a serving platter",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 14,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-MUG-BIGHUG",
+        "rationale": "Listing 3 specifically features an extra-wide handle that fits four fingers, which is ideal for someone with arthritis, whereas the other mug listings either lack a handle entirely or do not explicitly guarantee an extra-wide handle.",
+        "tokens": 2260,
+        "considerations": [
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "This is a handleless mug.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "This is a handleless design.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-BIGHUG",
+            "verdict": "chosen",
+            "reason": "Features an extra-wide handle that fits four fingers, perfect for someone with arthritis.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "This has a handleless design.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "shortlisted",
+            "reason": "Mentions a wide handle, but comes as an expensive set of 4 at 91.00 USD.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:KrZwBsG",
+            "verdict": "rejected",
+            "reason": "This is a candle holder, not a mug.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:SzHxCf2",
+            "verdict": "rejected",
+            "reason": "This is a set of soup bowls.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:vhNTQdM",
+            "verdict": "rejected",
+            "reason": "This is a set of candle holders, not a mug.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 15,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-MUG-MONSOON",
+        "rationale": "Listing 3 (Monsoon Mug) is the cheapest confirmed handmade mug that includes delivery information for the United States, meeting the request for a cheap handmade mug delivered to New York.",
+        "tokens": 3056,
+        "considerations": [
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "Handmade but no shipping or delivery information provided.",
+            "reasonCategory": "delivery_unknown"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-SANDSTONE",
+            "verdict": "rejected",
+            "reason": "No statement that the mug is handmade.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-MONSOON",
+            "verdict": "chosen",
+            "reason": "Hand‑thrown (handmade) mug with confirmed U.S. delivery (2‑3 business days).",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-BIGHUG",
+            "verdict": "rejected",
+            "reason": "No indication that the mug is handmade.",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:v5C4Hdk",
+            "verdict": "rejected",
+            "reason": "Handmade but no shipping or delivery information provided.",
+            "reasonCategory": "delivery_unknown"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "Handmade but shipping/delivery details are not stated.",
+            "reasonCategory": "delivery_unknown"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "Handmade but no shipping or delivery information provided.",
+            "reasonCategory": "delivery_unknown"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "rejected",
+            "reason": "Handmade but no shipping or delivery information provided.",
+            "reasonCategory": "delivery_unknown"
+          }
+        ]
+      },
+      {
+        "position": 16,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-VASE-BUD",
+        "rationale": "The Bud Vase is under $50 and explicitly states that returns are accepted within 30 days, making it a safe gift choice.",
+        "tokens": 2319,
+        "considerations": [
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-GIFTSET-CHAI",
+            "verdict": "shortlisted",
+            "reason": "Under $50 and has 30-day returns, but the bud vase is a more versatile gift.",
+            "reasonCategory": "better_alternative"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-VASE-BUD",
+            "verdict": "chosen",
+            "reason": "Meets the budget and 30-day return policy requirements.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:bOtyEav",
+            "verdict": "rejected",
+            "reason": "Price is over the $50 limit and return policy is not stated.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-INCENSE",
+            "verdict": "shortlisted",
+            "reason": "Under $50 and has 30-day returns, but an incense holder is less universal than a vase.",
+            "reasonCategory": "better_alternative"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-PLANTER-LARGE",
+            "verdict": "rejected",
+            "reason": "Price exceeds the $50 limit.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-TALL",
+            "verdict": "rejected",
+            "reason": "Price exceeds the $50 limit.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-PLANTER-SMALL",
+            "verdict": "shortlisted",
+            "reason": "Under $50 and has 30-day returns, but the bud vase is a better gift option.",
+            "reasonCategory": "better_alternative"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-TEALIGHT-6",
+            "verdict": "shortlisted",
+            "reason": "Under $50 and has 30-day returns, but the bud vase is preferred.",
+            "reasonCategory": "better_alternative"
+          }
+        ]
+      },
+      {
+        "position": 17,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "None of the listings provide a heavy ceramic bowl sized for a large dog's water needs; the only pet‑specific bowl is too small, and the others are soup or decorative items not suited for this purpose.",
+        "tokens": 3201,
+        "considerations": [
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:Yro8Lyx",
+            "verdict": "rejected",
+            "reason": "Only 3‑cup (24 oz) capacity for small‑medium dogs, insufficient for a large dog",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor G",
+            "productRef": "competitor-g:OaWFywE",
+            "verdict": "rejected",
+            "reason": "Soup bowl, not described as pet or water bowl and no weight claim",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-RAKU-BOWL",
+            "verdict": "rejected",
+            "reason": "Not food safe, not watertight, decorative bowl",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:SzHxCf2",
+            "verdict": "rejected",
+            "reason": "Soup bowls, 23 oz capacity, not pet‑specific or heavy",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:V1ljdY9",
+            "verdict": "rejected",
+            "reason": "Soup/stoneware bowls, not pet‑specific and capacity too small",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor J",
+            "productRef": "competitor-j:6CDmWhb",
+            "verdict": "rejected",
+            "reason": "Candle‑light holders, not bowls for pets",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor B",
+            "productRef": "competitor-b:JLuKcS7",
+            "verdict": "rejected",
+            "reason": "Soup bowls, 20 oz, not pet‑specific or heavy enough",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "Ceramic planter, not a bowl for water",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 18,
+        "model": "gemini-flash-lite-latest",
+        "outcome": "bought_ours",
+        "chosenStore": "Mayabazar",
+        "chosenProductRef": "mayabazar:MB-CUP-SAUCER",
+        "rationale": "Listing 1 explicitly offers a soft pastel cup and saucer set, features gift-wrapping with a handwritten note card, and is microwave and dishwasher safe, making it a wonderful and practical 80th birthday gift for a grandmother.",
+        "tokens": 2760,
+        "considerations": [
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-CUP-SAUCER",
+            "verdict": "chosen",
+            "reason": "Soft pastel cup and saucer set with gift-wrapping available, perfectly matching the request.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:bOtyEav",
+            "verdict": "rejected",
+            "reason": "Blue and earth-toned ceramic set, not in soft pastels as requested.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor F",
+            "productRef": "competitor-f:f53CTtl",
+            "verdict": "shortlisted",
+            "reason": "Has a pink speckled glaze and is a tea cup set, but is more expensive and lacks gift wrap options compared to Listing 1.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:JrPJ3ih",
+            "verdict": "rejected",
+            "reason": "Sand beige color, significantly more expensive, and comes as a set of four.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:xs3G5Fd",
+            "verdict": "rejected",
+            "reason": "Glossy white finish and very expensive set of 6.",
+            "reasonCategory": "price"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:ENOxIQ2",
+            "verdict": "rejected",
+            "reason": "This is a ceramic planter pot for gardening, not a cup and saucer set.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:C2FgdZx",
+            "verdict": "rejected",
+            "reason": "This is a terracotta plant pot, not a tea cup and saucer set.",
+            "reasonCategory": "wrong_product"
+          },
+          {
+            "store": "Competitor D",
+            "productRef": "competitor-d:LOaEjST",
+            "verdict": "rejected",
+            "reason": "This is a ceramic planter for gardening, not a cup and saucer set.",
+            "reasonCategory": "wrong_product"
+          }
+        ]
+      },
+      {
+        "position": 19,
+        "model": "openai/gpt-oss-120b",
+        "outcome": "no_purchase",
+        "chosenStore": null,
+        "chosenProductRef": null,
+        "rationale": "No listing confirms that the handmade ceramic mug can be shipped to Toronto, Canada, so none are suitable.",
+        "tokens": 2643,
+        "considerations": [
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:8U7OMbF",
+            "verdict": "rejected",
+            "reason": "No shipping information to Canada provided",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor K",
+            "productRef": "competitor-k:rJu5MzN",
+            "verdict": "rejected",
+            "reason": "No shipping information to Canada provided",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-SANDSTONE",
+            "verdict": "rejected",
+            "reason": "Ships only within the United States",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-MONSOON",
+            "verdict": "rejected",
+            "reason": "Ships only within the United States",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Mayabazar",
+            "productRef": "mayabazar:MB-MUG-BIGHUG",
+            "verdict": "rejected",
+            "reason": "Ships only within the United States",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor A",
+            "productRef": "competitor-a:v5C4Hdk",
+            "verdict": "rejected",
+            "reason": "No shipping information to Canada provided",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:54mxOuZ",
+            "verdict": "rejected",
+            "reason": "No shipping information to Canada provided",
+            "reasonCategory": "missing_fact"
+          },
+          {
+            "store": "Competitor E",
+            "productRef": "competitor-e:CIulMM6",
+            "verdict": "rejected",
+            "reason": "No shipping information to Canada provided",
+            "reasonCategory": "missing_fact"
+          }
+        ]
+      }
+    ]
+  }
+}
