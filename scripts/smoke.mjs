@@ -56,6 +56,23 @@ const cart = await res.json();
 if (res.status !== 201 || cart.status !== "READY")
   fail(`cart create: ${res.status} ${JSON.stringify(cart)}`);
 
+const panelList = await (await fetch(`${base}/api/panels`)).json();
+if (!Array.isArray(panelList.panels) || panelList.panels.length < 2)
+  fail(`expected the recorded panels, got ${JSON.stringify(panelList).slice(0, 200)}`);
+
+const mcp = await fetch(`${base}/mcp`, {
+  method: "POST",
+  headers: {
+    Authorization: `Bearer ${TOKEN}`,
+    "Content-Type": "application/json",
+    Accept: "application/json, text/event-stream",
+  },
+  body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "tools/list" }),
+});
+const mcpBody = await mcp.text();
+if (!mcp.ok || !mcpBody.includes("search_products"))
+  fail(`mcp tools/list: ${mcp.status} ${mcpBody.slice(0, 200)}`);
+
 server.kill();
 console.log(
   `Smoke test passed (db=${health.db.driver}, cart=${cart.id}, total=${cart.totals.total.value}).`,
