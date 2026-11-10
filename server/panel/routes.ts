@@ -6,7 +6,7 @@ import { getMerchantBySlug } from "../commerce/catalog.js";
 import type { Db } from "../db/client.js";
 import { catalogVersions, panels } from "../db/schema.js";
 import type { PanelService } from "./panelService.js";
-import { summarizePanel } from "./report.js";
+import { comparePanels, summarizePanel } from "./report.js";
 
 export interface PanelRoutesOptions {
   db: Db;
@@ -47,6 +47,18 @@ export function panelRoutes({
         .filter((s) => s !== undefined)
         .map(({ results: _results, ...rest }) => rest),
     });
+  });
+
+  router.get("/compare", async (req, res) => {
+    const [before, after] = await Promise.all(
+      [req.query.before, req.query.after].map((id) =>
+        typeof id === "string" && /^[0-9a-f-]{36}$/i.test(id)
+          ? summarizePanel(db, id, merchantSlug)
+          : undefined,
+      ),
+    );
+    if (!before || !after) return void res.status(404).json({ error: "not_found" });
+    res.json(comparePanels(before, after));
   });
 
   router.get("/:id", async (req, res) => {
