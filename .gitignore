@@ -13,3 +13,4 @@ data/runtime/
 .DS_Store
 Thumbs.db
 *.log
+.neon
