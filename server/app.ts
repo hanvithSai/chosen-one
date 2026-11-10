@@ -6,8 +6,10 @@ import type { Logger } from "pino";
 import { cartRoutes } from "./agent-api/cartRoutes.js";
 import { paymentRoutes } from "./agent-api/paymentRoutes.js";
 import type { CartService } from "./commerce/cart.js";
+import { getCatalog } from "./commerce/catalog.js";
 import type { CheckoutPolicy } from "./demo/data.js";
 import { mcpRoutes } from "./mcp/routes.js";
+import { activityRoutes } from "./api/activityRoutes.js";
 import { enrichmentRoutes } from "./enrichment/routes.js";
 import type { LlmService } from "./ai/llm.js";
 import type { PanelService } from "./panel/panelService.js";
@@ -104,6 +106,22 @@ export function createApp({
         adminToken: config.STORE_API_TOKEN,
         readOnly: config.DEMO_MODE === "replay",
       }),
+    );
+  }
+
+  if (database?.db) {
+    app.get("/api/store", async (_req, res) => {
+      const catalog = await getCatalog(database.db!, config.MERCHANT_SLUG);
+      res.json({
+        merchant: { name: catalog.merchant.name, tagline: catalog.merchant.tagline },
+        catalogVersion: catalog.version.version,
+        products: catalog.products.length,
+        mode: config.DEMO_MODE,
+      });
+    });
+    app.use(
+      "/api/activity",
+      activityRoutes({ db: database.db, merchantSlug: config.MERCHANT_SLUG }),
     );
   }
 
