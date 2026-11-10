@@ -1,98 +1,107 @@
-# ChosenOne: Tasks That Need a Person
+# ChosenOne: Tasks That Need the Developer
 
-These need a person: account sign-ups, CAPTCHAs and 2FA, accepting terms, judgement calls, voice and face, uploads to personal accounts, and final submission. Everything else is done by the AI coding agent ([plan.md](plan.md)).
+ChosenOne is a solo project by one developer based in India. Everything below needs that person: account sign-ups, CAPTCHAs and 2FA, accepting terms, judgement calls, voice and face, uploads to personal accounts, and final submission. Everything else is done by the AI coding agent ([plan.md](plan.md)).
 
-**Deadline:** Fri 13 Nov, 01:30 IST (Thu 12 Nov, 12:00 PST). Times below are IST.
+**Deadline:** Fri 13 Nov, 01:30 IST (Thu 12 Nov, 12:00 PST). All times below are IST.
 
 **Rules:**
 - **Free tiers only.** Never add a card or upgrade a plan.
 - Keys go **only** in `chosen-one/.env`, copied from `.env.example`. Never paste keys into chat or commit them.
 - Use **sandbox** PayPal credentials only.
-- When a task is finished, say "H# done".
+- When a task is finished, say "H# done". Task numbers are stable, so there is no H2.
+
+---
+
+## Status at a glance
+
+| Task | Status |
+|---|---|
+| H1 Decisions | Name, shop and agent persona decided; sponsor tools still to confirm |
+| H3 Research storage | Decided: kept on the developer's machine only |
+| H4 PayPal sandbox | **Done**: US sandbox app, merchant and buyer; one real payment captured |
+| H5 Gemini key | **Done** |
+| H6 Groq key | **Done** |
+| H7 Channel3 key | **Done** (no promo code needed) |
+| H8 Neon database | **Done** |
+| H9 Render account | **Done** |
+| H10 Deploy | Waiting for the MCP server, webhooks and web UI |
+| H11 APIMatic form | **Submitted**; waiting to hear back |
+| H12–H20 | Later |
 
 ---
 
 ## Done so far
 - [x] Picked the name: **ChosenOne**.
-- [x] Created the public repo https://github.com/hanvithSai/chosen-one (the AI pushed the first commits).
+- [x] Created the public repo https://github.com/hanvithSai/chosen-one.
 - [x] Updated the Devpost draft with the new name and elevator pitch.
 - [x] Installed the coding-agent plugins: the APIMatic Context Plugin for the PayPal Server SDK, and PayPal's AI-Toolkit.
-- [x] Made the stack decisions:
-  - LLMs: Gemini and Groq free tiers
-  - hosting: Render free with Neon free Postgres
-  - planning docs: engineering docs public here; strategy and raw research kept only on the team's machine (not on GitHub)
+- [x] Decided the stack: Gemini and Groq free tiers; Render free hosting with Neon free Postgres.
+- [x] Decided that engineering docs are public in this repo, while strategy and raw research stay on the developer's machine only.
+- [x] Chose the demo shop **Mayabazar** and the in-app buyer agent **Chitti**.
+- [x] Created the PayPal sandbox accounts and app, and approved one real test payment (see H4).
+- [x] Added the Gemini, Groq and Channel3 keys, and created the Neon project (H5–H8).
 
 ---
 
-## P0: by Tue 10 Nov, 10:00 (blocks the build)
+## P0: blocks the build
 
 ### H1. Remaining decisions (5 min)
-1. [x] **Demo merchant:** decided. **Mayabazar**, a fictional clay studio in Austin, TX (stoneware, terracotta, raku). The in-app buyer agent is called "Chitti".
-2. **Sponsor tools to tick on Devpost:** **APIMatic, Channel3, Render, AG Grid** (we use AG Grid Community for the results grid).
-3. **Team roles:** who records the voiceover, and who is the submitting Representative.
-
-### H2. Team and eligibility (10 min)
-- [ ] Every member is of age where they live and doesn't live in an excluded place (Brazil, Quebec, Russia, Crimea, Cuba, Iran, North Korea, or other OFAC-sanctioned countries).
-- [ ] No member is a PayPal, Devpost or sponsor employee, or family of one.
-- [ ] Teammates are invited from the Devpost project's team section **and have accepted**.
-- [ ] Choose the Representative and agree how any prize is split.
+1. [x] **Demo merchant:** **Mayabazar**, a fictional clay studio in Austin, TX (stoneware, terracotta, raku). The in-app buyer agent is called "Chitti".
+2. [ ] **Sponsor tools to tick on Devpost:** recommended **APIMatic, Channel3, Render, AG Grid** (we use AG Grid Community for the results grid). Confirm or change.
 
 ### H3. Research storage (decided)
-- [x] Decided that strategy and raw research stay **local only**, in a separate folder on the team's machine. It has its own git history but is never pushed. Nothing to do.
+- [x] Strategy and raw research stay **local only**, in a separate folder on the developer's machine. It has its own git history but is never pushed. Nothing to do.
 
-### H4. PayPal Developer sandbox (20 min)
-1. Log in at **developer.paypal.com**.
-2. Under **Apps & Credentials**, with **Sandbox** selected:
-   - **Create App** named "ChosenOne", type **Merchant**.
-   - Put the Client ID and Secret in `.env` as `PAYPAL_CLIENT_ID` and `PAYPAL_CLIENT_SECRET`.
-   - In the app's features, make sure **Accept payments**, **Invoicing** and **Transaction search** are ticked.
-3. Under **Testing Tools → Sandbox Accounts**:
-   - **Business (merchant):** country **US**, currency USD. Put its **Account ID** in `.env` as `PAYPAL_MERCHANT_ID`.
-   - **Personal (buyer):** country **US**, with a known password and a balance (for example $5,000). **This login is published in the README for judges.** Use a throwaway password.
-   - Put the buyer login in `.env` as `SANDBOX_BUYER_EMAIL` and `SANDBOX_BUYER_PASSWORD`. The AI uses it with Playwright to approve test checkouts.
+### H4. PayPal Developer sandbox (done)
+- [x] **Why US accounts:** Mayabazar is a US shop charging USD. India-based sandbox accounts block PayPal-to-PayPal payments inside India and can leave USD payments pending, so the sandbox merchant and buyer are US accounts even though the developer is in India.
+- [x] Created a **US business** account (the merchant) and a **US personal** account (the buyer, with a throwaway password that is published in the README for judges).
+- [x] Created the app **ChosenOne US** (type Merchant) on the US business account. Its Client ID and Secret are in `.env` as `PAYPAL_CLIENT_ID` and `PAYPAL_CLIENT_SECRET`. The business Account ID is `PAYPAL_MERCHANT_ID`, and the buyer login is `SANDBOX_BUYER_EMAIL` and `SANDBOX_BUYER_PASSWORD`.
+- [x] Checkout needs no feature checkbox: the current dashboard has no "Accept payments" option because standard checkout is included in every app.
+- [x] A real sandbox payment was created, approved by the developer as the US buyer, and captured.
+- [x] **Invoicing** and **Transaction search** are ticked and saved on the app (needed only for the reconciliation badge). The AI re-checks the token scopes before using them.
 
-### H5. Google AI Studio: Gemini free tier (5 min, no card)
-- [ ] At https://aistudio.google.com/apikey, sign in and click **Create API key**. Put it in `.env` as `GOOGLE_GENERATIVE_AI_API_KEY`.
-- [ ] On AI Studio's **rate limits / usage** page, note the free-tier **RPM, TPM and RPD** for the Flash and Flash-Lite models, and send the numbers to the AI.
-- Note: the free tier may use prompts to improve Google's products. We only send synthetic demo data.
+### H5. Google AI Studio: Gemini free tier (done)
+- [x] Key created and stored as `GOOGLE_GENERATIVE_AI_API_KEY`. Verified: the `gemini-flash-latest` and `gemini-flash-lite-latest` models are available.
+- The free tier may use prompts to improve Google's products. We only send synthetic demo data.
 
-### H6. Groq: open models, free tier (5 min, no card)
-- [ ] At https://console.groq.com/keys, sign up and create a key. Put it in `.env` as `GROQ_API_KEY`.
-- [ ] On **Settings → Limits**, note RPM, RPD, TPM and TPD for `openai/gpt-oss-120b` and `llama-3.3-70b-versatile`, and send them to the AI.
+### H6. Groq: open models, free tier (done)
+- [x] Key created and stored as `GROQ_API_KEY`. Measured limits on the free tier: about 1,000 requests a day and 8,000 tokens a minute on `openai/gpt-oss-120b`.
 
-### H7. Channel3 (5 min)
-- [ ] At https://trychannel3.com/developers, sign up and apply promo code **`PAYPAL-HACKATHON-2026`** (20,000 free credits). Put the key in `.env` as `CHANNEL3_API_KEY`.
+### H7. Channel3 (done)
+- [x] Key created and stored as `CHANNEL3_API_KEY`. The signup gave **1,000 free credits a month**, and Channel3's docs describe no promo-code field, so the hackathon promo code was not needed. ChosenOne uses well under 100 searches. If more is ever needed, ask in the `#channel3` channel of the PayPal Discord.
 
-### H8. Neon: free Postgres (5 min, no card)
-- [ ] At https://neon.tech, sign up with GitHub (as hanvithSai) on the **Free** plan.
-- [ ] Create a project named "chosen-one" in region **AWS US East (Ohio)**, close to Render's Ohio or Virginia regions.
-- [ ] Copy the **pooled** connection string (it contains `-pooler`) into `.env` as `DATABASE_URL`.
+### H8. Neon: free Postgres (done)
+- [x] Project **chosen-one** created in **AWS US East (N. Virginia)** under organization `org-purple-frog-89996757`, on the free plan. `DATABASE_URL` (pooled) and `DATABASE_URL_UNPOOLED` are in `.env`. Migrations have been applied.
+- [x] Restarted the coding agent; the Neon MCP server is loaded and works.
 
-### H9. Render: free account (3 min, no card)
-- [ ] At https://render.com, sign up with GitHub (as hanvithSai) and give it access to the `chosen-one` repo. Stay on the **Free** plan; don't add a payment method.
+### H9. Render: free account (done)
+- [x] Account exists. Stay on the **Free** plan; don't add a payment method. Before H10, make sure Render can access the `chosen-one` repo.
 
 ---
 
 ## P1: Tue evening to Wed
 
-### H10. Deploy on Render (Tue about 20:00, 10 min, when the AI says it's ready)
+### H10. Deploy on Render (when the AI says it is ready, 10 min)
 - [ ] In Render, go to **New → Blueprint** and select `chosen-one`. Confirm the instance type is **Free**.
-- [ ] Enter the secret values the AI lists (the same as `.env`, plus `PUBLIC_BASE_URL`).
+- [ ] Enter the secret values the AI lists (the same as `.env`, plus `PUBLIC_BASE_URL`). Copy them from `.env`; never paste them into chat.
 - [ ] Send the AI the service URL. The AI registers the PayPal webhook and runs the live end-to-end test.
 
-### H11. APIMatic free-subscription form (Tue evening, after the PayPal integration lands)
-- [ ] Fill in the Google form linked on https://paypalaihackathon.devpost.com/details/apimatic:
+### H11. APIMatic free-subscription form
+- [x] Submitted the Google form linked on https://paypalaihackathon.devpost.com/details/apimatic. Waiting to hear back; the developer passes on any reply.
+  - **Claim:** "Participant: APIMatic Basic (1 month)". The winning-team option applies only after winning.
   - **Link:** `https://github.com/hanvithSai/chosen-one`
-  - **Description:** the AI drafts this from [apimatic-context-plugin.md](apimatic-context-plugin.md).
+  - **Description:** the AI drafted this from [apimatic-context-plugin.md](apimatic-context-plugin.md).
+- The form only claims the free subscription perk. The sponsor prize itself comes from ticking APIMatic on the Devpost submission (H17).
 
-### H12. Approve test checkouts (only if you didn't share the sandbox buyer login in H4)
-- [ ] Open the PayPal sandbox link the AI posts, log in as the sandbox buyer, and approve.
+### H12. Approve test checkouts
+- [ ] Browser automation is not connected in this setup, so each live test payment needs the developer to open the PayPal sandbox link the AI posts, log in as the sandbox buyer, and approve. Each takes about 30 seconds.
 
 ### H13. Product photos (optional, 30 min)
 - [ ] Gather 12–24 photos of stoneware mugs and bowls, terracotta chai cups (kulhads) and planters, and raku vases: your own, or from Unsplash or Pexels (free licences, no visible logos).
 - [ ] Save them in `data/demo/images/` and list their sources in `data/demo/images/CREDITS.md`.
+- [ ] If skipped, the AI uses clean illustrated cards.
 
-### H14. Review demo content (Wed about 12:00, 20 min)
+### H14. Review demo content (20 min)
 - [ ] Check that `data/demo/intents.json` (20 shopper requests) reads like real requests people would make.
 - [ ] Check that the catalog, merchant notes and UI copy sound like a real small studio.
 
@@ -100,7 +109,7 @@ These need a person: account sign-ups, CAPTCHAs and 2FA, accepting terms, judgem
 
 ## P2: Thu 12 Nov (submission day)
 
-### H15. Final review (Thu 10:00, 30 min)
+### H15. Final review (Thu, about 10:00, 30 min)
 - [ ] In an incognito window, follow the README **Judge path** on the hosted URL.
 - [ ] Check that every number comes from a recorded run.
 - [ ] Check that no competitor brand names or logos appear anywhere.
@@ -108,14 +117,15 @@ These need a person: account sign-ups, CAPTCHAs and 2FA, accepting terms, judgem
 ### H16. Record the video (Thu 11:00–18:00) **[critical]**
 - [ ] Use the AI's script and shot list (target 2:45, **under 3:00**).
 - [ ] Use free tools: **OBS Studio** to record, **Clipchamp (free)** or **DaVinci Resolve (free)** to edit. Record at 1080p with notifications off.
-- [ ] Record the voiceover in your own voice. Add captions. **No copyrighted music.**
+- [ ] Record the voiceover in your own voice (an AI voiceover is also allowed). Add captions. **No copyrighted music.**
 - [ ] Show PayPal sandbox order and capture IDs clearly. Cut waiting time.
-- [ ] Upload to YouTube as **Public** by **18:00 IST**. Check it while logged out.
+- [ ] Upload to YouTube as **Public** by **18:00 IST**, because processing can take hours. Check it while logged out.
 
 ### H17. Devpost content (Thu 18:00–21:00)
 - [ ] Paste the AI-drafted sections. Built With tags: `paypal`, `paypal-orders-v2`, `paypal-webhooks`, `paypal-transaction-search`, `paypal-mcp`, `agentic-commerce-spec`, `gemini`, `groq`, `vercel-ai-sdk`, `mcp`, `channel3`, `apimatic`, `ag-grid`, `render`, `neon`, `postgresql`, `typescript`, `react`, `node.js`.
 - [ ] Add the hosted URL, repo link, YouTube link, screenshots and thumbnail (3:2, under 5 MB).
 - [ ] Tick the sponsor tools (H1.2). Add testing instructions: URL, judge path, sandbox buyer login.
+- [ ] Submit as an individual.
 
 ### H18. GitHub repo settings (5 min)
 - [ ] In the About box, add the description, website (the hosted URL) and topics: `paypal`, `agentic-commerce`, `mcp`, `ai-agents`, `hackathon`.
@@ -137,4 +147,4 @@ These need a person: account sign-ups, CAPTCHAs and 2FA, accepting terms, judgem
   - the Gemini, Groq and Channel3 keys
   - the GitHub keep-alive workflow (don't disable it)
 - [ ] Watch your email for questions during judging (1–15 Dec).
-- [ ] If you win: complete the affidavit and tax forms (W-8BEN for non-US residents) within 10 business days.
+- [ ] If you win: the rules say residents of other countries may be asked for a W-8BEN form, plus a winner affidavit, within 10 business days. Check your own tax obligations in India.
