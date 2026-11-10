@@ -43,7 +43,13 @@ const cartService = new CartService(database.db, {
 const here = path.dirname(fileURLToPath(import.meta.url));
 const webDistDir = path.resolve(here, "../web");
 
-const app = createApp({ config, logger, database, commerce: { cartService }, webDistDir });
+const app = createApp({
+  config,
+  logger,
+  database,
+  commerce: { cartService, merchantSlug: config.MERCHANT_SLUG, policy: demo.merchant.checkout },
+  webDistDir,
+});
 
 const server = app.listen(config.PORT, () => {
   logger.info(

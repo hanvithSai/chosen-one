@@ -5,6 +5,8 @@ import type { Logger } from "pino";
 import { cartRoutes } from "./agent-api/cartRoutes.js";
 import { paymentRoutes } from "./agent-api/paymentRoutes.js";
 import type { CartService } from "./commerce/cart.js";
+import type { CheckoutPolicy } from "./demo/data.js";
+import { mcpRoutes } from "./mcp/routes.js";
 import type { AppConfig } from "./config.js";
 import type { DbHandle } from "./db/client.js";
 
@@ -16,9 +18,9 @@ const API_PREFIXES = ["/api", "/mcp", "/merchant-cart", "/paypal", "/webhooks", 
 export interface AppDeps {
   config: AppConfig;
   logger: Logger;
-  database?: Pick<DbHandle, "driver" | "ping">;
+  database?: Pick<DbHandle, "driver" | "ping"> & Partial<Pick<DbHandle, "db">>;
   /** Agent commerce surface (Cart API v1 + PayPal return pages). */
-  commerce?: { cartService: CartService };
+  commerce?: { cartService: CartService; merchantSlug: string; policy: CheckoutPolicy };
   /** Directory holding the built web app (dist/web). Served only when it exists. */
   webDistDir?: string;
 }
@@ -46,6 +48,19 @@ export function createApp({ config, logger, database, commerce, webDistDir }: Ap
       cartRoutes({ cartService: commerce.cartService, storeApiToken: config.STORE_API_TOKEN }),
     );
     app.use("/paypal", paymentRoutes({ cartService: commerce.cartService }));
+    if (database?.db) {
+      app.use(
+        "/mcp",
+        mcpRoutes({
+          db: database.db,
+          cartService: commerce.cartService,
+          merchantSlug: commerce.merchantSlug,
+          policy: commerce.policy,
+          storeApiToken: config.STORE_API_TOKEN,
+          logger,
+        }),
+      );
+    }
   }
 
   if (webDistDir && existsSync(webDistDir)) {
