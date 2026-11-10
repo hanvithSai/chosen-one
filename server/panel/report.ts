@@ -120,3 +120,38 @@ export async function summarizePanel(
     })),
   };
 }
+
+export interface PanelComparison {
+  before: { panelId: string; label: string; pickRate: number };
+  after: { panelId: string; label: string; pickRate: number };
+  /** Change in PickRate, in percentage points. */
+  deltaPoints: number;
+  /** Requests the store lost before and won after, with the shopper's new reason. */
+  gained: { position: number; text: string; reason: string | null }[];
+  /** Requests the store won before and lost after. */
+  lost: { position: number; text: string }[];
+}
+
+/** Compares two panels over the same requests, to show what the approved fixes changed. */
+export function comparePanels(before: PanelSummary, after: PanelSummary): PanelComparison {
+  const won = (r: IntentResult) => r.outcome === "bought_ours";
+  const beforeByPos = new Map(before.results.map((r) => [r.position, r]));
+  const gained: PanelComparison["gained"] = [];
+  const lost: PanelComparison["lost"] = [];
+  for (const r of after.results) {
+    const earlier = beforeByPos.get(r.position);
+    if (!earlier) continue;
+    if (won(r) && !won(earlier)) {
+      gained.push({ position: r.position, text: r.text, reason: r.rationale });
+    } else if (!won(r) && won(earlier)) {
+      lost.push({ position: r.position, text: r.text });
+    }
+  }
+  return {
+    before: { panelId: before.panelId, label: before.label, pickRate: before.pickRate },
+    after: { panelId: after.panelId, label: after.label, pickRate: after.pickRate },
+    deltaPoints: Math.round((after.pickRate - before.pickRate) * 1000) / 10,
+    gained,
+    lost,
+  };
+}
