@@ -7,6 +7,7 @@ import { openDatabase } from "./db/client.js";
 import { loadDemoData } from "./demo/data.js";
 import { seedDemo } from "./demo/seed.js";
 import { createLogger } from "./logger.js";
+import { seedMarket } from "./market/seed.js";
 import { createGateway } from "./payments/createGateway.js";
 import { createWebhookVerifier } from "./webhooks/verifier.js";
 
@@ -29,6 +30,8 @@ const demo = loadDemoData();
 if (config.SEED_DEMO_ON_START) {
   const summary = await seedDemo(database.db, demo);
   logger.info({ created: summary.created }, "Demo merchant ready");
+  const market = await seedMarket(database.db, config.MERCHANT_SLUG);
+  if (market) logger.info(market, "Competitor market snapshot ready");
 }
 
 const gateway = createGateway(config, demo.merchant.name, logger);

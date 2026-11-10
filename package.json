@@ -26,6 +26,7 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx scripts/db-migrate.ts",
     "db:seed": "tsx scripts/seed-demo.ts",
+    "market:snapshot": "tsx scripts/market-snapshot.ts",
     "webhook:register": "tsx scripts/register-webhook.ts",
     "smoke": "node scripts/smoke.mjs"
   },
