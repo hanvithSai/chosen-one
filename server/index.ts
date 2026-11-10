@@ -6,7 +6,9 @@ import { DEFAULT_STORE_API_TOKEN, loadConfig, loadDotEnvFile } from "./config.js
 import { openDatabase } from "./db/client.js";
 import { loadDemoData } from "./demo/data.js";
 import { seedDemo } from "./demo/seed.js";
+import { createLlm } from "./ai/providers.js";
 import { createLogger } from "./logger.js";
+import { PanelService } from "./panel/panelService.js";
 import { seedMarket } from "./market/seed.js";
 import { createGateway } from "./payments/createGateway.js";
 import { createWebhookVerifier } from "./webhooks/verifier.js";
@@ -52,6 +54,7 @@ const app = createApp({
   logger,
   database,
   webhookVerifier: createWebhookVerifier(config, logger),
+  panelService: new PanelService(database.db, createLlm(config, database.db, logger), logger),
   commerce: { cartService, merchantSlug: config.MERCHANT_SLUG, policy: demo.merchant.checkout },
   webDistDir,
 });

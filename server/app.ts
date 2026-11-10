@@ -1,5 +1,6 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
+import { ZodError } from "zod";
 import express, { type ErrorRequestHandler, type Express } from "express";
 import type { Logger } from "pino";
 import { cartRoutes } from "./agent-api/cartRoutes.js";
@@ -7,6 +8,8 @@ import { paymentRoutes } from "./agent-api/paymentRoutes.js";
 import type { CartService } from "./commerce/cart.js";
 import type { CheckoutPolicy } from "./demo/data.js";
 import { mcpRoutes } from "./mcp/routes.js";
+import type { PanelService } from "./panel/panelService.js";
+import { panelRoutes } from "./panel/routes.js";
 import { webhookRoutes } from "./webhooks/routes.js";
 import { WebhookService } from "./webhooks/service.js";
 import type { WebhookVerifier } from "./webhooks/verifier.js";
@@ -24,6 +27,8 @@ export interface AppDeps {
   database?: Pick<DbHandle, "driver" | "ping"> & Partial<Pick<DbHandle, "db">>;
   /** Agent commerce surface (Cart API v1 + PayPal return pages). */
   commerce?: { cartService: CartService; merchantSlug: string; policy: CheckoutPolicy };
+  /** AI shopper panel (dashboard API). Needs the database. */
+  panelService?: PanelService;
   /** Verifies PayPal webhook signatures. When absent, /webhooks/paypal is not served. */
   webhookVerifier?: WebhookVerifier;
   /** Directory holding the built web app (dist/web). Served only when it exists. */
@@ -36,6 +41,7 @@ export function createApp({
   database,
   commerce,
   webhookVerifier,
+  panelService,
   webDistDir,
 }: AppDeps): Express {
   const app = express();
@@ -83,6 +89,19 @@ export function createApp({
     }
   }
 
+  if (panelService && database?.db) {
+    app.use(
+      "/api/panels",
+      panelRoutes({
+        db: database.db,
+        service: panelService,
+        merchantSlug: config.MERCHANT_SLUG,
+        adminToken: config.STORE_API_TOKEN,
+        readOnly: config.DEMO_MODE === "replay",
+      }),
+    );
+  }
+
   if (webhookVerifier && database?.db) {
     app.use(
       "/webhooks",
@@ -107,6 +126,10 @@ export function createApp({
   });
 
   const errorHandler: ErrorRequestHandler = (err, req, res, _next) => {
+    if (err instanceof ZodError) {
+      res.status(400).json({ error: "invalid_request", issues: err.issues.map((i) => i.message) });
+      return;
+    }
     logger.error({ err, path: req.path }, "Unhandled request error");
     res.status(500).json({ error: "internal_error" });
   };
