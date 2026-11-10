@@ -31,6 +31,11 @@ const ConfigSchema = z.object({
   MERCHANT_SLUG: z.string().default("mayabazar"),
   /** Bearer token agents present to the Cart API (stand-in for the PayPal-issued JWT). */
   STORE_API_TOKEN: z.string().min(8).default(DEFAULT_STORE_API_TOKEN),
+  /** PayPal REST credentials. Without them the offline gateway is used (tests, keyless replay). */
+  PAYPAL_ENV: z.enum(["sandbox", "production"]).default("sandbox"),
+  PAYPAL_CLIENT_ID: z.string().min(10).optional(),
+  PAYPAL_CLIENT_SECRET: z.string().min(10).optional(),
+  PAYPAL_WEBHOOK_ID: z.string().optional(),
 });
 
 export type AppConfig = z.infer<typeof ConfigSchema>;

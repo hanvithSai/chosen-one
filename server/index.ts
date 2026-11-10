@@ -7,7 +7,7 @@ import { openDatabase } from "./db/client.js";
 import { loadDemoData } from "./demo/data.js";
 import { seedDemo } from "./demo/seed.js";
 import { createLogger } from "./logger.js";
-import { FakePaymentGateway } from "./payments/gateway.js";
+import { createGateway } from "./payments/createGateway.js";
 
 loadDotEnvFile();
 const config = loadConfig();
@@ -30,8 +30,7 @@ if (config.SEED_DEMO_ON_START) {
   logger.info({ created: summary.created }, "Demo merchant ready");
 }
 
-// The PayPal gateway replaces this offline gateway once PayPal credentials are configured.
-const gateway = new FakePaymentGateway();
+const gateway = createGateway(config, demo.merchant.name, logger);
 const cartService = new CartService(database.db, {
   merchantSlug: config.MERCHANT_SLUG,
   policy: demo.merchant.checkout,
