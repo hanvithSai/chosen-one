@@ -27,13 +27,18 @@ let app: ReturnType<typeof createApp>;
 beforeAll(async () => {
   database = await createTestDatabase({ seed: true });
   const config = loadConfig({ NODE_ENV: "test", STORE_API_TOKEN: TOKEN });
+  const policy = loadDemoData().merchant.checkout;
   const cartService = new CartService(database.db, {
     merchantSlug: "mayabazar",
-    policy: loadDemoData().merchant.checkout,
+    policy,
     publicBaseUrl: "http://localhost:3000",
     gateway: new FakePaymentGateway(),
   });
-  app = createApp({ config, logger: createLogger(config), commerce: { cartService } });
+  app = createApp({
+    config,
+    logger: createLogger(config),
+    commerce: { cartService, merchantSlug: "mayabazar", policy },
+  });
 });
 
 afterAll(async () => {
