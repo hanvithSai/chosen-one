@@ -3,7 +3,7 @@ import { z } from "zod";
 import type { LlmService } from "../ai/llm.js";
 import { getCatalog, getMerchantBySlug, type Product } from "../commerce/catalog.js";
 import type { Db } from "../db/client.js";
-import { proposals, sourceNotes } from "../db/schema.js";
+import { catalogVersions, products, proposals, sourceNotes } from "../db/schema.js";
 
 /** Facts a fix may add. Price and stock are deliberately not here: they are never AI-written. */
 export const FIX_FIELDS = [
@@ -183,44 +183,36 @@ export interface ProposalView {
   status: string;
 }
 
-/** Proposals for the newest catalog version, ready to show the merchant. */
+/** All of the merchant's proposals (every catalog version), ready to show the merchant. */
 export async function listProposals(
   db: Db,
   merchantSlug: string,
   status?: string,
 ): Promise<ProposalView[]> {
-  const catalog = await getCatalog(db, merchantSlug);
-  const byId = new Map(catalog.products.map((p) => [p.id, p]));
+  const merchant = await getMerchantBySlug(db, merchantSlug);
   const rows = await db
-    .select()
+    .select({ proposal: proposals, product: products })
     .from(proposals)
+    .innerJoin(products, eq(proposals.productId, products.id))
+    .innerJoin(catalogVersions, eq(products.catalogVersionId, catalogVersions.id))
     .where(
       status === undefined
-        ? inArray(proposals.productId, [...byId.keys()])
-        : and(
-            inArray(proposals.productId, [...byId.keys()]),
-            eq(proposals.status, status as never),
-          ),
+        ? eq(catalogVersions.merchantId, merchant.id)
+        : and(eq(catalogVersions.merchantId, merchant.id), eq(proposals.status, status as never)),
     );
-  const notes = await db
-    .select()
-    .from(sourceNotes)
-    .where(eq(sourceNotes.merchantId, catalog.merchant.id));
+  const notes = await db.select().from(sourceNotes).where(eq(sourceNotes.merchantId, merchant.id));
   const noteTitle = new Map(notes.map((n) => [n.id, n.title]));
   return rows
-    .map((row) => {
-      const product = byId.get(row.productId)!;
-      return {
-        id: row.id,
-        sku: product.sku,
-        productTitle: product.title,
-        field: row.field,
-        value: row.value,
-        quote: row.quote,
-        noteTitle: row.sourceNoteId ? (noteTitle.get(row.sourceNoteId) ?? null) : null,
-        reasonCategory: row.reasonCategory,
-        status: row.status,
-      };
-    })
+    .map(({ proposal, product }) => ({
+      id: proposal.id,
+      sku: product.sku,
+      productTitle: product.title,
+      field: proposal.field,
+      value: proposal.value,
+      quote: proposal.quote,
+      noteTitle: proposal.sourceNoteId ? (noteTitle.get(proposal.sourceNoteId) ?? null) : null,
+      reasonCategory: proposal.reasonCategory,
+      status: proposal.status,
+    }))
     .sort((a, b) => a.sku.localeCompare(b.sku) || a.field.localeCompare(b.field));
 }
