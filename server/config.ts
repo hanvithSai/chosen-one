@@ -36,6 +36,19 @@ const ConfigSchema = z.object({
   PAYPAL_CLIENT_ID: z.string().min(10).optional(),
   PAYPAL_CLIENT_SECRET: z.string().min(10).optional(),
   PAYPAL_WEBHOOK_ID: z.string().optional(),
+  /** LLM providers (free tiers) used through the Vercel AI SDK. A missing key disables that slot. */
+  GOOGLE_GENERATIVE_AI_API_KEY: z.string().min(10).optional(),
+  GROQ_API_KEY: z.string().min(10).optional(),
+  GEMINI_MAIN_MODEL: z.string().default("gemini-3.5-flash"),
+  GEMINI_PANEL_MODEL: z.string().default("gemini-flash-lite-latest"),
+  GROQ_PANEL_MODEL: z.string().default("openai/gpt-oss-120b"),
+  /** Free-tier quotas (requests/min, tokens/min, requests/day, tokens/day), kept below the real caps. */
+  GEMINI_PANEL_RPM: z.coerce.number().int().positive().default(10),
+  GEMINI_PANEL_TPM: z.coerce.number().int().positive().default(250000),
+  GEMINI_PANEL_RPD: z.coerce.number().int().positive().default(500),
+  GROQ_PANEL_RPM: z.coerce.number().int().positive().default(30),
+  GROQ_PANEL_TPM: z.coerce.number().int().positive().default(8000),
+  GROQ_PANEL_TPD: z.coerce.number().int().positive().default(200000),
 });
 
 export type AppConfig = z.infer<typeof ConfigSchema>;
