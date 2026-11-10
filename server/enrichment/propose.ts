@@ -1,4 +1,4 @@
-import { and, eq, inArray } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import { z } from "zod";
 import type { LlmService } from "../ai/llm.js";
 import { getCatalog, getMerchantBySlug, type Product } from "../commerce/catalog.js";
