@@ -8,6 +8,7 @@ import { loadDemoData } from "./demo/data.js";
 import { seedDemo } from "./demo/seed.js";
 import { createLogger } from "./logger.js";
 import { createGateway } from "./payments/createGateway.js";
+import { createWebhookVerifier } from "./webhooks/verifier.js";
 
 loadDotEnvFile();
 const config = loadConfig();
@@ -47,6 +48,7 @@ const app = createApp({
   config,
   logger,
   database,
+  webhookVerifier: createWebhookVerifier(config, logger),
   commerce: { cartService, merchantSlug: config.MERCHANT_SLUG, policy: demo.merchant.checkout },
   webDistDir,
 });
