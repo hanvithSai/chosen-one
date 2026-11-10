@@ -49,12 +49,14 @@ const cartService = new CartService(database.db, {
 const here = path.dirname(fileURLToPath(import.meta.url));
 const webDistDir = path.resolve(here, "../web");
 
+const llm = createLlm(config, database.db, logger);
 const app = createApp({
   config,
   logger,
   database,
   webhookVerifier: createWebhookVerifier(config, logger),
-  panelService: new PanelService(database.db, createLlm(config, database.db, logger), logger),
+  llm,
+  panelService: new PanelService(database.db, llm, logger),
   commerce: { cartService, merchantSlug: config.MERCHANT_SLUG, policy: demo.merchant.checkout },
   webDistDir,
 });

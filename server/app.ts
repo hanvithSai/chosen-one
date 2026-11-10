@@ -8,6 +8,8 @@ import { paymentRoutes } from "./agent-api/paymentRoutes.js";
 import type { CartService } from "./commerce/cart.js";
 import type { CheckoutPolicy } from "./demo/data.js";
 import { mcpRoutes } from "./mcp/routes.js";
+import { enrichmentRoutes } from "./enrichment/routes.js";
+import type { LlmService } from "./ai/llm.js";
 import type { PanelService } from "./panel/panelService.js";
 import { panelRoutes } from "./panel/routes.js";
 import { webhookRoutes } from "./webhooks/routes.js";
@@ -29,6 +31,8 @@ export interface AppDeps {
   commerce?: { cartService: CartService; merchantSlug: string; policy: CheckoutPolicy };
   /** AI shopper panel (dashboard API). Needs the database. */
   panelService?: PanelService;
+  /** LLM used to draft catalog fixes. */
+  llm?: LlmService;
   /** Verifies PayPal webhook signatures. When absent, /webhooks/paypal is not served. */
   webhookVerifier?: WebhookVerifier;
   /** Directory holding the built web app (dist/web). Served only when it exists. */
@@ -42,6 +46,7 @@ export function createApp({
   commerce,
   webhookVerifier,
   panelService,
+  llm,
   webDistDir,
 }: AppDeps): Express {
   const app = express();
@@ -95,6 +100,19 @@ export function createApp({
       panelRoutes({
         db: database.db,
         service: panelService,
+        merchantSlug: config.MERCHANT_SLUG,
+        adminToken: config.STORE_API_TOKEN,
+        readOnly: config.DEMO_MODE === "replay",
+      }),
+    );
+  }
+
+  if (llm && database?.db) {
+    app.use(
+      "/api/proposals",
+      enrichmentRoutes({
+        db: database.db,
+        llm,
         merchantSlug: config.MERCHANT_SLUG,
         adminToken: config.STORE_API_TOKEN,
         readOnly: config.DEMO_MODE === "replay",
