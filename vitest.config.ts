@@ -8,5 +8,7 @@ export default defineConfig({
     // well over 10s when several start at once on modest hardware or CI runners.
     hookTimeout: 60_000,
     testTimeout: 30_000,
+    // Each worker may hold an in-memory Postgres; fewer workers avoids memory pressure.
+    maxWorkers: 4,
   },
 });
