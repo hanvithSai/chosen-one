@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { loadDashboard, type Dashboard } from "./api";
+import { ChittiTab } from "./components/ChittiTab";
 import { ConnectTab } from "./components/ConnectTab";
 import { FixesTab } from "./components/FixesTab";
 import { MeasureTab } from "./components/MeasureTab";
@@ -10,6 +11,7 @@ const TABS = [
   { id: "measure", label: "1. Measure" },
   { id: "fix", label: "2. Fix" },
   { id: "prove", label: "3. Prove" },
+  { id: "chitti", label: "Shop with Chitti" },
   { id: "connect", label: "Connect an agent" },
 ] as const;
 type TabId = (typeof TABS)[number]["id"];
@@ -102,6 +104,7 @@ export function App() {
                   activity={data.activity}
                 />
               )}
+              {tab === "chitti" && <ChittiTab />}
               {tab === "connect" && <ConnectTab />}
             </div>
           </>
