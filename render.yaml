@@ -1,0 +1,42 @@
+# Render Blueprint: one free web service. Postgres is Neon (free), not a Render database.
+# Secret values are marked `sync: false`; Render asks for them when the Blueprint is created.
+services:
+  - type: web
+    name: chosen-one
+    runtime: node
+    plan: free
+    region: virginia # closest to the Neon project in AWS us-east-1
+    branch: main
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
+      # Public demo: recorded results only, so visitors cannot start new (quota-costly) panel runs.
+      - key: DEMO_MODE
+        value: replay
+      - key: PAYPAL_ENV
+        value: sandbox
+      - key: SEED_DEMO_ON_START
+        value: "true"
+      - key: LOG_LEVEL
+        value: info
+      # PUBLIC_BASE_URL is taken from RENDER_EXTERNAL_URL automatically.
+      - key: DATABASE_URL # Neon pooled connection string
+        sync: false
+      - key: STORE_API_TOKEN # bearer token agents use; published in the README (sandbox demo)
+        sync: false
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: PAYPAL_WEBHOOK_ID # set after the first deploy, by npm run webhook:register
+        sync: false
+      - key: GOOGLE_GENERATIVE_AI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
