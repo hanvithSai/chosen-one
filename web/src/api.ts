@@ -71,6 +71,7 @@ export interface Activity {
   totals: {
     agentOrders: number;
     capturedOrders: number;
+    pendingOrders: number;
     capturedRevenue: string;
     toolCallsLast7Days: number;
   };
