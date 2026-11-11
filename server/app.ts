@@ -10,6 +10,8 @@ import { getCatalog } from "./commerce/catalog.js";
 import type { CheckoutPolicy } from "./demo/data.js";
 import { mcpRoutes } from "./mcp/routes.js";
 import { activityRoutes } from "./api/activityRoutes.js";
+import type { BuyerAgent } from "./buyer/chitti.js";
+import { buyerRoutes } from "./buyer/routes.js";
 import { enrichmentRoutes } from "./enrichment/routes.js";
 import type { LlmService } from "./ai/llm.js";
 import type { PanelService } from "./panel/panelService.js";
@@ -33,6 +35,8 @@ export interface AppDeps {
   commerce?: { cartService: CartService; merchantSlug: string; policy: CheckoutPolicy };
   /** AI shopper panel (dashboard API). Needs the database. */
   panelService?: PanelService;
+  /** In-app buyer agent (Chitti). Chat endpoint is served only when present. */
+  buyerAgent?: BuyerAgent;
   /** LLM used to draft catalog fixes. */
   llm?: LlmService;
   /** Verifies PayPal webhook signatures. When absent, /webhooks/paypal is not served. */
@@ -48,6 +52,7 @@ export function createApp({
   commerce,
   webhookVerifier,
   panelService,
+  buyerAgent,
   llm,
   webDistDir,
 }: AppDeps): Express {
@@ -123,6 +128,10 @@ export function createApp({
       "/api/activity",
       activityRoutes({ db: database.db, merchantSlug: config.MERCHANT_SLUG }),
     );
+  }
+
+  if (buyerAgent) {
+    app.use("/api/chitti", buyerRoutes({ agent: buyerAgent, logger }));
   }
 
   if (llm && database?.db) {
