@@ -7,6 +7,7 @@ import { openDatabase } from "./db/client.js";
 import { loadDemoData } from "./demo/data.js";
 import { seedRecordings } from "./demo/recordings.js";
 import { seedDemo } from "./demo/seed.js";
+import { Chitti } from "./buyer/chitti.js";
 import { createLlm } from "./ai/providers.js";
 import { createLogger } from "./logger.js";
 import { PanelService } from "./panel/panelService.js";
@@ -59,6 +60,15 @@ const app = createApp({
   database,
   webhookVerifier: createWebhookVerifier(config, logger),
   llm,
+  buyerAgent:
+    llm.has("gemini") || llm.has("groq")
+      ? new Chitti({
+          llm,
+          mcpUrl: `http://127.0.0.1:${config.PORT}/mcp`,
+          token: config.STORE_API_TOKEN,
+          logger,
+        })
+      : undefined,
   panelService: new PanelService(database.db, llm, logger),
   commerce: { cartService, merchantSlug: config.MERCHANT_SLUG, policy: demo.merchant.checkout },
   webDistDir,
