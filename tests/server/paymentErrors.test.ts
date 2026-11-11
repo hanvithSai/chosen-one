@@ -104,3 +104,55 @@ describe("payment provider failures", () => {
     ).rejects.toMatchObject({ statusCode: 502, errorName: "GATEWAY_ERROR" });
   });
 });
+
+describe("return page wording", () => {
+  async function returnPageFor(status: "COMPLETED" | "PENDING") {
+    const db = await createTestDatabase({ seed: true });
+    try {
+      const config = loadConfig({ NODE_ENV: "test", STORE_API_TOKEN: TOKEN });
+      const policy = loadDemoData().merchant.checkout;
+      const gateway: PaymentGateway = {
+        name: "stub",
+        createOrder: async () => ({
+          orderId: "ORDER1",
+          approvalUrl: "https://www.sandbox.paypal.com/checkoutnow?token=ORDER1",
+          status: "CREATED",
+        }),
+        captureOrder: async () => ({ orderId: "ORDER1", status, captureId: "CAP1" }),
+      };
+      const cartService = new CartService(db.db, {
+        merchantSlug: "mayabazar",
+        policy,
+        publicBaseUrl: "http://localhost:3000",
+        gateway,
+      });
+      const cart = await cartService.create(
+        {
+          items: [{ item_id: "MB-MUG-MONSOON", quantity: 1 }],
+          shipping_address: { country_code: "US", postal_code: "78701" },
+        },
+        { agentClient: "t" },
+      );
+      await cartService.checkout(cart.id!, {}, { agentClient: "t" });
+      const local = createApp({
+        config,
+        logger: createLogger(config),
+        database: db,
+        commerce: { cartService, merchantSlug: "mayabazar", policy },
+      });
+      return (await request(local).get("/paypal/return?token=ORDER1")).text;
+    } finally {
+      await db.close();
+    }
+  }
+
+  it("says complete only when PayPal has captured the payment", async () => {
+    expect(await returnPageFor("COMPLETED")).toContain("Payment complete");
+  });
+
+  it("says the payment is clearing when PayPal reports it pending", async () => {
+    const html = await returnPageFor("PENDING");
+    expect(html).toContain("Payment received, clearing");
+    expect(html).not.toContain("Payment complete");
+  });
+});
