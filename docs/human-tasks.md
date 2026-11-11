@@ -16,17 +16,21 @@ ChosenOne is a solo project by one developer based in India. Everything below ne
 
 | Task | Status |
 |---|---|
-| H1 Decisions | Name, shop and agent persona decided; sponsor tools still to confirm |
+| H1 Decisions | Name, shop and agent persona decided; **sponsor tools to tick on Devpost still to confirm** |
 | H3 Research storage | Decided: kept on the developer's machine only |
-| H4 PayPal sandbox | **Done**: US sandbox app, merchant and buyer; one real payment captured |
+| H4 PayPal sandbox | **Done**: US sandbox app, merchant and buyer |
 | H5 Gemini key | **Done** |
 | H6 Groq key | **Done** |
 | H7 Channel3 key | **Done** (no promo code needed) |
-| H8 Neon database | **Done** |
+| H8 Neon database | **Done** (seeded with the demo) |
 | H9 Render account | **Done** |
-| H10 Deploy | Waiting for the MCP server, webhooks and web UI |
+| H10 Deploy | **Done**: https://chosen-one-q4ox.onrender.com, webhook registered, keep-alive variable set |
 | H11 APIMatic form | **Submitted**; waiting to hear back |
-| H12–H20 | Later |
+| H12 Test checkouts | **Done**: a real agent order was approved, captured and webhook-confirmed on the hosted site |
+| H13 Product photos | Not needed: the dashboard has no product photos |
+| H14 Review demo content | To do |
+| H15–H19 | Thu 12 Nov: final review, video, Devpost, repo settings, submit |
+| H20 | After submission: freeze and keep services alive |
 
 ---
 
@@ -40,6 +44,7 @@ ChosenOne is a solo project by one developer based in India. Everything below ne
 - [x] Chose the demo shop **Mayabazar** and the in-app buyer agent **Chitti**.
 - [x] Created the PayPal sandbox accounts and app, and approved one real test payment (see H4).
 - [x] Added the Gemini, Groq and Channel3 keys, and created the Neon project (H5–H8).
+- [x] Deployed on Render, set the PayPal webhook ID and the `SERVICE_URL` variable, and approved test payments (H9, H10, H12).
 
 ---
 
@@ -75,16 +80,18 @@ ChosenOne is a solo project by one developer based in India. Everything below ne
 - [x] Restarted the coding agent; the Neon MCP server is loaded and works.
 
 ### H9. Render: free account (done)
-- [x] Account exists. Stay on the **Free** plan; don't add a payment method. Before H10, make sure Render can access the `chosen-one` repo.
+- [x] Account created; the service runs on the **Free** plan with no payment method.
 
 ---
 
 ## P1: Tue evening to Wed
 
-### H10. Deploy on Render (when the AI says it is ready, 10 min)
-- [ ] In Render, go to **New → Blueprint** and select `chosen-one`. Confirm the instance type is **Free**.
-- [ ] Enter the secret values the AI lists (the same as `.env`, plus `PUBLIC_BASE_URL`). Copy them from `.env`; never paste them into chat.
-- [ ] Send the AI the service URL. The AI registers the PayPal webhook and runs the live end-to-end test.
+### H10. Deploy on Render (done)
+- [x] Blueprint created from `render.yaml`; secrets entered in the Render dashboard.
+- [x] Service URL: https://chosen-one-q4ox.onrender.com (Render added the `-q4ox` suffix because `chosen-one` was taken; the name cannot be changed without recreating the service).
+- [x] PayPal webhook registered (`npm run webhook:register`) and `PAYPAL_WEBHOOK_ID` set in Render and `.env`.
+- [x] GitHub Actions variable `SERVICE_URL` set so the keep-alive workflow pings the service every 10 minutes.
+- Lesson: PayPal returned 401 until the client ID and secret were re-pasted without stray characters. If checkout ever fails with a `PAYMENT_PROVIDER_ERROR`, check those two values first.
 
 ### H11. APIMatic free-subscription form
 - [x] Submitted the Google form linked on https://paypalaihackathon.devpost.com/details/apimatic. Waiting to hear back; the developer passes on any reply.
@@ -93,13 +100,13 @@ ChosenOne is a solo project by one developer based in India. Everything below ne
   - **Description:** the AI drafted this from [apimatic-context-plugin.md](apimatic-context-plugin.md).
 - The form only claims the free subscription perk. The sponsor prize itself comes from ticking APIMatic on the Devpost submission (H17).
 
-### H12. Approve test checkouts
-- [ ] Browser automation is not connected in this setup, so each live test payment needs the developer to open the PayPal sandbox link the AI posts, log in as the sandbox buyer, and approve. Each takes about 30 seconds.
+### H12. Approve test checkouts (done)
+- [x] A real agent order (Chitti, $46.00) was approved by the developer as the sandbox buyer, captured as COMPLETED and confirmed by a verified webhook.
+- Tip: at PayPal's sandbox checkout choose **PayPal balance** or the **card**. Paying from the linked bank account gives a `PENDING` capture (reason `ECHECK`) that does not clear in the sandbox.
+- If the shared sandbox buyer login stops working (someone changed its password), reset it in the PayPal developer dashboard under **Testing tools → Sandbox accounts**, and update the README.
 
-### H13. Product photos (optional, 30 min)
-- [ ] Gather 12–24 photos of stoneware mugs and bowls, terracotta chai cups (kulhads) and planters, and raku vases: your own, or from Unsplash or Pexels (free licences, no visible logos).
-- [ ] Save them in `data/demo/images/` and list their sources in `data/demo/images/CREDITS.md`.
-- [ ] If skipped, the AI uses clean illustrated cards.
+### H13. Product photos (not needed)
+- The dashboard shows no product photos, so there is nothing to collect.
 
 ### H14. Review demo content (20 min)
 - [ ] Check that `data/demo/intents.json` (20 shopper requests) reads like real requests people would make.
@@ -115,14 +122,14 @@ ChosenOne is a solo project by one developer based in India. Everything below ne
 - [ ] Check that no competitor brand names or logos appear anywhere.
 
 ### H16. Record the video (Thu 11:00–18:00) **[critical]**
-- [ ] Use the AI's script and shot list (target 2:45, **under 3:00**).
+- [ ] Use the script and shot list in [demo-script.md](demo-script.md) (target 2:45, **under 3:00**).
 - [ ] Use free tools: **OBS Studio** to record, **Clipchamp (free)** or **DaVinci Resolve (free)** to edit. Record at 1080p with notifications off.
 - [ ] Record the voiceover in your own voice (an AI voiceover is also allowed). Add captions. **No copyrighted music.**
 - [ ] Show PayPal sandbox order and capture IDs clearly. Cut waiting time.
 - [ ] Upload to YouTube as **Public** by **18:00 IST**, because processing can take hours. Check it while logged out.
 
 ### H17. Devpost content (Thu 18:00–21:00)
-- [ ] Paste the AI-drafted sections. Built With tags: `paypal`, `paypal-orders-v2`, `paypal-webhooks`, `paypal-transaction-search`, `paypal-mcp`, `agentic-commerce-spec`, `gemini`, `groq`, `vercel-ai-sdk`, `mcp`, `channel3`, `apimatic`, `ag-grid`, `render`, `neon`, `postgresql`, `typescript`, `react`, `node.js`.
+- [ ] Paste the sections from [devpost.md](devpost.md). Built With tags: `paypal`, `paypal-orders-v2`, `paypal-webhooks`, `agentic-commerce-spec`, `gemini`, `groq`, `vercel-ai-sdk`, `mcp`, `channel3`, `apimatic`, `ag-grid`, `render`, `neon`, `postgresql`, `typescript`, `react`, `node.js`.
 - [ ] Add the hosted URL, repo link, YouTube link, screenshots and thumbnail (3:2, under 5 MB).
 - [ ] Tick the sponsor tools (H1.2). Add testing instructions: URL, judge path, sandbox buyer login.
 - [ ] Submit as an individual.
