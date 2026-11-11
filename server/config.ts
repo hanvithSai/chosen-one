@@ -58,6 +58,10 @@ export type AppConfig = z.infer<typeof ConfigSchema>;
 export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
   // Blank values (e.g. `KEY=` copied from .env.example) mean "unset", so defaults apply.
   const defined = Object.fromEntries(Object.entries(env).filter(([, v]) => v !== ""));
+  // Render publishes the service's public URL itself; use it unless one is set explicitly.
+  if (!defined.PUBLIC_BASE_URL && defined.RENDER_EXTERNAL_URL) {
+    defined.PUBLIC_BASE_URL = defined.RENDER_EXTERNAL_URL;
+  }
   const parsed = ConfigSchema.safeParse(defined);
   if (!parsed.success) {
     const issues = parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; ");
