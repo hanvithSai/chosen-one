@@ -43,3 +43,22 @@ describe("config", () => {
     expect(cfg.DEMO_MODE).toBe("live");
   });
 });
+
+describe("hosting configuration", () => {
+  it("uses the URL Render publishes when PUBLIC_BASE_URL is not set", () => {
+    const config = loadConfig({
+      NODE_ENV: "test",
+      RENDER_EXTERNAL_URL: "https://chosen-one.onrender.com",
+    });
+    expect(config.PUBLIC_BASE_URL).toBe("https://chosen-one.onrender.com");
+  });
+
+  it("prefers an explicit PUBLIC_BASE_URL", () => {
+    const config = loadConfig({
+      NODE_ENV: "test",
+      PUBLIC_BASE_URL: "https://example.com",
+      RENDER_EXTERNAL_URL: "https://chosen-one.onrender.com",
+    });
+    expect(config.PUBLIC_BASE_URL).toBe("https://example.com");
+  });
+});

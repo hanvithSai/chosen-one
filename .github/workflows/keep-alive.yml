@@ -1,0 +1,30 @@
+name: Keep alive
+
+# Render's free web service sleeps after 15 minutes without traffic. A visitor (or a judge)
+# would then wait about a minute for the first page. Pinging /healthz every 10 minutes
+# keeps it awake. Set the repository variable SERVICE_URL to the service's https URL.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Ping the service
+        env:
+          SERVICE_URL: ${{ vars.SERVICE_URL }}
+        run: |
+          if [ -z "$SERVICE_URL" ]; then
+            echo "::notice::SERVICE_URL is not set; nothing to ping."
+            exit 0
+          fi
+          curl --fail --silent --show-error --retry 3 --retry-delay 10 --max-time 90 \
+            "${SERVICE_URL%/}/healthz"
+          echo
