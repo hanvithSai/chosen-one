@@ -1,5 +1,6 @@
 import { payPalCartWritableSchema, type PayPalCartWritable } from "../commerce/cartSpec.js";
 import { Router, type NextFunction, type Request, type Response } from "express";
+import { PayPalApiError } from "../payments/paypalErrors.js";
 import { agentClientFrom, requireBearerToken } from "./auth.js";
 import { CartError, type CartContext, type CartService } from "../commerce/cart.js";
 
@@ -7,6 +8,18 @@ export interface CartRoutesOptions {
   cartService: CartService;
   /** Bearer token agents must present (stand-in for the PayPal-issued JWT in Store Sync). */
   storeApiToken: string;
+}
+
+/** Body for a payment provider failure: PayPal's error name and debug_id, never secrets. */
+export function paymentProviderBody(err: PayPalApiError) {
+  return {
+    name: "PAYMENT_PROVIDER_ERROR",
+    message: err.message,
+    paypal_error: err.errorName,
+    paypal_status: err.statusCode,
+    ...(err.issues.length > 0 ? { issues: err.issues } : {}),
+    ...(err.debugId ? { debug_id: err.debugId } : {}),
+  };
 }
 
 /** Store Sync Cart API v1 routes, following @paypal/agentic-commerce-spec. */
@@ -52,6 +65,10 @@ export function cartRoutes({ cartService, storeApiToken }: CartRoutesOptions): R
   router.use((err: unknown, _req: Request, res: Response, next: NextFunction) => {
     if (err instanceof CartError) {
       res.status(err.status).json(err.body);
+      return;
+    }
+    if (err instanceof PayPalApiError) {
+      res.status(502).json(paymentProviderBody(err));
       return;
     }
     next(err);

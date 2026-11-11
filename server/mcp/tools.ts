@@ -3,6 +3,8 @@ import { eq } from "drizzle-orm";
 import { z } from "zod";
 import type { Db } from "../db/client.js";
 import { orders, toolCalls } from "../db/schema.js";
+import { paymentProviderBody } from "../agent-api/cartRoutes.js";
+import { PayPalApiError } from "../payments/paypalErrors.js";
 import { CartError, type CartService } from "../commerce/cart.js";
 import {
   getCatalog,
@@ -180,6 +182,7 @@ export type ToolName = keyof typeof toolInputs;
 function describeError(err: unknown): ToolResult {
   if (err instanceof CartError) return fail({ error: err.body });
   if (err instanceof NotFoundError) return fail({ error: err.message });
+  if (err instanceof PayPalApiError) return fail({ error: paymentProviderBody(err) });
   throw err;
 }
 

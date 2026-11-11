@@ -179,7 +179,13 @@ export class PayPalGateway implements PaymentGateway {
         return await call();
       } catch (raw) {
         const error = toPayPalError(raw);
-        if (!(error instanceof PayPalApiError)) throw error;
+        if (!(error instanceof PayPalApiError)) {
+          // Network or authentication failures never reach PayPal's error format. Report them
+          // in the same shape so callers get a clear 502 instead of an anonymous 500.
+          const message = error instanceof Error ? error.message : String(error);
+          this.options.logger?.error({ op: label, err: message }, "PayPal call failed");
+          throw new PayPalApiError(502, "GATEWAY_ERROR", message.slice(0, 200), []);
+        }
         this.options.logger?.warn(
           {
             op: label,
