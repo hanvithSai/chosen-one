@@ -25,13 +25,25 @@ export function paymentRoutes({ cartService }: { cartService: CartService }): Ro
     }
     try {
       const { cart, order } = await cartService.completeByOrderId(token);
-      res.send(
-        page(
-          "Payment complete",
-          `<h1>Payment complete ✓</h1><p>Your order is confirmed. You can return to your AI assistant; it can check the order status for cart <code>${escapeHtml(cart.id ?? "")}</code>.</p>
-<p>PayPal order <code>${escapeHtml(order.paypalOrderId)}</code><br>Capture <code>${escapeHtml(order.captureId ?? "pending")}</code></p>`,
-        ),
-      );
+      const ids = `<p>PayPal order <code>${escapeHtml(order.paypalOrderId)}</code><br>Capture <code>${escapeHtml(order.captureId ?? "pending")}</code></p>`;
+      const cartRef = `<code>${escapeHtml(cart.id ?? "")}</code>`;
+      if (order.status === "COMPLETED") {
+        res.send(
+          page(
+            "Payment complete",
+            `<h1>Payment complete ✓</h1><p>Your order is confirmed. You can return to your AI assistant; it can check the order status for cart ${cartRef}.</p>${ids}`,
+          ),
+        );
+      } else {
+        // PayPal accepted the payment but has not cleared it yet (for example a bank-funded
+        // payment). Say so, rather than calling it complete.
+        res.send(
+          page(
+            "Payment received",
+            `<h1>Payment received, clearing</h1><p>PayPal accepted your approval and is clearing the payment (bank-funded payments can take a few days). The order for cart ${cartRef} is confirmed once it clears.</p>${ids}`,
+          ),
+        );
+      }
     } catch (err) {
       if (err instanceof CartError) {
         res

@@ -88,9 +88,10 @@ export function ProveTab({
         title="Real agent sales, attributed through PayPal"
         subtitle="Every order created through the store's Cart API or MCP server carries the calling agent in PayPal's custom_id, confirmed by a verified webhook."
       >
-        <dl className="mb-4 grid gap-4 text-sm md:grid-cols-4">
+        <dl className="mb-4 grid gap-4 text-sm md:grid-cols-5">
           <Stat label="Agent orders" value={String(activity.totals.agentOrders)} />
           <Stat label="Captured" value={String(activity.totals.capturedOrders)} />
+          <Stat label="Clearing at PayPal" value={String(activity.totals.pendingOrders)} />
           <Stat label="Agent revenue (sandbox)" value={`$${activity.totals.capturedRevenue}`} />
           <Stat
             label="Agent tool calls, 7 days"

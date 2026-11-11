@@ -57,6 +57,7 @@ export function activityRoutes({ db, merchantSlug }: ActivityRoutesOptions): Rou
       totals: {
         agentOrders: orderRows.length,
         capturedOrders: captured.length,
+        pendingOrders: orderRows.filter((o) => o.status === "PENDING").length,
         capturedRevenue: (captured.reduce((sum, o) => sum + o.amountCents, 0) / 100).toFixed(2),
         toolCallsLast7Days: weekly?.calls ?? 0,
       },
