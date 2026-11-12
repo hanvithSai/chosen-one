@@ -16,7 +16,7 @@ ChosenOne is a solo project by one developer based in India. Everything below ne
 
 | Task | Status |
 |---|---|
-| H1 Decisions | Name, shop and agent persona decided; **sponsor tools to tick on Devpost still to confirm** |
+| H1 Decisions | **Done**: name, shop and agent persona decided; sponsor tools ticked on Devpost (APIMatic, Channel3, Render, AG Grid) |
 | H3 Research storage | Decided: kept on the developer's machine only |
 | H4 PayPal sandbox | **Done**: US sandbox app, merchant and buyer |
 | H5 Gemini key | **Done** |
@@ -28,8 +28,12 @@ ChosenOne is a solo project by one developer based in India. Everything below ne
 | H11 APIMatic form | **Submitted**; waiting to hear back |
 | H12 Test checkouts | **Done**: a real agent order was approved, captured and webhook-confirmed on the hosted site |
 | H13 Product photos | Not needed: the dashboard has no product photos |
-| H14 Review demo content | To do |
-| H15–H19 | Thu 12 Nov: final review, video, Devpost, repo settings, submit |
+| H14 Review demo content | Not separately done; the demo content was checked through the final video and judge-path runs |
+| H15 Final review | Done through live end-to-end runs; the public Devpost page was checked |
+| H16 Video | **Done**: 2:52, public on YouTube, https://youtu.be/_bHwkebw4SA |
+| H17 Devpost content | **Done**: story, 24 tags, 7 captioned images, testing instructions, zip upload |
+| H18 GitHub repo settings | To confirm: About description, website and topics |
+| H19 Submit | **Submitted** (the public page shows "Submitted to PayPal AI Hackathon") |
 | H20 | After submission: freeze and keep services alive |
 
 ---
@@ -122,24 +126,24 @@ ChosenOne is a solo project by one developer based in India. Everything below ne
 - [ ] Check that no competitor brand names or logos appear anywhere.
 
 ### H16. Record the video (Thu 11:00–18:00) **[critical]**
-- [ ] Use the script and shot list in [demo-script.md](demo-script.md) (target 2:45, **under 3:00**).
-- [ ] Use free tools: **OBS Studio** to record, **Clipchamp (free)** or **DaVinci Resolve (free)** to edit. Record at 1080p with notifications off.
-- [ ] Record the voiceover in your own voice (an AI voiceover is also allowed). Add captions. **No copyrighted music.**
-- [ ] Show PayPal sandbox order and capture IDs clearly. Cut waiting time.
-- [ ] Upload to YouTube as **Public** by **18:00 IST**, because processing can take hours. Check it while logged out.
+- [x] The video was generated from the screenplay in [demo-script.md](demo-script.md) and `video/script.json` (2:52, **under 3:00**).
+- [x] Use free tools: **OBS Studio** to record, **Clipchamp (free)** or **DaVinci Resolve (free)** to edit. Record at 1080p with notifications off.
+- [x] Record the voiceover in your own voice (an AI voiceover is also allowed). Add captions. **No copyrighted music.**
+- [x] Show PayPal sandbox order and capture IDs clearly. Cut waiting time.
+- [x] Upload to YouTube as **Public** by **18:00 IST**, because processing can take hours. Check it while logged out.
 
 ### H17. Devpost content (Thu 18:00–21:00)
-- [ ] Paste the sections from [devpost.md](devpost.md). Built With tags: `paypal`, `paypal-orders-v2`, `paypal-webhooks`, `agentic-commerce-spec`, `gemini`, `groq`, `vercel-ai-sdk`, `mcp`, `channel3`, `apimatic`, `ag-grid`, `render`, `neon`, `postgresql`, `typescript`, `react`, `node.js`.
-- [ ] Add the hosted URL, repo link, YouTube link, screenshots and thumbnail (3:2, under 5 MB).
-- [ ] Tick the sponsor tools (H1.2). Add testing instructions: URL, judge path, sandbox buyer login.
-- [ ] Submit as an individual.
+- [x] Paste the sections from [devpost.md](devpost.md). Built With tags: `paypal`, `paypal-orders-v2`, `paypal-webhooks`, `agentic-commerce-spec`, `gemini`, `groq`, `vercel-ai-sdk`, `mcp`, `channel3`, `apimatic`, `ag-grid`, `render`, `neon`, `postgresql`, `typescript`, `react`, `node.js`.
+- [x] Add the hosted URL, repo link, YouTube link, screenshots and thumbnail (3:2, under 5 MB).
+- [x] Tick the sponsor tools (H1.2). Add testing instructions: URL, judge path, sandbox buyer login.
+- [x] Submit as an individual.
 
 ### H18. GitHub repo settings (5 min)
 - [ ] In the About box, add the description, website (the hosted URL) and topics: `paypal`, `agentic-commerce`, `mcp`, `ai-agents`, `hackathon`.
 - [ ] Check the license shows as MIT and the repo is Public.
 
 ### H19. Submit (by 22:00 IST; hard deadline Fri 01:30 IST)
-- [ ] Submit on Devpost and confirm the status isn't "Draft".
+- [x] Submit on Devpost and confirm the status isn't "Draft".
 
 ---
 
