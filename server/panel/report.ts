@@ -15,6 +15,8 @@ export interface IntentResult {
   outcome: string;
   chosenStore: string | null;
   rationale: string | null;
+  /** For a lost request: the shopper's reason about this store's own listing, if it gave one. */
+  ourReason?: { category: string; reason: string | null; product: string };
 }
 
 export interface PanelSummary {
@@ -73,10 +75,18 @@ export async function summarizePanel(
     lostRunIds.length === 0
       ? []
       : await db.select().from(considerations).where(inArray(considerations.runId, lostRunIds));
+  const ourReasonByRun = new Map<string, NonNullable<IntentResult["ourReason"]>>();
   const reasons = new Map<string, LostReason>();
   for (const row of reasonRows) {
     const ours = row.productRef.startsWith(`${merchantSlug}:`);
     if (!ours || row.verdict === "chosen" || !row.reasonCategory) continue;
+    if (!ourReasonByRun.has(row.runId)) {
+      ourReasonByRun.set(row.runId, {
+        category: row.reasonCategory,
+        reason: row.reason,
+        product: row.productRef,
+      });
+    }
     const entry = reasons.get(row.reasonCategory) ?? {
       category: row.reasonCategory,
       count: 0,
@@ -117,6 +127,7 @@ export async function summarizePanel(
       outcome: run.outcome,
       chosenStore: run.chosenStore,
       rationale: run.rationale,
+      ourReason: ourReasonByRun.get(run.id),
     })),
   };
 }
