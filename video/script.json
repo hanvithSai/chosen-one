@@ -1,0 +1,185 @@
+{
+  "title": "ChosenOne demo video",
+  "scenes": [
+    {
+      "id": "s1",
+      "name": "The problem",
+      "sentences": [
+        {
+          "say": "Meet Maya. She runs a small online shop that sells handmade clay mugs and pots.",
+          "caption": "Meet Maya. She runs a small online shop that sells handmade clay mugs and pots."
+        },
+        {
+          "say": "More and more shoppers now ask an AI assistant to buy things for them.",
+          "caption": "More and more shoppers now ask an AI assistant to buy things for them."
+        },
+        {
+          "say": "The assistant compares shops, and picks just one.",
+          "caption": "The assistant compares shops, and picks just one."
+        },
+        {
+          "say": "Maya has no way to know if it was her, or why it wasn't.",
+          "caption": "Maya has no way to know if it was her, or why it wasn't."
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "name": "The product",
+      "sentences": [
+        {
+          "say": "ChosenOne is a dashboard for shop owners like Maya, built on PayPal.",
+          "caption": "ChosenOne: a dashboard for small shop owners, built on PayPal."
+        },
+        {
+          "say": "It shows how often AI shopping agents pick your shop, and why they don't.",
+          "caption": "It shows how often AI shopping agents pick your shop, and why they don't."
+        },
+        {
+          "say": "Then it helps you fix it, and proves the result with real sales.",
+          "caption": "Then it helps you fix it, and proves the result with real sales."
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "name": "Measure",
+      "sentences": [
+        {
+          "say": "Here is Maya's dashboard. We ran twenty AI shoppers, each with a real request, like a dishwasher safe mug as a birthday gift.",
+          "caption": "20 AI shoppers, each with a real request."
+        },
+        {
+          "say": "Each one compared Maya's shop with competitors, and bought from one store, or none.",
+          "caption": "Each compares Maya's shop with competitors and buys from one store, or none."
+        },
+        {
+          "say": "The score is called Pick Rate. Before any fixes, Maya was picked only fifteen percent of the time.",
+          "caption": "PickRate before fixes: 15%"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "name": "Why she loses",
+      "sentences": [
+        {
+          "say": "Why did Maya lose? The dashboard lists every lost sale, in the shopper's own words.",
+          "caption": "Every lost sale, in the shopper's own words."
+        },
+        {
+          "say": "One shopper wanted food safe clay cups, and said: no statement of food safety.",
+          "caption": "\"No statement of food safety for the clay cups\""
+        },
+        {
+          "say": "Maya knew they were safe. But that fact was only in her private notes, not on the product page.",
+          "caption": "The fact was only in Maya's private notes, not on the product page."
+        },
+        {
+          "say": "Every lost sale also comes with a suggested action.",
+          "caption": "Every lost sale comes with a suggested action."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "name": "Fix",
+      "sentences": [
+        {
+          "say": "So the AI reads Maya's own notes, and drafts the missing facts for each product.",
+          "caption": "The AI drafts missing facts from Maya's own notes."
+        },
+        {
+          "say": "Every fact must quote her notes. The code checks the quote, and every number, so nothing is made up.",
+          "caption": "Every fact quotes her notes. Code checks the quote and the numbers."
+        },
+        {
+          "say": "Prices and stock are never touched. Maya approves two hundred and sixty seven facts across her twenty four products.",
+          "caption": "267 facts approved across 24 products. Prices and stock never change."
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "name": "Result",
+      "sentences": [
+        {
+          "say": "Then we ran the same twenty shoppers again.",
+          "caption": "Same 20 shoppers, run again."
+        },
+        {
+          "say": "Maya's Pick Rate jumped from fifteen percent to sixty percent. Ten sales won back.",
+          "caption": "PickRate: 15% to 60%. Ten sales won back."
+        },
+        {
+          "say": "Eight are still lost, for reasons only Maya can fix, like not shipping to Canada.",
+          "caption": "8 still lost: reasons only Maya can fix, like shipping to Canada."
+        },
+        {
+          "say": "This is a small simulated test, so it shows the method, not a guarantee.",
+          "caption": "A small simulated test: it shows the method, not a guarantee."
+        }
+      ]
+    },
+    {
+      "id": "s7a",
+      "name": "Agent buys",
+      "sentences": [
+        {
+          "say": "Now the real proof. An AI shopping agent named Chitti buys from Maya's shop.",
+          "caption": "Now a real AI agent buys from Maya's shop."
+        },
+        {
+          "say": "It talks to the shop through an open standard called M C P. It searches, reads the facts and policies, and builds a cart priced by the shop.",
+          "caption": "The agent searches, reads facts and policies, and builds a cart priced by the shop."
+        },
+        {
+          "say": "Then it starts a PayPal checkout, and hands the payment link to the shopper.",
+          "caption": "Then it starts a PayPal checkout."
+        }
+      ]
+    },
+    {
+      "id": "s7b",
+      "name": "PayPal approval",
+      "sentences": [
+        {
+          "say": "Here is PayPal's own checkout. The shopper logs in, chooses how to pay, and approves.",
+          "caption": "PayPal's own checkout (sandbox): log in, choose how to pay, approve."
+        },
+        {
+          "say": "The payment is captured, and PayPal records which agent brought the sale.",
+          "caption": "The payment is captured, and PayPal records which agent brought the sale."
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "name": "Proof",
+      "sentences": [
+        {
+          "say": "Back in the dashboard, the order shows the agent, the amount, the PayPal capture, and a verified webhook.",
+          "caption": "Agent, amount, PayPal capture and a verified webhook."
+        },
+        {
+          "say": "So Maya can finally see which AI agents bring her sales.",
+          "caption": "Maya can finally see which AI agents bring her sales."
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "name": "Close",
+      "sentences": [
+        {
+          "say": "ChosenOne. Measure, fix, prove. Built on PayPal orders, webhooks and the Store Sync cart A P I, with Gemini and Groq free tiers.",
+          "caption": "ChosenOne: Measure. Fix. Prove."
+        },
+        {
+          "say": "It's open source, and live now.",
+          "caption": "Open source and live now."
+        }
+      ]
+    }
+  ]
+}
