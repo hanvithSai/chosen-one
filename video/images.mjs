@@ -8,15 +8,33 @@ mkdirSync("out/images", { recursive: true });
 const shots = [
   { file: "01-landing.png", path: "/#/", wait: "text=Be the shop AI shopping agents" },
   { file: "02-overview.png", path: "/#/app", wait: "text=Your biggest opportunities" },
-  { file: "03-where-you-lose.png", path: "/#/app/lost", wait: "text=The shopper said", click: "text=Lost before the fixes" },
+  {
+    file: "03-where-you-lose.png",
+    path: "/#/app/lost",
+    wait: "text=The shopper said",
+    click: "text=Lost before the fixes",
+  },
   { file: "04-fixes.png", path: "/#/app/fixes", wait: "text=Fixes the AI drafted", settle: 2500 },
-  { file: "05-before-vs-after.png", path: "/#/app/proof", wait: "text=Sales won back after the fixes" },
-  { file: "06-agent-orders.png", path: "/#/app/proof", wait: "text=Real agent sales", scroll: "text=Real agent sales", settle: 2500 },
+  {
+    file: "05-before-vs-after.png",
+    path: "/#/app/proof",
+    wait: "text=Sales won back after the fixes",
+  },
+  {
+    file: "06-agent-orders.png",
+    path: "/#/app/proof",
+    wait: "text=Real agent sales",
+    scroll: "text=Real agent sales",
+    settle: 2500,
+  },
   { file: "07-connect-agents.png", path: "/#/app/connect", wait: "text=Let any AI agent shop" },
 ];
 
 const browser = await chromium.launch({ executablePath: EDGE, headless: true });
-const ctx = await browser.newContext({ viewport: { width: 1500, height: 1000 }, deviceScaleFactor: 1 });
+const ctx = await browser.newContext({
+  viewport: { width: 1500, height: 1000 },
+  deviceScaleFactor: 1,
+});
 const page = await ctx.newPage();
 await page.goto(BASE + "/", { waitUntil: "networkidle", timeout: 90000 });
 for (const s of shots) {

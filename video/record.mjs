@@ -41,10 +41,16 @@ async function overlay(page) {
 }
 
 async function cursorTo(page, x, y) {
-  await page.evaluate(([px, py]) => {
-    const c = document.querySelector(".co-cursor");
-    if (c) { c.style.left = px + "px"; c.style.top = py + "px"; }
-  }, [x, y]);
+  await page.evaluate(
+    ([px, py]) => {
+      const c = document.querySelector(".co-cursor");
+      if (c) {
+        c.style.left = px + "px";
+        c.style.top = py + "px";
+      }
+    },
+    [x, y],
+  );
   await sleep(750);
 }
 
@@ -59,19 +65,25 @@ async function click(page, loc) {
   await point(page, loc);
   const box = await loc.boundingBox();
   if (box) {
-    await page.evaluate(([x, y]) => {
-      const r = document.createElement("div");
-      r.className = "co-ripple";
-      r.style.left = x + "px"; r.style.top = y + "px";
-      document.body.appendChild(r);
-      setTimeout(() => r.remove(), 700);
-    }, [box.x + Math.min(box.width / 2, 160), box.y + box.height / 2]);
+    await page.evaluate(
+      ([x, y]) => {
+        const r = document.createElement("div");
+        r.className = "co-ripple";
+        r.style.left = x + "px";
+        r.style.top = y + "px";
+        document.body.appendChild(r);
+        setTimeout(() => r.remove(), 700);
+      },
+      [box.x + Math.min(box.width / 2, 160), box.y + box.height / 2],
+    );
   }
   await loc.click();
 }
 
-const hl = (loc, on = true) => loc.evaluate((el, v) => el.classList.toggle("co-hl", v), on).catch(() => {});
-const center = (loc) => loc.evaluate((el) => el.scrollIntoView({ behavior: "smooth", block: "center" })).catch(() => {});
+const hl = (loc, on = true) =>
+  loc.evaluate((el, v) => el.classList.toggle("co-hl", v), on).catch(() => {});
+const center = (loc) =>
+  loc.evaluate((el) => el.scrollIntoView({ behavior: "smooth", block: "center" })).catch(() => {});
 
 /** A full-screen magenta flash. assemble.mjs finds its last frame to align the cut exactly. */
 async function syncFlash(page) {
@@ -100,8 +112,14 @@ async function open(browser, id, url, ready) {
   const t0 = Date.now();
   const scene = byId[id];
   return {
-    ctx, page, scene, lead: (t0 - created) / 1000,
-    at: async (sec) => { const w = t0 + sec * 1000 - Date.now(); if (w > 0) await sleep(w); },
+    ctx,
+    page,
+    scene,
+    lead: (t0 - created) / 1000,
+    at: async (sec) => {
+      const w = t0 + sec * 1000 - Date.now();
+      if (w > 0) await sleep(w);
+    },
     now: () => (Date.now() - t0) / 1000,
     sent: (i) => scene.sentences[i]?.offset ?? 0,
   };
@@ -114,11 +132,17 @@ async function close(s, extra = {}) {
   const file = await video.path();
   const out = `build/vid/${s.scene.id}.webm`;
   renameSync(file, out);
-  writeFileSync(`build/vid/${s.scene.id}.json`, JSON.stringify({ lead: s.lead, duration: s.scene.duration, ...extra }, null, 2));
-  console.log(`recorded ${s.scene.id}  lead=${s.lead.toFixed(2)}s  len=${s.scene.duration.toFixed(1)}s`);
+  writeFileSync(
+    `build/vid/${s.scene.id}.json`,
+    JSON.stringify({ lead: s.lead, duration: s.scene.duration, ...extra }, null, 2),
+  );
+  console.log(
+    `recorded ${s.scene.id}  lead=${s.lead.toFixed(2)}s  len=${s.scene.duration.toFixed(1)}s`,
+  );
 }
 
-const nav = (page, label) => page.locator(`nav[aria-label="Merchant app"] button:has-text("${label}")`);
+const nav = (page, label) =>
+  page.locator(`nav[aria-label="Merchant app"] button:has-text("${label}")`);
 
 const scenes = {
   async s1(b) {
@@ -187,7 +211,11 @@ const scenes = {
     await hl(s.page.locator('.ag-header-cell:has-text("Quoted from")'));
     await s.at(s.sent(2) - 0.2);
     await hl(s.page.locator('.ag-header-cell:has-text("Quoted from")'), false);
-    await s.page.locator("section:has-text('Fixes the AI drafted')").first().evaluate((el) => el.scrollIntoView({ behavior: "smooth", block: "start" })).catch(() => {});
+    await s.page
+      .locator("section:has-text('Fixes the AI drafted')")
+      .first()
+      .evaluate((el) => el.scrollIntoView({ behavior: "smooth", block: "start" }))
+      .catch(() => {});
     await s.at(s.sent(2) + 1);
     await hl(s.page.locator("text=prices, stock levels or promises invented").locator("xpath=.."));
     await close(s);
@@ -219,7 +247,8 @@ const scenes = {
   },
   /** Chitti chat, then PayPal checkout, recorded as one continuous take (cut and timed by assemble.mjs). */
   async s7(b) {
-    const a = byId.s7a, p = byId.s7b;
+    const a = byId.s7a,
+      p = byId.s7b;
     const dir = "build/vid/s7";
     rmSync(dir, { recursive: true, force: true });
     const ctx = await b.newContext({ viewport: VIEW, recordVideo: { dir, size: VIEW } });
@@ -236,7 +265,10 @@ const scenes = {
     const input = page.locator('input[aria-label="Message to Chitti"]');
     await click(page, input);
     m.typeStart = T();
-    await input.pressSequentially("Buy one Monsoon Mug now and check out. Ship to 500 Congress Ave, Austin, TX 78701. I confirm.", { delay: 32 });
+    await input.pressSequentially(
+      "Buy one Monsoon Mug now and check out. Ship to 500 Congress Ave, Austin, TX 78701. I confirm.",
+      { delay: 32 },
+    );
     await sleep(400);
     m.send = T();
     await click(page, page.locator('button:has-text("Send")'));
@@ -286,7 +318,10 @@ const scenes = {
     const video = page.video();
     await ctx.close();
     renameSync(await video.path(), "build/vid/s7.webm");
-    writeFileSync("build/vid/s7.json", JSON.stringify({ ...m, aDur: a.duration, pDur: p.duration }, null, 2));
+    writeFileSync(
+      "build/vid/s7.json",
+      JSON.stringify({ ...m, aDur: a.duration, pDur: p.duration }, null, 2),
+    );
     console.log("recorded s7", JSON.stringify(m));
   },
   async s8(b) {
@@ -316,7 +351,11 @@ const scenes = {
   },
 };
 
-const browser = await chromium.launch({ executablePath: EDGE, headless: true, args: ["--hide-scrollbars"] });
+const browser = await chromium.launch({
+  executablePath: EDGE,
+  headless: true,
+  args: ["--hide-scrollbars"],
+});
 mkdirSync("build/vid", { recursive: true });
 const order = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9"];
 for (const id of order) {
