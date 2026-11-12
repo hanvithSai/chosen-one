@@ -18,6 +18,7 @@ export interface IntentResult {
   outcome: "bought_ours" | "bought_competitor" | "no_purchase" | "error";
   chosenStore: string | null;
   rationale: string | null;
+  ourReason?: { category: string; reason: string | null; product: string };
 }
 
 export interface PanelSummary {
