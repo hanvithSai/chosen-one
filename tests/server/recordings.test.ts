@@ -72,3 +72,17 @@ describe("demo recordings", () => {
     }
   });
 });
+
+describe("per-request reasons for lost sales", () => {
+  it("attaches the shopper's reason about the store's own listing to each lost request", async () => {
+    const rows = await database.db.select().from(panels);
+    const after = (
+      await Promise.all(rows.map((r) => summarizePanel(database.db, r.id, "mayabazar")))
+    ).find((s) => s?.label !== "Baseline")!;
+    const lost = after.results.filter((r) => r.outcome !== "bought_ours");
+    expect(lost.length).toBe(8);
+    expect(lost.every((r) => r.ourReason?.category)).toBe(true);
+    const won = after.results.filter((r) => r.outcome === "bought_ours");
+    expect(won.every((r) => r.ourReason === undefined)).toBe(true);
+  });
+});
