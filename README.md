@@ -29,11 +29,12 @@ The fixes added 267 facts across 24 listings (dishwasher safe, size, delivery ti
 
 ## Judge path (5 minutes)
 
-1. **Open the live demo.** The dashboard shows PickRate 15% → 60%.
-2. **Measure:** why shoppers rejected the shop, who won the sales instead (competitors are anonymised), and all 20 requests with the shopper's reasoning.
-3. **Fix:** the 267 facts the AI drafted, each with the quote from the shop's own notes that supports it.
-4. **Prove:** the sales won back, and the real agent orders attributed through PayPal.
-5. **Shop with Chitti.** Chitti is an AI buyer that uses the store's own MCP server. Ask it for a mug under $40 delivered to Austin, TX 78701, then tell it to check out. Click **Approve on PayPal (sandbox)** and log in as the sandbox buyer:
+1. **Open the live demo.** The landing page explains the product; click **Open the demo** to enter the merchant app. The **Overview** shows the setup checklist and PickRate 15% → 60%.
+2. **Where you lose:** every shopper request the shop did not win, with what the shopper said and a suggested action. Tabs show what is still lost, what the fixes recovered, and what was lost before.
+3. **Shopper results:** all 20 requests, before and after, and who won the sales instead (competitors are anonymised).
+4. **Fixes:** the 267 facts the AI drafted, each with the quote from the shop's own notes that supports it.
+5. **Before vs after:** the sales won back, and the real agent orders attributed through PayPal.
+6. **Try as a shopper.** Chitti is an AI buyer that uses the store's own MCP server. Ask it for a mug under $40 delivered to Austin, TX 78701, then tell it to check out. Click **Approve on PayPal (sandbox)** and log in as the sandbox buyer:
 
    | | |
    |---|---|
@@ -41,8 +42,8 @@ The fixes added 267 facts across 24 listings (dishwasher safe, size, delivery ti
    | Password | `d&!63'yS` |
 
    On PayPal's page choose **PayPal balance** or the **card** as the payment method. (A payment from the linked bank account stays `PENDING`, which the sandbox never clears.)
-6. **Back on the dashboard**, open **Prove**: the order appears with its PayPal order and capture IDs, the agent (`chitti`) credited, and the webhook marked **verified**.
-7. **Bring your own agent (optional).** The **Connect an agent** tab shows the MCP URL and tools. The bearer token for this sandbox demo is `chosenone-demo-2026`.
+7. **Back in the app**, open **Before vs after**: the order appears with its PayPal order and capture IDs, the agent (`chitti`) credited, and the webhook marked **verified**.
+8. **Bring your own agent (optional).** The **Connect agents** page shows the MCP URL and tools. The bearer token for this sandbox demo is `chosenone-demo-2026`.
 
 Chitti runs on free-tier AI models and is limited to 8 chats per visitor per hour and 150 a day. If it says it is busy, try later or use your own agent.
 
