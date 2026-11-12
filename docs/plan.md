@@ -1,6 +1,6 @@
 # ChosenOne: Engineering Plan
 
-*Version 4, Wed 11 Nov 2026 (IST). Free-tier stack. Solo project. Built and deployed; this version records what was built and where it differs from the first plan.*
+*Version 5, Fri 13 Nov 2026 (IST). Free-tier stack. Solo project. Built, deployed and submitted; this version records what was built and where it differs from the first plan.*
 
 **Deadline:** Thu 12 Nov 2026, 12:00 PST, which is **Fri 13 Nov, 01:30 IST**. After that, nothing changes until the winners are announced (around 21 Dec).
 **Companion:** [human-tasks.md](human-tasks.md), the tasks that need the developer.
@@ -9,9 +9,10 @@
 
 ---
 
-## Progress (Wed 11 Nov)
+## Progress (final, Fri 13 Nov)
 
 **Live demo:** https://chosen-one-q4ox.onrender.com (Render free + Neon free, sandbox PayPal).
+**Video:** https://youtu.be/_bHwkebw4SA (2:52, public) · **Devpost:** https://devpost.com/software/chosenone (submitted).
 
 | Done, merged into `main`, CI green | Status |
 |---|---|
@@ -27,10 +28,12 @@
 | AI shopper panel, PickRate, loss reasons, before/after compare | Done |
 | Fix engine: AI drafts, every fact must quote the shop's notes, merchant approves, new catalog version | Done |
 | Recorded demo run (PickRate 15% → 60%) seeded into every database | Done |
-| Dashboard: Measure, Fix, Prove, Shop with Chitti, Connect | Done |
+| Product UI: landing page and a merchant app (Overview with setup checklist, Where you lose with suggested actions, Shopper results, Fixes, Before vs after, Try as a shopper, Connect agents) | Done, live |
 | Chitti, the buyer agent, shops through the store's own MCP server | Done, live-tested |
 | Render blueprint, keep-alive workflow, deployment guide | Done, deployed |
-| README, architecture, demo script, Devpost drafts | In review |
+| README, architecture, plan, deployment guide, demo script, Devpost text | Done |
+| Demo video (2:52) and 7 product screenshots, made with open-source Piper TTS, Playwright and ffmpeg | Done, public on YouTube |
+| Devpost submission, with a zip of the code, docs and media | Submitted |
 
 **Not built (cut, by the cut order below):** Transaction Search reconciliation badge, merchant copilot over PayPal's MCP server, public store page with JSON-LD and the JS SDK v6 button.
 
@@ -40,6 +43,8 @@
 - **Market (§4).** The competitor snapshot has 37 listings from 12 anonymised sellers (Competitor A to L), not 3.
 - **Provider fallback (§5.7 item 7).** The plan said providers switch only between panels. As built, a call falls back to the other provider when one is over quota or overloaded, even inside a panel, so a run is not lost. Each request is still pinned to a preferred model.
 - **Diagnosis (§5.7 item 3).** The loss-reason taxonomy is the panel's own categories (`missing_fact`, `not_found`, `delivery_unknown`, `returns_unknown`, `shipping_cost`, `price`, `quality_signal`, `better_alternative`, `wrong_product`), recorded by the shopper with each decision.
+- **Product UI.** After the first dashboard (five tabs), the UI was rebuilt as a product: a landing page, then a merchant app with a sidebar. The new **Where you lose** page shows every lost sale with the shopper's own reason and a suggested action, and **Overview** has a setup checklist. This needed one backend change: each lost request now carries the shopper's reason about the store's own listing. The setup checklist is pre-completed for the demo shop; there is no real onboarding for a new merchant.
+- **Demo video.** Made with open-source tools only: Piper TTS for the voice, Playwright (driving Edge) to record the live site, and ffmpeg to assemble it. Narration is generated sentence by sentence, and each sentence's measured length sets the scene timing and captions, so picture and voice stay in sync. The real Chitti-to-PayPal sandbox checkout is recorded on the live site.
 - **Public site mode.** The hosted site runs in `replay` mode: panels and catalog changes are read-only so visitors cannot burn free quota. Chitti stays on, limited to 8 chats per visitor per hour and 150 a day.
 - **Prompt injection.** Listing text is shown to models as data and the system prompts say so, but there is no dedicated injection filter. Competitor text comes from a fixed snapshot, not live input.
 
@@ -57,7 +62,7 @@
 **Hackathon Stage 1 is pass/fail. All of these must be true:**
 - [x] A public GitHub repo with a detected open-source LICENSE, a README, and no secrets (CI scans every push).
 - [x] A hosted demo URL (https://chosen-one-q4ox.onrender.com), plus local run instructions. It must keep working until 21 Dec.
-- [ ] A public YouTube video under 3:00 showing PayPal and AI working end to end.
+- [x] A public YouTube video under 3:00 showing PayPal and AI working end to end (https://youtu.be/_bHwkebw4SA, 2:52).
 - [x] PayPal and AI are both central and named in the README. The Devpost "Built With" list and the video are still to do.
 
 **Stage 2 scores five equally weighted criteria. What we build for each:**
@@ -461,7 +466,8 @@ chosen-one/
 | `feature/buyer-agent` | AI SDK MCP client chat | Merged |
 | `chore/render-deploy` | `render.yaml`, keep-alive workflow | Merged, deployed |
 | Should branches | `feature/transaction-search`, `feature/merchant-copilot`, `feature/store-page` | Not built (cut) |
-| `docs/readme-submission` | README, screenshots, Devpost copy | In review |
+| `feature/product-ui` | Landing page, merchant app shell, Overview, Where you lose, per-request shopper reasons | Merged |
+| `docs/readme-submission`, `docs/demo-video`, `docs/final-update` | README, architecture, demo script, Devpost text, video tooling, final status | Merged |
 
 ---
 

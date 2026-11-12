@@ -10,6 +10,8 @@ AI agents are becoming shoppers, and a small merchant can't see whether those ag
 
 It then fixes the gaps with AI, and proves the result with real agent checkouts attributed through PayPal.
 
+**Demo video (2:52):** https://youtu.be/_bHwkebw4SA &nbsp;·&nbsp; **Devpost:** https://devpost.com/software/chosenone
+
 **Live demo:** https://chosen-one-q4ox.onrender.com &nbsp;·&nbsp; Built solo for the [PayPal AI Hackathon](https://paypalaihackathon.devpost.com/).
 
 > The demo shop, **Mayabazar**, is a fictional clay studio in Austin, TX. Payments use the PayPal **sandbox**, so no real money moves. The free hosting can take up to a minute to wake the first time you open it.
@@ -142,7 +144,7 @@ Useful scripts: `npm run panel:run` (run the shopper panel), `npm run fixes:run`
 - [Engineering plan](docs/plan.md): scope, schedule, testing, risks, and what changed
 - [Deployment](docs/deployment.md): Render and Neon, step by step
 - [APIMatic Context Plugin notes](docs/apimatic-context-plugin.md)
-- [Demo video script](docs/demo-script.md) and [Devpost text](docs/devpost.md)
+- [Demo video script](docs/demo-script.md), [how the video was made](video/README.md) and [Devpost text](docs/devpost.md)
 - [Tasks that need the developer](docs/human-tasks.md)
 
 ## License

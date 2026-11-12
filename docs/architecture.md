@@ -53,7 +53,8 @@ flowchart LR
 | Fix engine | `server/enrichment/` | Drafts facts, verifies quotes against the notes, publishes approved facts as a new catalog version |
 | Buyer agent | `server/buyer/` | Chitti: AI SDK tool calling over an MCP client to the store's own `/mcp` |
 | Recordings | `server/demo/recordings.ts`, `data/recordings/` | The real baseline and after-fix runs, seeded into every database |
-| Dashboard | `web/` | React 19, Tailwind 4, AG Grid Community |
+| Product UI | `web/` | React 19, Tailwind 4, AG Grid Community, Lucide icons, a small hash router. A landing page, then the merchant app: Overview (setup checklist, KPIs), Where you lose (each lost sale, the shopper's reason, a suggested action), Shopper results, Fixes, Before vs after, Try as a shopper (Chitti), Connect agents |
+| Demo video tooling | `video/` | Piper TTS, Playwright, ffmpeg; see [video/README.md](../video/README.md) |
 
 ## Agent checkout and attribution
 

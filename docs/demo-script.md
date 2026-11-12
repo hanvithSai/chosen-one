@@ -1,5 +1,7 @@
 # Demo video: script and shot list
 
+> **Submitted video:** https://youtu.be/_bHwkebw4SA (2:52). It was generated with open-source tools from `video/script.json`; the exact narration, timings and build steps are in [video/README.md](../video/README.md). The table below is the original plan for a manually recorded version and is kept as a fallback.
+
 **Target length 2:45, hard limit under 3:00.** Record at 1080p with notifications off, using the hosted site (https://chosen-one-q4ox.onrender.com) in a normal browser window. Use free tools only: OBS Studio to record, Clipchamp (free) or DaVinci Resolve (free) to edit. Add captions. No copyrighted music.
 
 The video must show **PayPal and AI working end to end**. Keep the voiceover plain and specific. Say what is simulated.

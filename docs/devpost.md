@@ -59,7 +59,7 @@ Reconcile agent sales with PayPal Transaction Search, add a merchant copilot ove
 
 ## Built with
 
-`paypal`, `paypal-orders-v2`, `paypal-webhooks`, `agentic-commerce-spec`, `gemini`, `groq`, `vercel-ai-sdk`, `mcp`, `channel3`, `apimatic`, `ag-grid`, `render`, `neon`, `postgresql`, `typescript`, `react`, `node.js`
+Devpost accepts single-word tags only. As entered (24): `paypal`, `mcp`, `gemini`, `groq`, `apimatic`, `channel3`, `aggrid`, `render`, `neon`, `postgresql`, `typescript`, `react`, `nodejs`, `webhooks`, `agentic-commerce`, `ai-sdk`, `drizzle`, `express`, `vite`, `tailwindcss`, `zod`, `github-actions`, `llm`, `paypal-sandbox`.
 
 ## Sponsor tools to tick
 
@@ -76,12 +76,32 @@ APIMatic (Context Plugin for the PayPal Server SDK), Channel3 (competitor produc
 
 Payments are PayPal sandbox only; no real money moves.
 
-## Screenshots to upload (5, with captions)
+## Gallery images (7, as submitted, each caption under 140 characters)
 
-1. Dashboard hero, "PickRate 15% to 60%"
-2. Overview, setup checklist and who the shoppers chose
-3. Where you lose, a lost sale with the shopper's reason and suggested action
-4. Fixes, a fact next to its source quote
-5. Try as a shopper, tool steps and the Approve on PayPal button (and Before vs after, agent order with capture id and verified webhook)
+Files are in `video/out/images/` (3:2 PNGs, regenerate with `node video/images.mjs`).
 
-Thumbnail (3:2, under 5 MB): the hero numbers on the dark card.
+1. Landing page: ChosenOne shows small PayPal shops how often AI shopping agents pick them. Demo shop PickRate: 15% to 60%.
+2. Overview: setup checklist, PickRate 15% to 60%, ten sales won back, and the biggest opportunities grouped by what to fix.
+3. Where you lose: each lost sale shows the shopper's request, their reason in their own words, and a suggested action.
+4. Fixes: 267 AI-drafted facts, each quoting the merchant's own notes. Code checks every quote and number before approval.
+5. Before vs after: the same 20 AI shoppers, run again. PickRate rises from 15% to 60%; ten sales won back, one lost.
+6. Real agent sales via PayPal: agent name, order and capture IDs, and a verified webhook confirmation (sandbox).
+7. Connect agents: any AI agent can shop through the MCP server or Store Sync Cart API, then pay with PayPal Orders v2.
+
+## Video
+
+https://youtu.be/_bHwkebw4SA (2:52, public). Title: "ChosenOne: be the shop AI shopping agents pick | PayPal AI Hackathon 2026". The description has chapter timestamps and an honest-limits note. See [video/README.md](../video/README.md) for how it was made.
+
+## Other form answers (as drafted)
+
+**Technology requirement.** PayPal (free sandbox only): Orders v2 through `@paypal/paypal-server-sdk` 2.5.0 (create with a `PayPal-Request-Id`, `custom_id` carrying the agent name, approve, capture, safe retries), the Store Sync Cart API v1 through `@paypal/agentic-commerce-spec` 1.1.0 (validated with the spec's own schemas, all prices computed by the store), PayPal Webhooks (verified with `verify-webhook-signature` against the raw body, idempotent ledger), and sandbox accounts with OAuth client credentials. AI: Gemini and Groq's `openai/gpt-oss-120b` on free tiers through the Vercel AI SDK, powering AI shoppers, fix drafting (every fact must quote the merchant's notes) and Chitti, a buyer agent that uses an MCP client with tool calling against the store's own MCP server; plus the MCP server for outside agents.
+
+**AI tools used.** To build: an AI coding agent in the IDE, with the APIMatic Context Plugin for the PayPal Server SDK, PayPal's AI-Toolkit and the Neon MCP server. Inside the product: Gemini, Groq, the Vercel AI SDK, an MCP server and an MCP client. The demo narration used Piper, an open-source text-to-speech voice.
+
+**APIMatic Context Plugin experience.** Used five TypeScript skills (getting-started, client-initialization, authentication, calling-endpoints, error-handling). It gave accurate SDK 2.5.0 knowledge: the client is one long-lived object, retries are off by default and never apply to POST (so retries were built around one `PayPal-Request-Id`), and error payloads keep PayPal's snake_case names. Issues: a preview release installed through an npx command, only five skills used, and it covers the Server SDK only (the Cart API package and webhook verification were done from PayPal's REST docs). No measured time saving, because the same thing was not built twice. Details: [apimatic-context-plugin.md](apimatic-context-plugin.md).
+
+**AG Grid experience.** AG Grid Community 36.x (not AG Charts or AG Studio) for three tables: shopper results, 267 fixes and agent orders. Sorting, filtering and resizing came for free, `themeQuartz.withParams` matched the brand, and React cell renderers gave status chips. Issues: auto-height rows needed explicit line height and padding, and the grid makes one JavaScript chunk over 500 kB (not code-split).
+
+**Sponsor tools used.** APIMatic, Channel3, AG Grid and Render.
+
+**Overall experience feedback.** Strong theme and useful sponsor tooling. Suggestions: note that sandbox accounts created in India block PayPal-to-PayPal payments, clarify that the Channel3 perk has no promo-code field, show the Pacific-time deadline in local time, and collect sponsor perk claims in one checklist.
