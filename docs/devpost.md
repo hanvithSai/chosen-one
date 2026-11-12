@@ -68,20 +68,20 @@ APIMatic (Context Plugin for the PayPal Server SDK), Channel3 (competitor produc
 ## Testing instructions (for the judges' field)
 
 1. Open https://chosen-one-q4ox.onrender.com (the first load can take up to a minute while the free host wakes).
-2. Look at the **Measure**, **Fix** and **Prove** tabs: PickRate 15% → 60% from recorded runs.
-3. Open **Shop with Chitti**, ask for a mug under $40 delivered to Austin, TX 78701, then say to check out. Click **Approve on PayPal (sandbox)**.
+2. Click **Open the demo**, then look at **Overview**, **Where you lose**, **Fixes** and **Before vs after**: PickRate 15% → 60% from recorded runs.
+3. Open **Try as a shopper**, ask for a mug under $40 delivered to Austin, TX 78701, then say to check out. Click **Approve on PayPal (sandbox)**.
 4. Log in with the sandbox buyer from the README: email `sb-a55ct53836734@personal.example.com`, password `d&!63'yS`. Choose **PayPal balance or the card** (not the bank account).
-5. Return to the dashboard, open **Prove**: the order shows agent `chitti`, COMPLETED, and the webhook as verified.
-6. Optional: connect your own agent with the MCP URL on the **Connect an agent** tab; the bearer token for this sandbox demo is `chosenone-demo-2026`.
+5. Return to the dashboard, open **Before vs after**: the order shows agent `chitti`, COMPLETED, and the webhook as verified.
+6. Optional: connect your own agent with the MCP URL on the **Connect agents** page; the bearer token for this sandbox demo is `chosenone-demo-2026`.
 
 Payments are PayPal sandbox only; no real money moves.
 
 ## Screenshots to upload (5, with captions)
 
 1. Dashboard hero, "PickRate 15% to 60%"
-2. Measure tab, reasons and who won
-3. Fix tab, a fact next to its source quote
-4. Shop with Chitti, tool steps and the Approve on PayPal button
-5. Prove tab, agent order with capture id and verified webhook
+2. Overview, setup checklist and who the shoppers chose
+3. Where you lose, a lost sale with the shopper's reason and suggested action
+4. Fixes, a fact next to its source quote
+5. Try as a shopper, tool steps and the Approve on PayPal button (and Before vs after, agent order with capture id and verified webhook)
 
 Thumbnail (3:2, under 5 MB): the hero numbers on the dark card.

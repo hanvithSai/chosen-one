@@ -14,3 +14,9 @@ data/runtime/
 Thumbs.db
 *.log
 .neon
+
+# demo video build artifacts
+video/node_modules/
+video/voices/
+video/build/
+video/out/
